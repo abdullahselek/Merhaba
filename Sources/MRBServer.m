@@ -30,4 +30,18 @@
 
 @implementation MRBServer
 
+- (id)initWithDomainName:(NSString *)domain
+                protocol:(NSString *)protocol
+                    name:(NSString *)name {
+    self = [super init];
+    if (self) {
+        self.domain = domain;
+        self.protocol = protocol;
+        self.name = name;
+        self.outputStreamHasSpace = NO;
+        self.payloadSize = 128;
+    }
+    return self;
+}
+
 @end

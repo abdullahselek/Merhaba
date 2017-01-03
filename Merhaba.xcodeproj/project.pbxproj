@@ -11,6 +11,7 @@
 		A45CE9281E1B059400C0D50D /* Merhaba_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9271E1B059400C0D50D /* Merhaba_iOSTests.m */; };
 		A45CE9311E1B059F00C0D50D /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; };
+		A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		A45CE9291E1B059400C0D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45CE9321E1B086D00C0D50D /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		A45CE9331E1B086D00C0D50D /* Merhaba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Merhaba.h; path = Sources/Merhaba.h; sourceTree = "<group>"; };
+		A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBServerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A45CE9271E1B059400C0D50D /* Merhaba_iOSTests.m */,
+				A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */,
 				A45CE9291E1B059400C0D50D /* Info.plist */,
 			);
 			path = "Merhaba-iOSTests";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */,
 				A45CE9281E1B059400C0D50D /* Merhaba_iOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

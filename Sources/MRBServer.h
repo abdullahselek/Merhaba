@@ -101,4 +101,40 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 
 @interface MRBServer : NSObject
 
+/**
+  * the bonjour domain
+ */
+@property (nonatomic) NSString *domain;
+/**
+  * the bonjour protocol
+ */
+@property (nonatomic) NSString *protocol;
+/**
+  * the bonjour name
+ */
+@property (nonatomic) NSString *name;
+/**
+  * the port, reterieved from the OS
+ */
+@property (nonatomic) uint16_t port;
+/**
+  * the size you expect to be sending
+ */
+@property (nonatomic) uint8_t payloadSize;
+/**
+  * when there is space in the output stream this is YES
+ */
+@property (nonatomic) BOOL outputStreamHasSpace;
+
+/**
+  * Initialize with name, protocol and name
+  *
+  * @param domain NSString
+  * @param protocol NSString
+  * @param name NSString
+ */
+- (id)initWithDomainName:(NSString *)domain
+                protocol:(NSString *)protocol
+                    name:(NSString *)name;
+
 @end
