@@ -28,7 +28,21 @@
 
 #import "MRBServer.h"
 
+NSString * const MRBDefaultProtocol = @"_Server._tcp.";
+
 @implementation MRBServer
+
+- (id)init {
+    return [self initWithDomainName:@""
+                           protocol:MRBDefaultProtocol
+                               name:@""];
+}
+
+- (id)initWithProtocol:(NSString *)protocol {
+    return [self initWithDomainName:@""
+                    protocol:[NSString stringWithFormat:@"_%@._tcp.", protocol]
+                        name:@""];
+}
 
 - (id)initWithDomainName:(NSString *)domain
                 protocol:(NSString *)protocol

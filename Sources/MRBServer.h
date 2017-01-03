@@ -28,6 +28,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const MRBDefaultProtocol;
+
 @class MRBServer;
 
 /**
@@ -125,6 +127,13 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * when there is space in the output stream this is YES
  */
 @property (nonatomic) BOOL outputStreamHasSpace;
+
+/**
+  * Uses protocol as the bonjour protocol and TCP as the networking layer
+  *
+  * @param protocol NSString
+ */
+- (id)initWithProtocol:(NSString *)protocol;
 
 /**
   * Initialize with name, protocol and name
