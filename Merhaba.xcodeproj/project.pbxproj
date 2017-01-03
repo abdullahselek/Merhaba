@@ -225,12 +225,14 @@
 		A45CE90E1E1B033F00C0D50D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 			};
 			name = Debug;
 		};
 		A45CE90F1E1B033F00C0D50D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 			};
 			name = Release;
 		};
