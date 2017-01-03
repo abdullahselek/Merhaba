@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A45CE9231E1B059400C0D50D /* Merhaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45CE9191E1B059400C0D50D /* Merhaba.framework */; };
-		A45CE9281E1B059400C0D50D /* Merhaba_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9271E1B059400C0D50D /* Merhaba_iOSTests.m */; };
 		A45CE9311E1B059F00C0D50D /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; };
 		A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */; };
@@ -29,7 +28,6 @@
 		A45CE9131E1B04F700C0D50D /* MRBServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MRBServer.m; path = Sources/MRBServer.m; sourceTree = "<group>"; };
 		A45CE9191E1B059400C0D50D /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45CE9221E1B059400C0D50D /* Merhaba-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Merhaba-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A45CE9271E1B059400C0D50D /* Merhaba_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Merhaba_iOSTests.m; sourceTree = "<group>"; };
 		A45CE9291E1B059400C0D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45CE9321E1B086D00C0D50D /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		A45CE9331E1B086D00C0D50D /* Merhaba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Merhaba.h; path = Sources/Merhaba.h; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		A45CE9261E1B059400C0D50D /* Merhaba-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				A45CE9271E1B059400C0D50D /* Merhaba_iOSTests.m */,
 				A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */,
 				A45CE9291E1B059400C0D50D /* Info.plist */,
 			);
@@ -211,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */,
-				A45CE9281E1B059400C0D50D /* Merhaba_iOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
