@@ -91,6 +91,14 @@
 
 @end
 
+typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
+    MRBServerCouldNotBindToIPv4Address,
+    MRBServerCouldNotBindToIPv6Address,
+    MRBServerNoSocketsAvailable,
+    MRBServerNoSpaceOnOutputStream,
+    MRBServerOutputStreamReachedCapacity
+};
+
 @interface MRBServer : NSObject
 
 @end
