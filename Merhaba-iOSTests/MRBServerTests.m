@@ -9,6 +9,12 @@
 #import <XCTest/XCTest.h>
 #import "MRBServer.h"
 
+@interface MRBServer(Test)
+
+- (CFSocketRef)createSocket;
+
+@end
+
 @interface MRBServerTests : XCTestCase
 
 @end
@@ -39,6 +45,30 @@
     XCTAssertTrue([mrbServer.domain isEqualToString:@"domain"], @"set domain invalid");
     XCTAssertTrue([mrbServer.protocol isEqualToString:@"protocol"], @"set protocol invalid");
     XCTAssertTrue([mrbServer.name isEqualToString:@"name"], @"set name invalid");
+}
+
+- (void)testCreateSocket {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    XCTAssertNotNil(mrbServer, @"init failed");
+    CFSocketRef socket = [mrbServer createSocket];
+    XCTAssertNotNil((__bridge id) socket, @"create socket failed");
+}
+
+- (void)testStartServer_withEmptyError {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    XCTAssertNotNil(mrbServer, @"init failed");
+    BOOL successful = [mrbServer startWithError:nil];
+    XCTAssertTrue(successful, @"socket start failed");
+}
+
+- (void)testStartServer_withNotEmptyError {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    XCTAssertNotNil(mrbServer, @"init failed");
+    NSError *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
+                                                code:MRBServerNoSocketsAvailable
+                                            userInfo:nil];
+    BOOL successful = [mrbServer startWithError:error];
+    XCTAssertTrue(successful, @"socket start failed");
 }
 
 @end

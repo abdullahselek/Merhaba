@@ -28,7 +28,10 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString * const MRBDefaultProtocol;
+extern NSString * const MRBServerErrorDomain;
 
 @class MRBServer;
 
@@ -101,7 +104,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
     MRBServerOutputStreamReachedCapacity
 };
 
-@interface MRBServer : NSObject
+@interface MRBServer : NSObject <NSNetServiceDelegate, NSStreamDelegate, NSNetServiceBrowserDelegate>
 
 /**
   * the bonjour domain
@@ -127,6 +130,14 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * when there is space in the output stream this is YES
  */
 @property (nonatomic) BOOL outputStreamHasSpace;
+/**
+  * the socket that data is sent over
+ */
+@property (nullable, nonatomic) CFSocketRef socket;
+/**
+  * bonjour net service used to publish this server
+ */
+@property (nonatomic) NSNetService *netService;
 
 /**
   * Uses protocol as the bonjour protocol and TCP as the networking layer
@@ -146,4 +157,13 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
                 protocol:(NSString *)protocol
                     name:(NSString *)name;
 
+/**
+  * Starts server
+  *
+  * @param error NSError
+ */
+- (BOOL)startWithError:(NSError * _Nullable)error;
+
 @end
+
+NS_ASSUME_NONNULL_END
