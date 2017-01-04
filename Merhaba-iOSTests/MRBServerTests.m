@@ -54,20 +54,10 @@
     XCTAssertNotNil((__bridge id) socket, @"create socket failed");
 }
 
-- (void)testStartServer_withEmptyError {
+- (void)testStartServer_shouldSuccess {
     MRBServer *mrbServer = [[MRBServer alloc] init];
     XCTAssertNotNil(mrbServer, @"init failed");
-    BOOL successful = [mrbServer startWithError:nil];
-    XCTAssertTrue(successful, @"socket start failed");
-}
-
-- (void)testStartServer_withNotEmptyError {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    XCTAssertNotNil(mrbServer, @"init failed");
-    NSError *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
-                                                code:MRBServerNoSocketsAvailable
-                                            userInfo:nil];
-    BOOL successful = [mrbServer startWithError:error];
+    BOOL successful = [mrbServer start];
     XCTAssertTrue(successful, @"socket start failed");
 }
 

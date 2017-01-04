@@ -159,10 +159,8 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 
 /**
   * Starts server
-  *
-  * @param error NSError
  */
-- (BOOL)startWithError:(NSError * _Nullable)error;
+- (BOOL)start;
 
 @end
 
