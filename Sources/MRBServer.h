@@ -101,7 +101,8 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
     MRBServerCouldNotBindToIPv6Address,
     MRBServerNoSocketsAvailable,
     MRBServerNoSpaceOnOutputStream,
-    MRBServerOutputStreamReachedCapacity
+    MRBServerOutputStreamReachedCapacity,
+    MRBServerSuccess,
 };
 
 @interface MRBServer : NSObject <NSNetServiceDelegate, NSStreamDelegate, NSNetServiceBrowserDelegate>
@@ -140,6 +141,11 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 @property (nonatomic) NSNetService *netService;
 
 /**
+  * stream that this side writes two
+ */
+@property (nonatomic) NSOutputStream *outputStream;
+
+/**
   * Uses protocol as the bonjour protocol and TCP as the networking layer
   *
   * @param protocol NSString
@@ -161,6 +167,14 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * Starts server
  */
 - (BOOL)start;
+
+/**
+  * Send data to the remote side of the server
+  *
+  * @param data Data you want to send
+  * @return MRBServerErrorCode result code
+ */
+- (MRBServerErrorCode)sendData:(NSData *)data;
 
 @end
 

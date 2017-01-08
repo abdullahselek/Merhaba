@@ -168,6 +168,25 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     return successful;
 }
 
+- (MRBServerErrorCode)sendData:(NSData *)data {
+    if (self.outputStreamHasSpace) {
+        NSInteger len = [self.outputStream write:[data bytes] maxLength:[data length]];
+        if (len == -1) {
+            return MRBServerNoSpaceOnOutputStream;
+        } else if (len == 0) {
+            return MRBServerOutputStreamReachedCapacity;
+        } else {
+            return MRBServerSuccess;
+        }
+    } else {
+        return MRBServerNoSpaceOnOutputStream;
+    }
+}
+
+- (void)streamHasSpace:(NSStream *)stream {
+    self.outputStreamHasSpace = YES;
+}
+
 @end
 
 static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
