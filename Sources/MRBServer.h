@@ -139,11 +139,22 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * bonjour net service used to publish this server
  */
 @property (nonatomic) NSNetService *netService;
-
 /**
   * stream that this side writes two
  */
-@property (nonatomic) NSOutputStream *outputStream;
+@property (nullable, nonatomic) NSOutputStream *outputStream;
+/**
+  * stream that this side reads from
+ */
+@property (nullable, nonatomic) NSInputStream *inputStream;
+/**
+  * when input stream is ready to read from this turns to YES
+ */
+@property (nonatomic) BOOL inputStreamReady;
+/**
+  * when output stream is ready to read from this turns to YES
+ */
+@property (nonatomic) BOOL outputStreamReady;
 
 /**
   * Uses protocol as the bonjour protocol and TCP as the networking layer

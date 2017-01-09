@@ -187,12 +187,79 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     self.outputStreamHasSpace = YES;
 }
 
+- (void)connectedToInputStream:(NSInputStream *)inputStream
+                   outputStream:(NSOutputStream *)outputStream {
+    // need to close existing streams
+    [self stopStreams];
+
+    self.inputStream = inputStream;
+    self.inputStream.delegate = self;
+    [self.inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop]
+                                forMode:NSDefaultRunLoopMode];
+    [self.inputStream open];
+
+    self.outputStream = outputStream;
+    self.outputStream.delegate = self;
+    [self.outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop]
+                                 forMode:NSDefaultRunLoopMode];
+    [self.outputStream open];
+}
+
+- (void)stopStreams {
+    if (self.inputStream != nil) {
+        [self.inputStream close];
+        [self.inputStream removeFromRunLoop:[NSRunLoop currentRunLoop]
+                                    forMode:NSRunLoopCommonModes];
+        self.inputStream = nil;
+        self.inputStreamReady = NO;
+    }
+    if (self.outputStream != nil) {
+        [self.outputStream close];
+        [self.outputStream removeFromRunLoop:[NSRunLoop currentRunLoop]
+                                     forMode:NSRunLoopCommonModes];
+        self.outputStream = nil;
+        self.outputStreamReady = NO;
+    }
+}
+
 @end
 
 static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
                                              CFSocketCallBackType type,
                                              CFDataRef address,
                                              const void *data, void *info) {
-
+    /**
+      * the server's socket has accepted a connection request
+      * this function is called because it was registered in the
+      * socket create method
+     */
+    if (kCFSocketAcceptCallBack == type) {
+        MRBServer *server = (__bridge MRBServer *) info;
+        // on an accept the data is the native socket handle
+        CFSocketNativeHandle nativeSocketHandle = *(CFSocketNativeHandle *)data;
+        // create the read and write streams for the connection to the other process
+        CFReadStreamRef readStream = NULL;
+        CFWriteStreamRef writeStream = NULL;
+        CFStreamCreatePairWithSocket(kCFAllocatorDefault, nativeSocketHandle,
+                                     &readStream, &writeStream);
+        if (readStream != NULL && writeStream != NULL) {
+            CFReadStreamSetProperty(readStream,
+                                    kCFStreamPropertyShouldCloseNativeSocket,
+                                    kCFBooleanTrue);
+            CFWriteStreamSetProperty(writeStream,
+                                     kCFStreamPropertyShouldCloseNativeSocket,
+                                     kCFBooleanTrue);
+            [server connectedToInputStream:(__bridge NSInputStream *) readStream
+                              outputStream:(__bridge NSOutputStream *)writeStream];
+        } else {
+            /**
+              * on any failure, need to destroy the CFSocketNativeHandle
+              * since we are not going to use it any more
+             */
+            close(nativeSocketHandle);
+        }
+        if (readStream) CFRelease(readStream);
+        if (writeStream) CFRelease(writeStream);
+    }
 }
 
