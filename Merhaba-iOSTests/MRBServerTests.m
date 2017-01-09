@@ -7,7 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
 #import "MRBServer.h"
+#import "Fixture.h"
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <unistd.h>
 
 @interface MRBServer(Test)
 
@@ -59,6 +64,44 @@
     XCTAssertNotNil(mrbServer, @"init failed");
     BOOL successful = [mrbServer start];
     XCTAssertTrue(successful, @"socket start failed");
+}
+
+- (void)testSendData_shouldReturnNoSpaceOnOutputStream_whenDataNil {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [mrbServer sendData:[[NSData alloc] initWithContentsOfFile:@"data"]];
+    XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
+}
+
+- (void)testSendData_shouldReturnNoSpaceOnOutputStream_whenOutputStreamHasSpaceNo {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    mrbServer.outputStreamHasSpace = NO;
+    MRBServerErrorCode code = [mrbServer sendData:[Fixture dataFromFile:@"data"]];
+    XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
+}
+
+- (void)testSendData_shouldReturnOutputStreamReachedCapacity_whenDataNotNil {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    NSData *data = [Fixture dataFromFile:@"data"];
+    OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(0);
+    mrbServer.outputStream = mockOutputStream;
+    mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [mrbServer sendData:data];
+    XCTAssertEqual(code, MRBServerOutputStreamReachedCapacity);
+}
+
+- (void)testSendData_shouldReturnServerSuccess_whenDataNotNil {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    NSData *data = [Fixture dataFromFile:@"data"];
+    OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(1);
+    mrbServer.outputStream = mockOutputStream;
+    mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [mrbServer sendData:data];
+    XCTAssertEqual(code, MRBServerSuccess);
 }
 
 @end

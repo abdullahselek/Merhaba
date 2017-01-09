@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09F900850506D9F51B92B942 /* Pods_Merhaba_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */; };
 		8CE58820A2FF2C45DEB33C0D /* Pods_Merhaba_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358C2950AE66A705EC3A50CB /* Pods_Merhaba_iOSTests.framework */; };
+		A41E5FC81E24296400FE9EAC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A41E5FC71E24296400FE9EAC /* data.json */; };
+		A41E5FCB1E242AFF00FE9EAC /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = A41E5FCA1E242AFF00FE9EAC /* Fixture.m */; };
 		A45CE9231E1B059400C0D50D /* Merhaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45CE9191E1B059400C0D50D /* Merhaba.framework */; };
 		A45CE9311E1B059F00C0D50D /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; };
@@ -31,6 +33,9 @@
 		3662A5A307F39425A07C1047 /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7826D822F6E69F6C3F318093 /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOS/Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A41E5FC71E24296400FE9EAC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = Resources/data.json; sourceTree = "<group>"; };
+		A41E5FC91E242AFF00FE9EAC /* Fixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fixture.h; sourceTree = "<group>"; };
+		A41E5FCA1E242AFF00FE9EAC /* Fixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixture.m; sourceTree = "<group>"; };
 		A45CE9121E1B04F700C0D50D /* MRBServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MRBServer.h; path = Sources/MRBServer.h; sourceTree = "<group>"; };
 		A45CE9131E1B04F700C0D50D /* MRBServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MRBServer.m; path = Sources/MRBServer.m; sourceTree = "<group>"; };
 		A45CE9191E1B059400C0D50D /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +88,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A41E5FC61E24293800FE9EAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A41E5FC71E24296400FE9EAC /* data.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A45CE9091E1B033F00C0D50D = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +130,11 @@
 		A45CE9261E1B059400C0D50D /* Merhaba-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				A41E5FC61E24293800FE9EAC /* Resources */,
 				A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */,
 				A45CE9291E1B059400C0D50D /* Info.plist */,
+				A41E5FC91E242AFF00FE9EAC /* Fixture.h */,
+				A41E5FCA1E242AFF00FE9EAC /* Fixture.m */,
 			);
 			path = "Merhaba-iOSTests";
 			sourceTree = "<group>";
@@ -226,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41E5FC81E24296400FE9EAC /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */,
+				A41E5FCB1E242AFF00FE9EAC /* Fixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
