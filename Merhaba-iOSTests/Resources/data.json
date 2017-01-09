@@ -1,0 +1,7 @@
+{
+    "json": {
+        "id": 1,
+        "project": "Merhaba",
+        "targets": ["iOS", "macOS"]
+    }
+}
