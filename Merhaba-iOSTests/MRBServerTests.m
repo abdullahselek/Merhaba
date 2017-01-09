@@ -37,6 +37,7 @@
 @interface MRBServer(Test)
 
 - (CFSocketRef)createSocket;
+- (void)streamHasSpace:(NSStream *)stream;
 
 @end
 
@@ -122,6 +123,12 @@
     mrbServer.outputStreamHasSpace = YES;
     MRBServerErrorCode code = [mrbServer sendData:data];
     XCTAssertEqual(code, MRBServerSuccess);
+}
+
+- (void)testStreamHasSpace {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    [mrbServer streamHasSpace:[[NSStream alloc] init]];
+    XCTAssertTrue(mrbServer.outputStreamHasSpace, @"streamHasSpace failed");
 }
 
 @end
