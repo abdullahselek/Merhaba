@@ -188,7 +188,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (void)connectedToInputStream:(NSInputStream *)inputStream
-                   outputStream:(NSOutputStream *)outputStream {
+                  outputStream:(NSOutputStream *)outputStream {
     // need to close existing streams
     [self stopStreams];
 

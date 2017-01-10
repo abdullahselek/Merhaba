@@ -38,6 +38,8 @@
 
 - (CFSocketRef)createSocket;
 - (void)streamHasSpace:(NSStream *)stream;
+- (void)connectedToInputStream:(NSInputStream *)inputStream
+                  outputStream:(NSOutputStream *)outputStream;
 
 @end
 
@@ -129,6 +131,15 @@
     MRBServer *mrbServer = [[MRBServer alloc] init];
     [mrbServer streamHasSpace:[[NSStream alloc] init]];
     XCTAssertTrue(mrbServer.outputStreamHasSpace, @"streamHasSpace failed");
+}
+
+- (void)testConnectedToStream_shouldSetCorrect_whenInputAndOutputStreamNotEmpty {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    id mockInputStream = OCMClassMock([NSInputStream class]);
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    [mrbServer connectedToInputStream:mockInputStream outputStream:mockOutputStream];
+    XCTAssertEqual(mrbServer.inputStream, mockInputStream);
+    XCTAssertEqual(mrbServer.outputStream, mockOutputStream);
 }
 
 @end
