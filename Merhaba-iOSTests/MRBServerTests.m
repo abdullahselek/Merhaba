@@ -40,6 +40,7 @@
 - (void)streamHasSpace:(NSStream *)stream;
 - (void)connectedToInputStream:(NSInputStream *)inputStream
                   outputStream:(NSOutputStream *)outputStream;
+- (void)stopStreams;
 
 @end
 
@@ -140,6 +141,17 @@
     [mrbServer connectedToInputStream:mockInputStream outputStream:mockOutputStream];
     XCTAssertEqual(mrbServer.inputStream, mockInputStream);
     XCTAssertEqual(mrbServer.outputStream, mockOutputStream);
+}
+
+- (void)testStopStream {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    id mockInputStream = OCMClassMock([NSInputStream class]);
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    mrbServer.inputStream = mockInputStream;
+    mrbServer.outputStream = mockOutputStream;
+    [mrbServer stopStreams];
+    XCTAssertNil(mrbServer.inputStream);
+    XCTAssertNil(mrbServer.outputStream);
 }
 
 @end
