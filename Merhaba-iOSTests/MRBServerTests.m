@@ -154,4 +154,11 @@
     XCTAssertNil(mrbServer.outputStream);
 }
 
+- (void)testConnectToRemoteService_withValidService {
+    MRBServer *mrbServer = [[MRBServer alloc] init];
+    id mockNetService = OCMClassMock([NSNetService class]);
+    [mrbServer connectToRemoteService:mockNetService];
+    XCTAssertEqual(mrbServer.currentlyResolvingService, mockNetService);
+}
+
 @end

@@ -183,6 +183,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
+- (void)connectToRemoteService:(NSNetService *)selectedService {
+    [self.currentlyResolvingService stop];
+    self.currentlyResolvingService = nil;
+
+    self.currentlyResolvingService = selectedService;
+    self.currentlyResolvingService.delegate = self;
+    [self.currentlyResolvingService resolveWithTimeout:0.0];
+}
+
 - (void)streamHasSpace:(NSStream *)stream {
     self.outputStreamHasSpace = YES;
 }

@@ -157,6 +157,11 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 @property (nonatomic) BOOL outputStreamReady;
 
 /**
+  * the service we are currently trying to resolve
+ */
+@property (nullable, nonatomic) NSNetService *currentlyResolvingService;
+
+/**
   * Uses protocol as the bonjour protocol and TCP as the networking layer
   *
   * @param protocol NSString
@@ -186,6 +191,13 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * @return MRBServerErrorCode result code
  */
 - (MRBServerErrorCode)sendData:(NSData *)data;
+
+/**
+  * To connect to the remote service
+  *
+  * @param selectedService NSNetService
+ */
+- (void)connectToRemoteService:(NSNetService *)selectedService;
 
 @end
 
