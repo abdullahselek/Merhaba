@@ -46,16 +46,21 @@
 
 @interface MRBServerTests : XCTestCase
 
+@property (nonatomic) MRBServer *mrbServer;
+
 @end
 
 @implementation MRBServerTests
 
+- (void)setUp {
+    self.mrbServer = [[MRBServer alloc] init];
+}
+
 - (void)testInit {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    XCTAssertNotNil(mrbServer, @"init failed");
-    XCTAssertTrue([mrbServer.domain isEqualToString:@""], @"set domain invalid");
-    XCTAssertTrue([mrbServer.protocol isEqualToString:MRBDefaultProtocol], @"set protocol invalid");
-    XCTAssertTrue([mrbServer.name isEqualToString:@""], @"set name invalid");
+    XCTAssertNotNil(self.mrbServer, @"init failed");
+    XCTAssertTrue([self.mrbServer.domain isEqualToString:@""], @"set domain invalid");
+    XCTAssertTrue([self.mrbServer.protocol isEqualToString:MRBDefaultProtocol], @"set protocol invalid");
+    XCTAssertTrue([self.mrbServer.name isEqualToString:@""], @"set name invalid");
 }
 
 - (void)testInitWithProtocol {
@@ -77,88 +82,82 @@
 }
 
 - (void)testCreateSocket {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    XCTAssertNotNil(mrbServer, @"init failed");
-    CFSocketRef socket = [mrbServer createSocket];
+    XCTAssertNotNil(self.mrbServer, @"init failed");
+    CFSocketRef socket = [self.mrbServer createSocket];
     XCTAssertNotNil((__bridge id) socket, @"create socket failed");
 }
 
 - (void)testStartServer_shouldSuccess {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    XCTAssertNotNil(mrbServer, @"init failed");
-    BOOL successful = [mrbServer start];
+    XCTAssertNotNil(self.mrbServer, @"init failed");
+    BOOL successful = [self.mrbServer start];
     XCTAssertTrue(successful, @"socket start failed");
 }
 
 - (void)testSendData_shouldReturnNoSpaceOnOutputStream_whenDataNil {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
-    mrbServer.outputStreamHasSpace = YES;
-    MRBServerErrorCode code = [mrbServer sendData:[[NSData alloc] initWithContentsOfFile:@"data"]];
+    self.mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendData:[[NSData alloc] initWithContentsOfFile:@"data"]];
     XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
 }
 
 - (void)testSendData_shouldReturnNoSpaceOnOutputStream_whenOutputStreamHasSpaceNo {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
-    mrbServer.outputStreamHasSpace = NO;
-    MRBServerErrorCode code = [mrbServer sendData:[Fixture dataFromFile:@"data"]];
+    self.mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    self.mrbServer.outputStreamHasSpace = NO;
+    MRBServerErrorCode code = [self.mrbServer sendData:[Fixture dataFromFile:@"data"]];
     XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
 }
 
 - (void)testSendData_shouldReturnOutputStreamReachedCapacity_whenDataNotNil {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
     NSData *data = [Fixture dataFromFile:@"data"];
     OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(0);
-    mrbServer.outputStream = mockOutputStream;
-    mrbServer.outputStreamHasSpace = YES;
-    MRBServerErrorCode code = [mrbServer sendData:data];
+    self.mrbServer.outputStream = mockOutputStream;
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendData:data];
     XCTAssertEqual(code, MRBServerOutputStreamReachedCapacity);
 }
 
 - (void)testSendData_shouldReturnServerSuccess_whenDataNotNil {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
     NSData *data = [Fixture dataFromFile:@"data"];
     OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(1);
-    mrbServer.outputStream = mockOutputStream;
-    mrbServer.outputStreamHasSpace = YES;
-    MRBServerErrorCode code = [mrbServer sendData:data];
+    self.mrbServer.outputStream = mockOutputStream;
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendData:data];
     XCTAssertEqual(code, MRBServerSuccess);
 }
 
 - (void)testStreamHasSpace {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
-    [mrbServer streamHasSpace:[[NSStream alloc] init]];
-    XCTAssertTrue(mrbServer.outputStreamHasSpace, @"streamHasSpace failed");
+    [self.mrbServer streamHasSpace:[[NSStream alloc] init]];
+    XCTAssertTrue(self.mrbServer.outputStreamHasSpace, @"streamHasSpace failed");
 }
 
 - (void)testConnectedToStream_shouldSetCorrect_whenInputAndOutputStreamNotEmpty {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
     id mockInputStream = OCMClassMock([NSInputStream class]);
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
-    [mrbServer connectedToInputStream:mockInputStream outputStream:mockOutputStream];
-    XCTAssertEqual(mrbServer.inputStream, mockInputStream);
-    XCTAssertEqual(mrbServer.outputStream, mockOutputStream);
+    [self.mrbServer connectedToInputStream:mockInputStream outputStream:mockOutputStream];
+    XCTAssertEqual(self.mrbServer.inputStream, mockInputStream);
+    XCTAssertEqual(self.mrbServer.outputStream, mockOutputStream);
 }
 
 - (void)testStopStream_shouldSetNil_whenInputAndOutputStreamNotEmpty {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
     id mockInputStream = OCMClassMock([NSInputStream class]);
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
-    mrbServer.inputStream = mockInputStream;
-    mrbServer.outputStream = mockOutputStream;
-    [mrbServer stopStreams];
-    XCTAssertNil(mrbServer.inputStream);
-    XCTAssertNil(mrbServer.outputStream);
+    self.mrbServer.inputStream = mockInputStream;
+    self.mrbServer.outputStream = mockOutputStream;
+    [self.mrbServer stopStreams];
+    XCTAssertNil(self.mrbServer.inputStream);
+    XCTAssertNil(self.mrbServer.outputStream);
 }
 
 - (void)testConnectToRemoteService_withValidService {
-    MRBServer *mrbServer = [[MRBServer alloc] init];
     id mockNetService = OCMClassMock([NSNetService class]);
-    [mrbServer connectToRemoteService:mockNetService];
-    XCTAssertEqual(mrbServer.currentlyResolvingService, mockNetService);
+    [self.mrbServer connectToRemoteService:mockNetService];
+    XCTAssertEqual(self.mrbServer.currentlyResolvingService, mockNetService);
+}
+
+- (void)tearDown {
+    self.mrbServer = nil;
 }
 
 @end
