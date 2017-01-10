@@ -143,7 +143,7 @@
     XCTAssertEqual(mrbServer.outputStream, mockOutputStream);
 }
 
-- (void)testStopStream {
+- (void)testStopStream_shouldSetNil_whenInputAndOutputStreamNotEmpty {
     MRBServer *mrbServer = [[MRBServer alloc] init];
     id mockInputStream = OCMClassMock([NSInputStream class]);
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
