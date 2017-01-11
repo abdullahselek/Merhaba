@@ -40,6 +40,7 @@
 - (void)streamHasSpace:(NSStream *)stream;
 - (void)connectedToInputStream:(NSInputStream *)inputStream
                   outputStream:(NSOutputStream *)outputStream;
+- (void)stopNetService;
 - (void)stopStreams;
 
 @end
@@ -154,6 +155,18 @@
     id mockNetService = OCMClassMock([NSNetService class]);
     [self.mrbServer connectToRemoteService:mockNetService];
     XCTAssertEqual(self.mrbServer.currentlyResolvingService, mockNetService);
+}
+
+- (void)testStop {
+    id mockServer = OCMPartialMock(self.mrbServer);
+    [self.mrbServer start];
+    id mockNetService = OCMClassMock([NSNetService class]);
+    self.mrbServer.netService = mockNetService;
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    [self.mrbServer stop];
+    OCMVerify([mockServer stopNetService]);
+    OCMVerify([mockServer stopStreams]);
 }
 
 - (void)tearDown {

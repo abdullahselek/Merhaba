@@ -214,6 +214,26 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self.outputStream open];
 }
 
+- (void)stop {
+    if (self.netService) {
+        [self stopNetService];
+    }
+    if (self.socket != NULL) {
+        CFSocketInvalidate(self.socket);
+        CFRelease(self.socket);
+        self.socket = NULL;
+    }
+    [self stopStreams];
+    [self.delegate serverStopped:self];
+}
+
+- (void)stopNetService {
+    [self.netService stop];
+    [self.netService removeFromRunLoop:[NSRunLoop currentRunLoop]
+                               forMode:NSRunLoopCommonModes];
+    self.netService = nil;
+}
+
 - (void)stopStreams {
     if (self.inputStream != nil) {
         [self.inputStream close];
