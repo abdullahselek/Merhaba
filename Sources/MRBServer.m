@@ -218,7 +218,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     if (self.netService) {
         [self stopNetService];
     }
-    if (self.socket != NULL) {
+    if (self.socket) {
         CFSocketInvalidate(self.socket);
         CFRelease(self.socket);
         self.socket = NULL;
@@ -235,14 +235,14 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (void)stopStreams {
-    if (self.inputStream != nil) {
+    if (self.inputStream) {
         [self.inputStream close];
         [self.inputStream removeFromRunLoop:[NSRunLoop currentRunLoop]
                                     forMode:NSRunLoopCommonModes];
         self.inputStream = nil;
         self.inputStreamReady = NO;
     }
-    if (self.outputStream != nil) {
+    if (self.outputStream) {
         [self.outputStream close];
         [self.outputStream removeFromRunLoop:[NSRunLoop currentRunLoop]
                                      forMode:NSRunLoopCommonModes];
@@ -271,7 +271,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
         CFWriteStreamRef writeStream = NULL;
         CFStreamCreatePairWithSocket(kCFAllocatorDefault, nativeSocketHandle,
                                      &readStream, &writeStream);
-        if (readStream != NULL && writeStream != NULL) {
+        if (readStream && writeStream) {
             CFReadStreamSetProperty(readStream,
                                     kCFStreamPropertyShouldCloseNativeSocket,
                                     kCFBooleanTrue);
