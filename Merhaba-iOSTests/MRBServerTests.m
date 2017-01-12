@@ -43,6 +43,9 @@
 - (void)stopNetService;
 - (void)stopStreams;
 
+- (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict;
+- (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo;
+
 @end
 
 @interface MRBServerTests : XCTestCase
@@ -167,6 +170,24 @@
     [self.mrbServer stop];
     OCMVerify([mockServer stopNetService]);
     OCMVerify([mockServer stopStreams]);
+}
+
+- (void)testServiceDidNotResolve {
+    NSNetService *service = OCMClassMock([NSNetService class]);
+    self.mrbServer.currentlyResolvingService = service;
+    [self.mrbServer netService:service didNotResolve:@{@"error": @"1"}];
+    OCMVerify([service stop]);
+    XCTAssertNil(self.mrbServer.currentlyResolvingService);
+}
+
+- (void)testServiceDidNotPublish {
+    NSNetService *service = OCMClassMock([NSNetService class]);
+    self.mrbServer.currentlyResolvingService = service;
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    NSDictionary *errorDict = @{@"error": @"1"};
+    [self.mrbServer netService:service didNotPublish:errorDict];
+    OCMVerify([mockProtocol server:self.mrbServer didNotStart:errorDict]);
 }
 
 - (void)tearDown {

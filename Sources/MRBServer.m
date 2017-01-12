@@ -251,6 +251,17 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
+#pragma mark NSNetServiceDelegate methods
+
+- (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict {
+    [self.currentlyResolvingService stop];
+    self.currentlyResolvingService = nil;
+}
+
+- (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo {
+    [self.delegate server:self didNotStart:errorInfo];
+}
+
 @end
 
 static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
