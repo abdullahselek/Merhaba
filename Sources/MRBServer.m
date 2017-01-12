@@ -34,6 +34,13 @@
 NSString * const MRBDefaultProtocol = @"_Server._tcp.";
 NSString * const MRBServerErrorDomain = @"ServerErrorDomain";
 
+@interface MRBServer ()
+
+@property (nonatomic) NSNetService *localService;
+@property (nonatomic) NSNetServiceBrowser *browser;
+
+@end
+
 /**
   * the call back function called when the server accepts a connection
  */
@@ -263,6 +270,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     self.outputStream = nil;
 }
 
+- (void)searchForServicesOfType:(NSString *)type {
+    [self.browser stop];
+    self.browser = nil;
+
+    self.browser = [[NSNetServiceBrowser alloc] init];
+    self.browser.delegate = self;
+    [self.browser searchForServicesOfType:type inDomain:@"local"];
+}
+
 #pragma mark NSNetServiceDelegate methods
 
 - (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict {
@@ -281,6 +297,13 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     self.currentlyResolvingService = nil;
 
     [self remoteServiceResolved:service];
+}
+
+- (void)netServiceDidPublish:(NSNetService *)service {
+    self.localService = service;
+    self.name = service.name;
+    // now start looking for others
+    [self searchForServicesOfType:self.protocol];
 }
 
 @end
