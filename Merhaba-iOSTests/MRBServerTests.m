@@ -44,6 +44,7 @@
                   outputStream:(NSOutputStream *)outputStream;
 - (void)stopNetService;
 - (void)stopStreams;
+- (BOOL)publishNetService;
 
 - (void)remoteServiceResolved:(NSNetService *)remoteService;
 - (void)searchForServicesOfType:(NSString *)type;
@@ -59,6 +60,8 @@
 - (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
            didFindService:(NSNetService*)service
                moreComing:(BOOL)moreComing;
+
+- (void)stream:(NSStream *)stream handleEvent:(NSStreamEvent)eventCode;
 
 @end
 
@@ -266,6 +269,55 @@
     id mockServiceBrowser = OCMClassMock([NSNetServiceBrowser class]);
     [self.mrbServer netServiceBrowser:mockServiceBrowser didFindService:newService moreComing:YES];
     OCMVerify([mockProtocol serviceAdded:newService moreComing:YES]);
+}
+
+- (void)testHandleEvent_shouldCompleteStreamOpening_whenEventOpenCompleted {
+    id mockServer = OCMPartialMock(self.mrbServer);
+    id mockStream = OCMClassMock([NSStream class]);
+    self.mrbServer.inputStream = mockStream;
+    self.mrbServer.outputStream = mockStream;
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    self.mrbServer.netService = OCMClassMock([NSNetService class]);
+    [self.mrbServer stream:mockStream handleEvent:NSStreamEventOpenCompleted];
+    OCMVerify([mockProtocol serverRemoteConnectionComplete:self.mrbServer]);
+    OCMVerify([mockServer stopNetService]);
+}
+
+- (void)testHandleEvent_shouldAcceptData_whenEventHasBytesAvailable {
+    id mockStream = OCMClassMock([NSInputStream class]);
+    OCMStub([mockStream hasBytesAvailable]).andReturn(NO);
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    self.mrbServer.payloadSize = 128;
+    [self.mrbServer stream:mockStream handleEvent:NSStreamEventHasBytesAvailable];
+    OCMVerify([mockProtocol server:self.mrbServer didAcceptData:OCMOCK_ANY]);
+}
+
+- (void)testHandleEvent_shouldSetHasSpaceTrue_whenEventHasSpaceAvailable {
+    id mockStream = OCMClassMock([NSStream class]);
+    [self.mrbServer stream:mockStream handleEvent:NSStreamEventHasSpaceAvailable];
+    XCTAssertTrue(self.mrbServer.outputStreamHasSpace);
+}
+
+- (void)testHandleEvent_shouldPublishService_whenEventEndEncountered {
+    id mockServer = OCMPartialMock(self.mrbServer);
+    id mockStream = OCMClassMock([NSStream class]);
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    [self.mrbServer stream:mockStream handleEvent:NSStreamEventEndEncountered];
+    OCMVerify([mockServer publishNetService]);
+    OCMVerify([mockProtocol server:self.mrbServer lostConnection:OCMOCK_ANY]);
+}
+
+- (void)testHandleEvent_shouldLooseConnection_whenEventErrorOccurred {
+    id mockServer = OCMPartialMock(self.mrbServer);
+    id mockStream = OCMClassMock([NSStream class]);
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    [self.mrbServer stream:mockStream handleEvent:NSStreamEventErrorOccurred];
+    OCMVerify([mockProtocol server:self.mrbServer lostConnection:OCMOCK_ANY]);
+    OCMVerify([mockServer stop]);
 }
 
 - (void)tearDown {

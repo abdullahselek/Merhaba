@@ -76,7 +76,7 @@ extern NSString * const MRBServerErrorDomain;
   * @param server MRBServer
   * @param errorDict NSDictionary
  */
-- (void)server:(MRBServer *)server lostConnection:(NSDictionary *)errorDict;
+- (void)server:(MRBServer *)server lostConnection:(NSDictionary * _Nullable)errorDict;
 
 /**
   * A new service comes on line

@@ -199,10 +199,6 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self.currentlyResolvingService resolveWithTimeout:0.0];
 }
 
-- (void)streamHasSpace:(NSStream *)stream {
-    self.outputStreamHasSpace = YES;
-}
-
 - (void)connectedToInputStream:(NSInputStream *)inputStream
                   outputStream:(NSOutputStream *)outputStream {
     // need to close existing streams
@@ -281,6 +277,53 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self.browser searchForServicesOfType:type inDomain:@"local"];
 }
 
+#pragma mark Stream methods
+
+- (void)streamCompletedOpening:(NSStream *)stream {
+    if (self.inputStream == stream) {
+        self.inputStreamReady = YES;
+    }
+    if (self.outputStream == stream) {
+        self.outputStreamReady = YES;
+    }
+
+    if (self.inputStreamReady && self.outputStreamReady) {
+        [self.delegate serverRemoteConnectionComplete:self];
+        [self stopNetService];
+    }
+}
+
+- (void)streamHasBytes:(NSStream *)stream {
+    NSMutableData *data = [NSMutableData data];
+    uint8_t *buf = calloc(self.payloadSize, sizeof(uint8_t));
+    NSUInteger len = 0;
+    while ([(NSInputStream *) stream hasBytesAvailable]) {
+        len = [self.inputStream read:buf maxLength:self.payloadSize];
+        if (len > 0) {
+            [data appendBytes:buf length:len];
+        }
+    }
+    free(buf);
+    [self.delegate server:self didAcceptData:data];
+}
+
+- (void)streamHasSpace:(NSStream *)stream {
+    self.outputStreamHasSpace = YES;
+}
+
+- (void)streamEncounteredEnd:(NSStream *)stream {
+    // remote side died, tell the delegate then restart my local
+    // service looking for some other server to connect to
+    [self.delegate server:self lostConnection:nil];
+    [self stopStreams];
+    [self publishNetService];
+}
+
+- (void)streamEncounteredError:(NSStream *)stream {
+    [self.delegate server:self lostConnection:[[stream streamError] userInfo]];
+    [self stop];
+}
+
 #pragma mark NSNetServiceDelegate methods
 
 - (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict {
@@ -328,6 +371,35 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
                moreComing:(BOOL)moreComing {
     if (![service.name isEqualToString:self.localService.name]) {
         [self.delegate serviceAdded:service moreComing:moreComing];
+    }
+}
+
+#pragma mark NSStreamDelegate methods
+
+- (void)stream:(NSStream *)stream handleEvent:(NSStreamEvent)eventCode {
+    switch (eventCode) {
+        case NSStreamEventOpenCompleted: {
+            [self streamCompletedOpening:stream];
+            break;
+        }
+        case NSStreamEventHasBytesAvailable: {
+            [self streamHasBytes:stream];
+            break;
+        }
+        case NSStreamEventHasSpaceAvailable: {
+            [self streamHasSpace:stream];
+            break;
+        }
+        case NSStreamEventEndEncountered: {
+            [self streamEncounteredEnd:stream];
+            break;
+        }
+        case NSStreamEventErrorOccurred: {
+            [self streamEncounteredError:stream];
+            break;
+        }
+        default:
+            break;
     }
 }
 
