@@ -43,8 +43,11 @@
 - (void)stopNetService;
 - (void)stopStreams;
 
+- (void)remoteServiceResolved:(NSNetService *)remoteService;
+
 - (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict;
 - (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo;
+- (void)netServiceDidResolveAddress:(NSNetService *)service;
 
 @end
 
@@ -188,6 +191,15 @@
     NSDictionary *errorDict = @{@"error": @"1"};
     [self.mrbServer netService:service didNotPublish:errorDict];
     OCMVerify([mockProtocol server:self.mrbServer didNotStart:errorDict]);
+}
+
+- (void)testServiceDidResolveAddress {
+    id mockServer = OCMPartialMock(self.mrbServer);
+    NSNetService *service = OCMClassMock([NSNetService class]);
+    self.mrbServer.currentlyResolvingService = service;
+    [self.mrbServer netServiceDidResolveAddress:service];
+    XCTAssertNil(self.mrbServer.currentlyResolvingService);
+    OCMVerify([mockServer remoteServiceResolved:service]);
 }
 
 - (void)tearDown {

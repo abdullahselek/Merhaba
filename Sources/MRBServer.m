@@ -251,6 +251,18 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
+- (void)remoteServiceResolved:(NSNetService *)remoteService {
+    NSInputStream *inputStream = nil;
+    NSOutputStream *outputStream = nil;
+
+    if([remoteService getInputStream:&inputStream outputStream:&outputStream]) {
+        [self connectedToInputStream:inputStream outputStream:outputStream];
+    }
+
+    self.inputStream = nil;
+    self.outputStream = nil;
+}
+
 #pragma mark NSNetServiceDelegate methods
 
 - (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict {
@@ -260,6 +272,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 - (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo {
     [self.delegate server:self didNotStart:errorInfo];
+}
+
+- (void)netServiceDidResolveAddress:(NSNetService *)service {
+    assert(service == self.currentlyResolvingService);
+
+    [self.currentlyResolvingService stop];
+    self.currentlyResolvingService = nil;
+
+    [self remoteServiceResolved:service];
 }
 
 @end
