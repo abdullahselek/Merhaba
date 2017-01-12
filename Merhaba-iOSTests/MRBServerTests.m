@@ -36,6 +36,8 @@
 
 @interface MRBServer(Test)
 
+@property (nonatomic) NSNetService *localService;
+
 - (CFSocketRef)createSocket;
 - (void)streamHasSpace:(NSStream *)stream;
 - (void)connectedToInputStream:(NSInputStream *)inputStream
@@ -50,6 +52,13 @@
 - (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo;
 - (void)netServiceDidResolveAddress:(NSNetService *)service;
 - (void)netServiceDidPublish:(NSNetService *)service;
+
+- (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
+         didRemoveService:(NSNetService*)service
+               moreComing:(BOOL)moreComing;
+- (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
+           didFindService:(NSNetService*)service
+               moreComing:(BOOL)moreComing;
 
 @end
 
@@ -212,6 +221,51 @@
     [self.mrbServer netServiceDidPublish:service];
     XCTAssertEqual(self.mrbServer.name, @"name");
     OCMVerify([mockServer searchForServicesOfType:@"protocol"]);
+}
+
+- (void)testDidRemoveService_shouldSetCurrentServiceNil_whenServiceNamesEqual {
+    NSNetService *currentService = OCMClassMock([NSNetService class]);
+    OCMStub([currentService name]).andReturn(@"service");
+    self.mrbServer.currentlyResolvingService = currentService;
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    NSNetService *newService = OCMClassMock([NSNetService class]);
+    OCMStub([newService name]).andReturn(@"service");
+    id mockServiceBrowser = OCMClassMock([NSNetServiceBrowser class]);
+    [self.mrbServer netServiceBrowser:mockServiceBrowser
+                     didRemoveService:newService
+                           moreComing:YES];
+    XCTAssertNil(self.mrbServer.currentlyResolvingService);
+    OCMVerify([mockProtocol serviceRemoved:newService moreComing:YES]);
+}
+
+- (void)testDidRemoveService_shouldSetCurrentLocalServiceNil_whenLocalServiceNameEqual {
+    NSNetService *localService = OCMClassMock([NSNetService class]);
+    OCMStub([localService name]).andReturn(@"service");
+    self.mrbServer.localService = localService;
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    NSNetService *newService = OCMClassMock([NSNetService class]);
+    OCMStub([newService name]).andReturn(@"service");
+    id mockServiceBrowser = OCMClassMock([NSNetServiceBrowser class]);
+    [self.mrbServer netServiceBrowser:mockServiceBrowser
+                     didRemoveService:newService
+                           moreComing:YES];
+    XCTAssertNil(self.mrbServer.localService);
+    OCMVerify([mockProtocol serviceRemoved:newService moreComing:YES]);
+}
+
+- (void)testDidFindService_shouldAddFoundService_whenLocalServiceNameNotEqualWithFoundService {
+    NSNetService *localService = OCMClassMock([NSNetService class]);
+    OCMStub([localService name]).andReturn(@"service");
+    self.mrbServer.localService = localService;
+    id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
+    self.mrbServer.delegate = mockProtocol;
+    NSNetService *newService = OCMClassMock([NSNetService class]);
+    OCMStub([newService name]).andReturn(@"newService");
+    id mockServiceBrowser = OCMClassMock([NSNetServiceBrowser class]);
+    [self.mrbServer netServiceBrowser:mockServiceBrowser didFindService:newService moreComing:YES];
+    OCMVerify([mockProtocol serviceAdded:newService moreComing:YES]);
 }
 
 - (void)tearDown {

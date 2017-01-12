@@ -258,6 +258,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
+#pragma mark Remote Service methods
+
 - (void)remoteServiceResolved:(NSNetService *)remoteService {
     NSInputStream *inputStream = nil;
     NSOutputStream *outputStream = nil;
@@ -304,6 +306,29 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     self.name = service.name;
     // now start looking for others
     [self searchForServicesOfType:self.protocol];
+}
+
+#pragma mark NetServiceBrowser setup and delegate methods
+
+- (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
+         didRemoveService:(NSNetService*)service
+               moreComing:(BOOL)moreComing {
+
+    if ([service.name isEqualToString:self.currentlyResolvingService.name]) {
+        [self.currentlyResolvingService stop];
+        self.currentlyResolvingService = nil;
+    } else if ([self.localService.name isEqualToString:service.name]) {
+        self.localService = nil;
+    }
+    [self.delegate serviceRemoved:service moreComing:moreComing];
+}
+
+- (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
+           didFindService:(NSNetService*)service
+               moreComing:(BOOL)moreComing {
+    if (![service.name isEqualToString:self.localService.name]) {
+        [self.delegate serviceAdded:service moreComing:moreComing];
+    }
 }
 
 @end
