@@ -1,0 +1,6 @@
+framework module Merhaba {
+  umbrella header "Merhaba-umbrella.h"
+
+  export *
+  module * { export * }
+}

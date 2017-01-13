@@ -1,13 +1,25 @@
 platform :ios, '9.0'
 
+def product_pods
+	pod 'Merhaba', :path => '.'
+end
+
+workspace 'Merhaba.xcworkspace'
+project 'Merhaba.xcodeproj'
+project 'Sample/iOS Sample/iOS Sample.xcodeproj'
+
 target 'Merhaba-iOS' do
-  use_frameworks!
+	project 'Merhaba.xcodeproj'
+  	use_frameworks!
 
-  # Pods for Merhaba-iOS
+  	target 'Merhaba-iOSTests' do
+    	inherit! :search_paths
+    	pod 'OCMock', '~> 3.4'
+  	end
+end
 
-  target 'Merhaba-iOSTests' do
+target 'iOS Sample' do
+	use_frameworks!
     inherit! :search_paths
-    pod 'OCMock', '~> 3.4'
-  end
-
+    product_pods
 end

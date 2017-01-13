@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936AA131BD229EF0C88335C6 /* Pods_iOS_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFA4028527BE6F36B4E329A /* Pods_iOS_Sample.framework */; };
 		A40A2A041E296F9A003B0761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A40A2A031E296F9A003B0761 /* main.m */; };
 		A40A2A071E296F9A003B0761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A40A2A061E296F9A003B0761 /* AppDelegate.m */; };
 		A40A2A0A1E296F9A003B0761 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40A2A091E296F9A003B0761 /* ViewController.m */; };
@@ -26,6 +27,9 @@
 		A40A2A0E1E296F9A003B0761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A40A2A111E296F9A003B0761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A40A2A131E296F9A003B0761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFA4028527BE6F36B4E329A /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7C0514CC3AAA7A7B9ABB5C /* Pods-iOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Sample.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-iOS Sample/Pods-iOS Sample.release.xcconfig"; sourceTree = "<group>"; };
+		C271CFD1F4124714E9E3FAAF /* Pods-iOS Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Sample.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-iOS Sample/Pods-iOS Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936AA131BD229EF0C88335C6 /* Pods_iOS_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14C9C342598A9D1E7182CCE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C271CFD1F4124714E9E3FAAF /* Pods-iOS Sample.debug.xcconfig */,
+				BF7C0514CC3AAA7A7B9ABB5C /* Pods-iOS Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4ABEF86C78994D8EE0FA74C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBFA4028527BE6F36B4E329A /* Pods_iOS_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A40A29F61E296F9A003B0761 = {
 			isa = PBXGroup;
 			children = (
 				A40A2A011E296F9A003B0761 /* iOS Sample */,
 				A40A2A001E296F9A003B0761 /* Products */,
+				14C9C342598A9D1E7182CCE0 /* Pods */,
+				4ABEF86C78994D8EE0FA74C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A40A2A161E296F9A003B0761 /* Build configuration list for PBXNativeTarget "iOS Sample" */;
 			buildPhases = (
+				47F003A011741C8150F8C213 /* [CP] Check Pods Manifest.lock */,
 				A40A29FB1E296F9A003B0761 /* Sources */,
 				A40A29FC1E296F9A003B0761 /* Frameworks */,
 				A40A29FD1E296F9A003B0761 /* Resources */,
+				15F73460E4B47AF6F8D00FFD /* [CP] Embed Pods Frameworks */,
+				CAC05DE953834E40B76700CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15F73460E4B47AF6F8D00FFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-iOS Sample/Pods-iOS Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47F003A011741C8150F8C213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC05DE953834E40B76700CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-iOS Sample/Pods-iOS Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A40A29FB1E296F9A003B0761 /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		A40A2A171E296F9A003B0761 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C271CFD1F4124714E9E3FAAF /* Pods-iOS Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS Sample/Info.plist";
@@ -281,6 +357,7 @@
 		};
 		A40A2A181E296F9A003B0761 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7C0514CC3AAA7A7B9ABB5C /* Pods-iOS Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS Sample/Info.plist";

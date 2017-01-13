@@ -1,12 +1,19 @@
 PODS:
+  - Merhaba (0.1)
   - OCMock (3.4)
 
 DEPENDENCIES:
+  - Merhaba (from `.`)
   - OCMock (~> 3.4)
 
+EXTERNAL SOURCES:
+  Merhaba:
+    :path: "."
+
 SPEC CHECKSUMS:
+  Merhaba: ddcd3e2abf3af9dbaa8b80055868ec0b3f3b5aa2
   OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
 
-PODFILE CHECKSUM: a5cdcdaeb8bcbb50ab93378452792f0668ec26d8
+PODFILE CHECKSUM: 80b5220700e76b0fea21044eb2d319022a41ef26
 
 COCOAPODS: 1.1.1
