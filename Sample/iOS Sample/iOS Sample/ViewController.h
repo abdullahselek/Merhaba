@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Merhaba/Merhaba.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<MRBServerDelegate>
 
+@property (nonatomic) MRBServer *server;
 
 @end
 
