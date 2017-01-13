@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		09F900850506D9F51B92B942 /* Pods_Merhaba_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */; };
 		8CE58820A2FF2C45DEB33C0D /* Pods_Merhaba_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358C2950AE66A705EC3A50CB /* Pods_Merhaba_iOSTests.framework */; };
+		A40A2A1A1E297678003B0761 /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9121E1B04F700C0D50D /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A41E5FC81E24296400FE9EAC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A41E5FC71E24296400FE9EAC /* data.json */; };
 		A41E5FCB1E242AFF00FE9EAC /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = A41E5FCA1E242AFF00FE9EAC /* Fixture.m */; };
 		A45CE9231E1B059400C0D50D /* Merhaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45CE9191E1B059400C0D50D /* Merhaba.framework */; };
 		A45CE9311E1B059F00C0D50D /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
-		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; };
+		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40A2A1A1E297678003B0761 /* MRBServer.h in Headers */,
 				A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
