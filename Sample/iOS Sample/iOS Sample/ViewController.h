@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Merhaba/Merhaba.h>
 
-@interface ViewController : UIViewController<MRBServerDelegate>
+@interface ViewController : UIViewController<MRBServerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic) MRBServer *server;
 @property (nonatomic) NSMutableArray *services;
