@@ -78,7 +78,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (CFSocketRef)createSocket {
-    CFSocketContext socketCtxt = {0, (__bridge void *)(self), NULL, NULL, NULL};
+    CFSocketContext socketCtxt = {0, CFBridgingRetain(self), NULL, NULL, NULL};
     return CFSocketCreate(kCFAllocatorDefault,
                           PF_INET,
                           SOCK_STREAM,
@@ -415,7 +415,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
       * socket create method
      */
     if (kCFSocketAcceptCallBack == type) {
-        MRBServer *server = (__bridge MRBServer *) info;
+        MRBServer *server = (MRBServer *) CFBridgingRelease(info);
         // on an accept the data is the native socket handle
         CFSocketNativeHandle nativeSocketHandle = *(CFSocketNativeHandle *)data;
         // create the read and write streams for the connection to the other process
@@ -430,8 +430,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
             CFWriteStreamSetProperty(writeStream,
                                      kCFStreamPropertyShouldCloseNativeSocket,
                                      kCFBooleanTrue);
-            [server connectedToInputStream:(__bridge NSInputStream *) readStream
-                              outputStream:(__bridge NSOutputStream *)writeStream];
+            [server connectedToInputStream:(NSInputStream *) CFBridgingRelease(readStream)
+                              outputStream:(NSOutputStream *)CFBridgingRelease(writeStream)];
         } else {
             /**
               * on any failure, need to destroy the CFSocketNativeHandle
