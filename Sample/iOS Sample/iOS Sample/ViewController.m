@@ -72,6 +72,9 @@
     NSLog(@"Server did accept data %@", data);
     NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"Incoming message : %@", message);
+    UIAlertController *alertViewController = [[UIAlertController alloc] init];
+    [alertViewController setMessage:message];
+    [self presentViewController:alertViewController animated:YES completion:nil];
 }
 
 - (void)server:(MRBServer *)server lostConnection:(NSDictionary *)errorDict {
