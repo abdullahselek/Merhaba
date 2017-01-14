@@ -51,15 +51,21 @@
 #pragma mark MRBServer Delegate functions
 
 - (void)serverRemoteConnectionComplete:(MRBServer *)server {
-
+    NSLog(@"Connected to service");
+    self.isConnectedToService = YES;
+    self.connectedRow = self.selectedRow;
+    [self.tableView reloadData];
 }
 
 - (void)serverStopped:(MRBServer *)server {
-
+    NSLog(@"Disconnected from service");
+    self.isConnectedToService = NO;
+    self.connectedRow = -1;
+    [self.tableView reloadData];
 }
 
 - (void)server:(MRBServer *)server didNotStart:(NSDictionary *)errorDict {
-
+    NSLog(@"Server did not start %@", errorDict);
 }
 
 - (void)server:(MRBServer *)server didAcceptData:(NSData *)data {
