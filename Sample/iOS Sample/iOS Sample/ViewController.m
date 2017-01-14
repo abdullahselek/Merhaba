@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSString *type = @"TestingProtocol";
+    self.services = [[NSMutableArray alloc] init];
 
+    NSString *type = @"TestingProtocol";
     self.server = [[MRBServer alloc] initWithProtocol:type];
     self.server.delegate = self;
 
@@ -49,11 +50,13 @@
 }
 
 - (void)serviceAdded:(NSNetService *)service moreComing:(BOOL)more {
-
+    NSLog(@"Added a service: %@", [service name]);
+    [self.services addObject:service];
 }
 
 - (void)serviceRemoved:(NSNetService *)service moreComing:(BOOL)more {
-
+    NSLog(@"Removed a service: %@", [service name]);
+    [self.services removeObject:service];
 }
 
 - (void)didReceiveMemoryWarning {

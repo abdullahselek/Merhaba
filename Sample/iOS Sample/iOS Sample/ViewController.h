@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController<MRBServerDelegate>
 
 @property (nonatomic) MRBServer *server;
+@property (nonatomic) NSMutableArray *services;
 
 @end
 

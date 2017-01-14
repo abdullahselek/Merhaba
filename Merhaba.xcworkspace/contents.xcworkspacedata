@@ -5,12 +5,9 @@
       location = "container:Merhaba.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Merhaba.xcodeproj">
+      location = "group:Sample/iOS Sample/iOS Sample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Sample/iOS Sample/iOS Sample.xcodeproj">
    </FileRef>
 </Workspace>
