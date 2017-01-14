@@ -69,11 +69,16 @@
 }
 
 - (void)server:(MRBServer *)server didAcceptData:(NSData *)data {
-
+    NSLog(@"Server did accept data %@", data);
+    NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"Incoming message : %@", message);
 }
 
 - (void)server:(MRBServer *)server lostConnection:(NSDictionary *)errorDict {
-
+    NSLog(@"Lost connection");
+    self.isConnectedToService = NO;
+    self.connectedRow = -1;
+    [self.tableView reloadData];
 }
 
 - (void)serviceAdded:(NSNetService *)service moreComing:(BOOL)more {
