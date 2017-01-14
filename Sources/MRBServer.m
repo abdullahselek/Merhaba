@@ -78,7 +78,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (CFSocketRef)createSocket {
-    CFSocketContext socketCtxt = {0, CFBridgingRetain(self), NULL, NULL, NULL};
+    CFSocketContext socketCtxt = {0, (__bridge_retained void *)(self), NULL, NULL, NULL};
     return CFSocketCreate(kCFAllocatorDefault,
                           PF_INET,
                           SOCK_STREAM,
