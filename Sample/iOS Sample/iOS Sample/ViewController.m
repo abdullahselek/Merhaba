@@ -11,6 +11,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 
 @end
 
@@ -27,6 +29,23 @@
 
     BOOL isStarted = [self.server start];
     NSLog(@"Check server started : %@", (isStarted) ? @"YES" : @"NO");
+}
+
+#pragma mark Button Actions
+
+- (IBAction)connectToService:(id)sender {
+    if (self.services.count > 0) {
+        [self.server connectToRemoteService:[self.services objectAtIndex:self.selectedRow]];
+    }
+}
+
+- (IBAction)sendText:(id)sender {
+    NSString *textToSend = self.textField.text;
+    if (textToSend != nil) {
+        NSData *data = [textToSend dataUsingEncoding:NSUTF8StringEncoding];
+        MRBServerErrorCode errorCode = [self.server sendData:data];
+        NSLog(@"Data sent with code : %ld", errorCode);
+    }
 }
 
 #pragma mark MRBServer Delegate functions
