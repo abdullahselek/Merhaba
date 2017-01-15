@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
     s.name                  = 'Merhaba'
-    s.version               = '0.1'
-    s.summary               = 'Discovery and connection between iOS & macOS devices'
+    s.version               = '1.0'
+    s.summary               = 'Discovery and connection between iOS devices'
     s.homepage              = 'https://github.com/abdullahselek/Merhaba'
     s.license               = {
         :type => 'MIT',
