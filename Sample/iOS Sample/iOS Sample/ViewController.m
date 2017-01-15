@@ -72,9 +72,7 @@
     NSLog(@"Server did accept data %@", data);
     NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"Incoming message : %@", message);
-    UIAlertController *alertViewController = [[UIAlertController alloc] init];
-    [alertViewController setMessage:message];
-    [self presentViewController:alertViewController animated:YES completion:nil];
+    [self showAlertWithMessage:message];
 }
 
 - (void)server:(MRBServer *)server lostConnection:(NSDictionary *)errorDict {
@@ -94,6 +92,19 @@
     NSLog(@"Removed a service: %@", [service name]);
     [self.services removeObject:service];
     [self refeshTableView:more];
+}
+
+#pragma mark UIAlertController function
+
+- (void)showAlertWithMessage:(NSString *)message {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Incoming message"
+                                                                             message:message
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertController dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alertController addAction:action];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 #pragma mark UITableView Helpers
