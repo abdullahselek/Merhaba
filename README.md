@@ -79,3 +79,13 @@ Handling incoming data with didAcceptData function
 NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 NSLog(@"Incoming message : %@", message);
 ```
+
+Stopping server
+```
+[self.server stop];
+```
+
+Stopping browsing for bonjour services
+```
+[self.server stopBrowser];
+```
