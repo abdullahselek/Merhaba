@@ -36,6 +36,9 @@
 
 @interface MRBServer(Test)
 
+@property (nonatomic) NSString *domain;
+@property (nonatomic) NSString *protocol;
+@property (nonatomic) NSString *name;
 @property (nonatomic) NSNetService *localService;
 @property (nonatomic) NSNetServiceBrowser *browser;
 

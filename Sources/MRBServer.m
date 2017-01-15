@@ -36,6 +36,9 @@ NSString * const MRBServerErrorDomain = @"ServerErrorDomain";
 
 @interface MRBServer ()
 
+@property (nonatomic) NSString *domain;
+@property (nonatomic) NSString *protocol;
+@property (nonatomic) NSString *name;
 @property (nonatomic) NSNetService *localService;
 @property (nonatomic) NSNetServiceBrowser *browser;
 
@@ -407,6 +410,17 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
         default:
             break;
     }
+}
+
+#pragma mark Dealloc
+
+- (void)dealloc {
+    [self stop];
+    [self stopBrowser];
+    self.domain = nil;
+    self.protocol = nil;
+    self.name = nil;
+    self.delegate = nil;
 }
 
 @end

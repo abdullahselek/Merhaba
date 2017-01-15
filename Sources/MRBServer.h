@@ -108,18 +108,6 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 @interface MRBServer : NSObject <NSNetServiceDelegate, NSStreamDelegate, NSNetServiceBrowserDelegate>
 
 /**
-  * the bonjour domain
- */
-@property (nonatomic) NSString *domain;
-/**
-  * the bonjour protocol
- */
-@property (nonatomic) NSString *protocol;
-/**
-  * the bonjour name
- */
-@property (nonatomic) NSString *name;
-/**
   * the port, reterieved from the OS
  */
 @property (nonatomic) uint16_t port;
