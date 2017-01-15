@@ -254,6 +254,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
+- (void)stopBrowser {
+    [self.browser stop];
+    self.browser = nil;
+    [self.localService stop];
+    self.localService = nil;
+    [self.currentlyResolvingService stop];
+    self.currentlyResolvingService = nil;
+}
+
 #pragma mark Remote Service methods
 
 - (void)remoteServiceResolved:(NSNetService *)remoteService {

@@ -37,6 +37,7 @@
 @interface MRBServer(Test)
 
 @property (nonatomic) NSNetService *localService;
+@property (nonatomic) NSNetServiceBrowser *browser;
 
 - (CFSocketRef)createSocket;
 - (void)streamHasSpace:(NSStream *)stream;
@@ -318,6 +319,16 @@
     [self.mrbServer stream:mockStream handleEvent:NSStreamEventErrorOccurred];
     OCMVerify([mockProtocol server:self.mrbServer lostConnection:OCMOCK_ANY]);
     OCMVerify([mockServer stop]);
+}
+
+- (void)testStopBrowser {
+    id mockService = OCMClassMock([NSNetService class]);
+    id mockBrowser = OCMClassMock([NSNetServiceBrowser class]);
+    self.mrbServer.localService = mockService;
+    self.mrbServer.browser = mockBrowser;
+    [self.mrbServer stopBrowser];
+    XCTAssertNil(self.mrbServer.localService);
+    XCTAssertNil(self.mrbServer.browser);
 }
 
 - (void)tearDown {

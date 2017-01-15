@@ -206,6 +206,11 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
  */
 - (void)stop;
 
+/**
+  * Turns of browsing for like protocol bonjour services
+ */
+- (void)stopBrowser;
+
 @end
 
 NS_ASSUME_NONNULL_END
