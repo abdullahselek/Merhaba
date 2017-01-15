@@ -67,3 +67,15 @@ Connect to selected service
 [self.server connectToRemoteService:selectedService];
 ```
 
+Sending data to selected service
+```
+NSData *data = [textToSend dataUsingEncoding:NSUTF8StringEncoding];
+MRBServerErrorCode errorCode = [self.server sendData:data];
+NSLog(@"Data sent with code : %ld", errorCode);
+```
+
+Handling incoming data with didAcceptData function
+```
+NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+NSLog(@"Incoming message : %@", message);
+```
