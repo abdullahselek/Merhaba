@@ -263,9 +263,6 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     if([remoteService getInputStream:&inputStream outputStream:&outputStream]) {
         [self connectedToInputStream:inputStream outputStream:outputStream];
     }
-
-    self.inputStream = nil;
-    self.outputStream = nil;
 }
 
 - (void)searchForServicesOfType:(NSString *)type {
@@ -430,8 +427,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
             CFWriteStreamSetProperty(writeStream,
                                      kCFStreamPropertyShouldCloseNativeSocket,
                                      kCFBooleanTrue);
-            [server connectedToInputStream:(NSInputStream *) CFBridgingRelease(readStream)
-                              outputStream:(NSOutputStream *)CFBridgingRelease(writeStream)];
+            [server connectedToInputStream:(__bridge NSInputStream *) readStream
+                              outputStream:(__bridge NSOutputStream *)writeStream];
         } else {
             /**
               * on any failure, need to destroy the CFSocketNativeHandle
