@@ -106,3 +106,7 @@ Stopping browsing for bonjour services
 ```
 [self.server stopBrowser];
 ```
+
+## License
+
+Merhaba is released under the MIT license. See LICENSE for details.
