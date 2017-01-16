@@ -21,7 +21,9 @@ Bonjour networking for discovery and connection between iOS devices.
 ## Requirements
 iOS 9.0+
 
-## CocoaPods
+## Installation
+
+### CocoaPods
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
 ```	
 $ gem install cocoapods
@@ -41,7 +43,7 @@ Then, run the following command:
 ```
 $ pod install
 ```
-## Carthage
+### Carthage
 
 Carthage is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
 
