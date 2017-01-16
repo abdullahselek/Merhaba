@@ -9,6 +9,15 @@
 # Merhaba
 Bonjour networking for discovery and connection between iOS devices.
 
+## Features
+
+- Creating Service
+- Start & Stop Service
+- Stop Browsing
+- Create Connection with Another Service
+- Send Data
+- Strong Events
+
 ## Requirements
 iOS 9.0+
 
