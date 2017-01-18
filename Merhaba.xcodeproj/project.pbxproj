@@ -16,7 +16,6 @@
 		A45CE9311E1B059F00C0D50D /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46BBD0F1E2FEB1B007C5F5E /* Merhaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46BBD061E2FEB1A007C5F5E /* Merhaba.framework */; };
-		A46BBD141E2FEB1B007C5F5E /* Merhaba_macOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD131E2FEB1B007C5F5E /* Merhaba_macOSTests.m */; };
 		A46BBD1F1E2FEBBA007C5F5E /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A46BBD201E2FEBC5007C5F5E /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46BBD211E2FEBC5007C5F5E /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9121E1B04F700C0D50D /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,8 +59,6 @@
 		A45CE9331E1B086D00C0D50D /* Merhaba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Merhaba.h; path = Sources/Merhaba.h; sourceTree = "<group>"; };
 		A46BBD061E2FEB1A007C5F5E /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BBD0E1E2FEB1A007C5F5E /* Merhaba-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Merhaba-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A46BBD131E2FEB1B007C5F5E /* Merhaba_macOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Merhaba_macOSTests.m; sourceTree = "<group>"; };
-		A46BBD151E2FEB1B007C5F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A46BBD1D1E2FEB40007C5F5E /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBServerTests.m; sourceTree = "<group>"; };
 		BF44925C50770907E1644335 /* Pods-Merhaba-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOS/Pods-Merhaba-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +133,6 @@
 			children = (
 				A45CE9101E1B037200C0D50D /* Sources */,
 				A45CE9261E1B059400C0D50D /* Merhaba-iOSTests */,
-				A46BBD121E2FEB1B007C5F5E /* Merhaba-macOSTests */,
 				A45CE91A1E1B059400C0D50D /* Products */,
 				89ACC038B83BEC31EBF7E4E4 /* Pods */,
 				4FFD14CE68A94EEF7458E086 /* Frameworks */,
@@ -176,15 +172,6 @@
 				A41E5FCA1E242AFF00FE9EAC /* Fixture.m */,
 			);
 			path = "Merhaba-iOSTests";
-			sourceTree = "<group>";
-		};
-		A46BBD121E2FEB1B007C5F5E /* Merhaba-macOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				A46BBD131E2FEB1B007C5F5E /* Merhaba_macOSTests.m */,
-				A46BBD151E2FEB1B007C5F5E /* Info.plist */,
-			);
-			path = "Merhaba-macOSTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,7 +463,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46BBD141E2FEB1B007C5F5E /* Merhaba_macOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
