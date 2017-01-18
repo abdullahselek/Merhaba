@@ -19,10 +19,12 @@
 		A46BBD1F1E2FEBBA007C5F5E /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A46BBD201E2FEBC5007C5F5E /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46BBD211E2FEBC5007C5F5E /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9121E1B04F700C0D50D /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A46BBD221E2FED46007C5F5E /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A46BBD1D1E2FEB40007C5F5E /* Info-macOS.plist */; };
 		A46BBD301E2FEEE0007C5F5E /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD2B1E2FEEAF007C5F5E /* MRBServerTests.m */; };
 		A46BBD311E2FEEEE007C5F5E /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD291E2FEEAF007C5F5E /* Fixture.m */; };
 		A46BBD321E2FEEF8007C5F5E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A46BBD261E2FEEA2007C5F5E /* data.json */; };
+		A4FFF7681E2FF6C000FC4364 /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD2B1E2FEEAF007C5F5E /* MRBServerTests.m */; };
+		A4FFF7691E2FF6C000FC4364 /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD291E2FEEAF007C5F5E /* Fixture.m */; };
+		A4FFF76A1E2FF6CF00FC4364 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A46BBD261E2FEEA2007C5F5E /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -361,7 +363,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46BBD221E2FED46007C5F5E /* Info-macOS.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FFF76A1E2FF6CF00FC4364 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +559,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FFF7681E2FF6C000FC4364 /* MRBServerTests.m in Sources */,
+				A4FFF7691E2FF6C000FC4364 /* Fixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +585,7 @@
 			buildSettings = {
 				CLANG_ENABLE_CODE_COVERAGE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
@@ -589,6 +594,7 @@
 			buildSettings = {
 				CLANG_ENABLE_CODE_COVERAGE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
@@ -868,6 +874,7 @@
 				PRODUCT_NAME = Merhaba;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -924,6 +931,7 @@
 				PRODUCT_NAME = Merhaba;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -971,7 +979,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Merhaba-macOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1018,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Merhaba-macOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;

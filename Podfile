@@ -1,5 +1,3 @@
-platform :ios, '9.0'
-
 def product_pods
 	pod 'Merhaba', :path => '.'
 end
@@ -9,6 +7,7 @@ project 'Merhaba.xcodeproj'
 project 'Sample/iOS Sample/iOS Sample.xcodeproj'
 
 target 'Merhaba-iOS' do
+	platform :ios, '9.0'
 	project 'Merhaba.xcodeproj'
   	use_frameworks!
 
@@ -19,6 +18,7 @@ target 'Merhaba-iOS' do
 end
 
 target 'Merhaba-macOS' do
+	platform :osx, '10.9'
 	project 'Merhaba.xcodeproj'
   	use_frameworks!
 

@@ -321,7 +321,7 @@
     self.mrbServer.delegate = mockProtocol;
     [self.mrbServer stream:mockStream handleEvent:NSStreamEventErrorOccurred];
     OCMVerify([mockProtocol server:self.mrbServer lostConnection:OCMOCK_ANY]);
-    OCMVerify([mockServer stop]);
+    OCMVerify([(MRBServer *) mockServer stop]);
 }
 
 - (void)testStopBrowser {

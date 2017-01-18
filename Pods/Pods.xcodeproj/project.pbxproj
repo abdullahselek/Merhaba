@@ -7,98 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F7D55919C59833456188558FE8D7FA /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A1E89D7AD7E000B8104191B7B27BCC /* OCMExpectationRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0310B1523123778B0E3FB78BE3A14095 /* OCMBlockCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F5B34D0FFB5DA6271A15FEA6FE0A62 /* OCMBlockCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0AEAD2BEB61CCA26BB0798F2E527BF84 /* OCMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E335CE147F4FCC4E93A585A0688083D2 /* OCMRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0D183650A2D88CB6DAD886030A3A2B62 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F389E14DBE71DB2C71EAF4C876BF62F9 /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0E32A8C1B69250199C8EC0794CF3A3B6 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AF8AE70C11F95DF78AE7E9ABFB78A1 /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		116FA1BBD719AFAA5593D71332D2A926 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9359CB3F2FE8FD51F7987C9C637438B /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11A20C39855E46308C11B905F847E428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		13A1051CA96D84674E588FECAF52DD43 /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 98361CD81CF91315EF11AED46899AF53 /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		13AA024ACA7FE3FAD7E0FFD5AC77370D /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E0631D3AEC6C764E0FB5D19E9D617C1D /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		147E00CDCEDB145F0012FA174BA4E545 /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EB55F4C5E7223618F9F856AB203E40AA /* OCObserverMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		15081C3A4D626D9631A9594847D2E2A6 /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DC99DFD40020ABD61383BAD8225562 /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1583087CE691D66E050A0AE7C07296BD /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA65C1F57D866B096BDF75847837CB5 /* OCMNotificationPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		15FEDB8A315321D48BC7E535429ADB48 /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = CA20AD763085232EB811ADB451250CFE /* OCMInvocationStub.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1A6B622029844E49D7A35AA4827A162B /* Pods-Merhaba-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D19BE39D289C4DA92DB6398FC2789 /* Pods-Merhaba-iOSTests-dummy.m */; };
-		1D53147F49F02FC693C33D8526049C90 /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E808E4218926AE48D170B4FBDE4CFC5E /* OCMIndirectReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1DD2C9A900B7D7B5F3862D15C1A8AD7E /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 42215B7B41E6269E6C9FBEB695D7686E /* NSValue+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		24394811C369F117D75337F436C81222 /* OCMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89C71BAFB5295AC2D415B32ABDCF94 /* OCMock-dummy.m */; };
-		28B5E9BDDC2F53432C7D7D244837F1B5 /* OCClassMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC4BFEE8296742ED75DD86CB40AB71 /* OCClassMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		353759005B92EEC29E4B15765C4D3EEB /* OCPartialMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BF69075B157BF8BC3287C893599B15 /* OCPartialMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		38D5085895B3757AF0DCED078EF8B145 /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E416DDC21B2A1738A82E5642E04D23 /* OCMRealObjectForwarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3C8FD3A5E38D51394AB809B48B442216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3D1CB7A4AB9B00BC95F06CF858F18BCE /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B424290BCF97ED3D0872878957394F0 /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3E791576B071ABA40E9B299CD9D8FF57 /* Pods-Merhaba-macOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44BB5341CD6B5BF698B0F29B1C774B3 /* Pods-Merhaba-macOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0225196EF91A222B27D9DA8C8FB1951D /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DBB110702946438B84683F31242CBF /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0397DC7C473FC941495E24436B709501 /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = DB31497AEF0DDB451FC60782B6996335 /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		048AFE46BC9D0B3E1F8A703AA805F9B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
+		058FE9575B5F826F43B046E9E9B3EBB8 /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30F6F5A19D893D2F4397D27F1BD0EB /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		05A4B9B41ABE7FAA8EEAA20CA2098ABA /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC0AAB05F53193CADBBA7138BF06728 /* OCMRealObjectForwarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BAE60880563F8673902FD37E9EE5591 /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8C47EDCB140CC1BBCD7FB3ADEE98CC /* OCMBoxedReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CCE08AAE74539F9F69E19F6DF47C3DC /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 72B6C5291A7A705C2A951C0F32893C84 /* OCMInvocationExpectation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D4BED83360F9121EE46D63F00650E66 /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D45D64CFE41E30A9D28AF3D11F96EF /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0D94489AA74E7483733EF66B5EEDF536 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4292A3062DD60D11DE49855FA2DB5D65 /* OCMExceptionReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1320420C963F1637BEE47E59B4B2BE82 /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 56056F30481FC363F3959E74A25FED61 /* OCMArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1564D898B850501CFE497D4B2BED9D9F /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B81F696C2DDAF33E261EA8AF7FD5D4C /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		174F522B684A56F6C8DF7EAA83379152 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C82B57692BC2FA8E311684C9A017F3 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1A4E54404B24198C1DCB3AE19DC9DC0D /* OCClassMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F5C9B431ED64B35083045C114EF23F /* OCClassMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B112574321D68FD7C21552BE9364A00 /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BE6DC8366AE53571A5DDBF83AAC11C /* OCMMacroState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B95409B84BDF9D180DD156F034A04C2 /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5E5E26C80F712177210D1887866D3 /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1C35CF057F38F77F6964DBFF7C529CB9 /* OCMExceptionReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C07C7CB320AA75E32676EBD720BA316A /* OCMExceptionReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D2B591C3256225E9108788B03E7F784 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0B84F0200B68F02C64442C30FC75E /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1F7779EFD7CFAA682F4F9D055ECE4205 /* OCPartialMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 75137520F37B63C4576CA61DE588306D /* OCPartialMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22EB39BAFB5CF83659B78489516F685F /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7D3ECDB915E089FDBE647697645E52 /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		236B061333AC4B59CCEA0EA10210CBCE /* OCMInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E02F7F4F5A3FBF8E2B1DDA97A88DEE /* OCMInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2481FFB4180CD9DB70867F07E7F02224 /* OCMArgAction.m in Sources */ = {isa = PBXBuildFile; fileRef = FC517E0CFD18D3FD53184DC40656865B /* OCMArgAction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27093694126C4DE36D1CB11E1F32B9A4 /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 107ACBFE70ABF66FBE5B8E2B957B8580 /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		276A3CDAA4C1F7B70D0227824B84AE67 /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 602B262CA594A8BF2C9F182398CCA154 /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28451294D6122B123B86C7D5BFACDD37 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
+		2B4FB12EDF5086C456F55CF1016CE772 /* OCMock-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BEC27530093239FB6AD8E3755BBA41 /* OCMock-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C085E0370DF04D22314D12A946C047D /* OCMBlockArgCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC8A202E31F85F2FD597F70C31A2ACE /* OCMBlockArgCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EACC6FC63A12941C8086CD6BBF6DED2 /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2958C329C6723D823ED17BC954DC0B /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3405A299DCEFF2856208155756396A3D /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7D3ECDB915E089FDBE647697645E52 /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34DA9F92D7C7ED58EABE869C4712035A /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 336251B31320E4EC920B15412FAFBC14 /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		358E2C8E9740230E09175C0D84A768E4 /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BA246A81252E17D851C0A6C23D32D /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8FB8E5F0A967794F65891DD1DB8A1C /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE03DBA7C140DE13098B6F3180D3F /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8FD3A5E38D51394AB809B48B442216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
+		3C97EC7110C5233A89D64F9A872CD772 /* OCMBlockArgCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC8A202E31F85F2FD597F70C31A2ACE /* OCMBlockArgCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3EAE127C429A3BBA5B45692CA6E2DD83 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4292A3062DD60D11DE49855FA2DB5D65 /* OCMExceptionReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		41CE9780AF638F4FA2B6C302A284A73F /* OCMBlockCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = DC68138B119FAC9D85A1C9F72500A884 /* OCMBlockCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42118033E5BF098B7844F4763B063BF5 /* OCMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2389CAB62CC2FCCFAD6B1CB52DE4F838 /* OCMRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42A16118C6A6AB841816EE8131D3F1AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
 		43E3CF3407865180114E58DA5BDF15C7 /* Pods-iOS Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCB9326BE1762C3E7F3E935AF8DC006 /* Pods-iOS Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4552366371FE1ACA9600897C31D70E4C /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D8DE538FDA5D3E664C5ADD23CC24E5 /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		45E91E6E79D1EEACF0F7A668E3D9A89D /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0019314F609F1083CF413C5A482273CD /* OCProtocolMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		48AB2F5421844894FDB9FE7A7DC2C199 /* Pods-Merhaba-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45011AB641B8319E8058F53052F9A7FB /* Pods-Merhaba-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E8250BDB662F542F9294F6941333373 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 863114BC8DC62295516F12FCBE22088E /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4F02F5DD4EC7C3AFD1EC38E2F55B0C4A /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B6798923DD4F2989DAA1B7B5B4435EAD /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4F4A7459D96FDABBAB640D1D1B1BB42E /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6A5763FEA7E7A0A3B69677F1C3F10 /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5037A042D2012439DEC932F10FC51B95 /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A9972E0EB79E284AA82925084077E738 /* NSMethodSignature+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		51CAB174257235556CE8902084F0E662 /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F462FE47AF1DFE8D35CDD66D12A06F0 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48F2978053E7CB9460DB572C0AD18327 /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 32E62B54D8CC0A06F44F82FE88964262 /* OCMNotificationPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4936BD6F85C8BED593E073D41CBF1186 /* Pods-Merhaba-macOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7248EFA8D5F22D141664D14764B3160F /* Pods-Merhaba-macOSTests-dummy.m */; };
+		494F19F88A0F2C3AECF63CCD8476E926 /* OCMArgAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D70DAAD6D6FAAF9B03D89AAF7CE4A29 /* OCMArgAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B20586B6098F1E56D2E4577754AD45B /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5894962363180755BCBA26A8252ACD /* OCMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B4F35A7D12C1D0A69AA5B77DBB84C3D /* OCClassMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F5C9B431ED64B35083045C114EF23F /* OCClassMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BB955C46516BBB906231F90992452C7 /* Pods-Merhaba-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAFB4145388F15ADA685295A34C07F2 /* Pods-Merhaba-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE70F437F3069206BC181BDF6B1D2E7 /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 107ACBFE70ABF66FBE5B8E2B957B8580 /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4D844C0B3EB53F8D37EAC9C6D36C501E /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 32E62B54D8CC0A06F44F82FE88964262 /* OCMNotificationPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FC9DEBF36B74B128823CF0AB060CDDD /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A032D9C1202214D08FAFA375D178C8 /* OCMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54017F0B23A901BEA7D72B5F94E5E3D6 /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B414A52CF031089F22DD2058C51712 /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		543D9D71DD92175A9CC5F0831CF2A028 /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BBB18EFAF1190419B602AE585FE81 /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		54471D429F63760B736E52506A0B861B /* OCMInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE8A8EF6CACB0B742A6E8F6DB9B5EA7 /* OCMInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		544934287F432058F0CCD55C424B88D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		58FB50DB554239F854ECBEC3C86F3A92 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA7631C4547D4450BC19ED6FD1D662 /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		59578DBAB2520015A65B5B160722A370 /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B9E4866B3FAD54B5BA8978ED84C0FD /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		62830C78B907E292ACAD894B97F02171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		544934287F432058F0CCD55C424B88D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
+		54ED5083E878C3B98E4676E8408A74E3 /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2958C329C6723D823ED17BC954DC0B /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55565730FA2261221BEB94C52DD100FD /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = E1283CBC2291292808C21F7F418E85AB /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5685ED3ACD158078EF30C63105786AE7 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4E2EF5060696D94DF5F0E9FA7415DC /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		598050427AC77B6942DE248280214411 /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0E576A473CEE5985750851A66DE933 /* NSValue+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D872F35FC0BC9741E18232ABF3F1A2C /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB184D5947C66909EF6B83BDC381BD5 /* OCMStubRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F61569E7EFFC4B13A3499AAD30B8EB9 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F83AC864486AA12288F9444CDA1CC5 /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		601A726A1B63D596C3D6732F5A8022BA /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8831329DBF43C8D229AB8125C6B7EEC1 /* NSMethodSignature+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		60EE6A6524A1DA966CD4BD25B303E03D /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = DB31497AEF0DDB451FC60782B6996335 /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		614ED3A1698A2AA913F37AF07243CF7C /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AAB4F5911BC2046AE69688E1273B99 /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		617E5C66231874BAC6005FFD68209A78 /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9AA5DE7E19A196540F554F7EE276DE /* OCMIndirectReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61C9B68B680C6E42845D1164564F39EE /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BA246A81252E17D851C0A6C23D32D /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		62830C78B907E292ACAD894B97F02171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
+		62C554F2A93AD695C0E3F29AA53135F7 /* OCMArgAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D70DAAD6D6FAAF9B03D89AAF7CE4A29 /* OCMArgAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6450774DD6792D849A9F189FD146A3E0 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 670D1A79A0A6218731A84D6453134BCB /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67DE7B73C15ACCFC6ECE0B88A8E17F42 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8829B65F43C15C772386E60F856507BC /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A28E242EEE71E85C169FF31269E783F /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB3F5A3028CC1FDAFFCA1B461706ECA /* OCMInvocationStub.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B679C55A74D34F31F7DDCB88AA47803 /* Pods-Merhaba-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 249DB861E0D5C2626963FCF4B59D7685 /* Pods-Merhaba-macOS-dummy.m */; };
-		6DEAD4CD0FF9467DA3FD3F22816418C6 /* OCMArgAction.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B30FF38C0A6CCDFD2CC460779C887A /* OCMArgAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		71213523998EC4038EEF2881118A57A1 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EB4FBD5BCC3955049231A027E6C7CD /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		72C8CC2855787B9DC1A37DDEB5E24155 /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CB51379CDB00EB7467E6B4B0C79F2B /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		74BC62D6FEB722F4976016FD4DCA870B /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C9C272CA12E76D64E7F458C8D85FF /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B006E74668E41702B8881E724728DE9 /* OCMBlockCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEFB3CA39480952785E373FFC61A970 /* OCMBlockCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7D94DE66B8B5E3B4A0B5E53A88C3FAEE /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A59FD7C4F619BB5878A38A415A12F /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		82558AE4441757075270A8A260B34EC9 /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD2C8647E50AE8EDA8410F14D68EFA0 /* OCObserverMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		86FF90618135B7C9032BC7075343F236 /* OCMBlockArgCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 06EA21C3E134F1D54000BCDF7C8664EB /* OCMBlockArgCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8EE2E0824E8AD382EC6553104A60430E /* OCMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D995B0C49A4DAF4E7F56399094C0EB2 /* OCMockObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		915751C97068AF644D3FE4498633DAB1 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A34341D84E14BC5541177000A44363 /* OCMExceptionReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		92F61FA0ACB1B709FFEBE1D9DC2C68E5 /* OCMPassByRefSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11788970FD4F576A2F3F7DB227C42E8A /* OCMPassByRefSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		974362D040AC870A5D72E365B21A8CE4 /* OCMExceptionReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D1E6244E73ACDAD3F6B49B7592B7F6 /* OCMExceptionReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9A92686CF21CC8ECAB69A3CFB621FA4B /* OCMock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE4C7C6F737C71AA76258E5304A4E0A2 /* OCMock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1268C3E1B318712F159EF222F19BD8B /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FD111DD460FD04F5C37983E3FD5D4EC0 /* NSNotificationCenter+OCMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4AF7E8EF9BB26F4CE7FD9EA32D4AD4C /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BE16F4CF360CC1D099CDD695A599E5 /* OCMMacroState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4CD01540B9FCF8F26D52856704571D7 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1FAB30430DED5EA1A357096C2D353B /* OCMReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6F0FD4E7F4521338B63A028098CF3ECD /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD501D4ED2F17C5D09FE778412A5FF1E /* OCObserverMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7086FB32667B13D95C6ED5AECD08ACC8 /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D3A6DEB9E7055A845149D4A415A5 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7192343DB0CD7B5D8E1145C8C6C48968 /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD501D4ED2F17C5D09FE778412A5FF1E /* OCObserverMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7473AC4A86DDDAC10F248F2919EED556 /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC097730A7D168D6B41408A7386B275E /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		758691EE3C53B93296C7F02BA892018F /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ACCDF424289CD571AF0E95ABE28239 /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		78D3211702CC14F3BFB481F85DA5C949 /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0E576A473CEE5985750851A66DE933 /* NSValue+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B7F0A788C0A2828EC33715125CCC0BA /* OCMInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E02F7F4F5A3FBF8E2B1DDA97A88DEE /* OCMInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7E41329B6F65E07FF7FF4149709A09E9 /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC097730A7D168D6B41408A7386B275E /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7EE67CF7BB28EA1ACFE337379A04004F /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8C47EDCB140CC1BBCD7FB3ADEE98CC /* OCMBoxedReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FF99F521B6BAABE710FC13CE7361BE5 /* OCMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2389CAB62CC2FCCFAD6B1CB52DE4F838 /* OCMRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		80AE7477987265027C2BD0236CEE155D /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FC608F430207E41325DDB610217B2620 /* OCMExpectationRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		831BAEA2109C9A8DDEEF4025E24AA54F /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C82B57692BC2FA8E311684C9A017F3 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8380CDE194C7308D7667785F18441AF9 /* OCMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1D89E9B0BDEDA012AADF3625E648FA /* OCMockObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84444BA4B7ABAA8C1CAF80F5A3111D4C /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = AB562795F1E1E021C6B37F5AE4C9F778 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85D0ADC32A0B3E789777AA475CFF2DB5 /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 72B6C5291A7A705C2A951C0F32893C84 /* OCMInvocationExpectation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88151BC5B1825243BBA01DB13F991C49 /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E419CAD2497965A2CC13E2F8882E64 /* OCObserverMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		891787B151EDDEE8B21418AC0ACE41CD /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 830309A702F237D68D921430DBB485E5 /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8008574422042CA0398507DD5464CF /* Pods-Merhaba-macOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44BB5341CD6B5BF698B0F29B1C774B3 /* Pods-Merhaba-macOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F9809FB18CE8320B8045B6AE9D62B52 /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5C74D09BD47EF096CBBE32F5E183F2 /* NSNotificationCenter+OCMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		954E460D0266FAF01D00372531849E28 /* OCMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1D89E9B0BDEDA012AADF3625E648FA /* OCMockObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		966A2493149C23322000163E1D42F9D5 /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1951C6FC35FD6573998EF6A94365D42D /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B19B4E53B53C85BCC16F6ECFC539B83 /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1951C6FC35FD6573998EF6A94365D42D /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9DACB447A61C1B0E9E309328675F255A /* OCMBlockCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = A70CD12A81C220205900D6F979E714F6 /* OCMBlockCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DB585E23792759989D015E043E5F572 /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5894962363180755BCBA26A8252ACD /* OCMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F14BAC0B3453AA86B12049304FF5C56 /* OCPartialMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 75137520F37B63C4576CA61DE588306D /* OCPartialMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A111008B150FA804C568C94C076F658F /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 602B262CA594A8BF2C9F182398CCA154 /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A556FEA3B1334E39F9BD7535E99FFF33 /* Pods-Merhaba-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5996A408B31CEB192D04F925550A6F /* Pods-Merhaba-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A59AE6011C58D3D2F009DEF7F5AA259B /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F882D3201BE8599F20865B78F0FE9 /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A9571E56544CD912F0DA62E545DB2419 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EADA58A9EB3715F2BDA00E4C36F99 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B200AEB2373802A1B871987A18D08F75 /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B840C9BF509C2FE1EA6170246E5C1 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B33B6DFAA43992C898AF6D4F1C539A8A /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B61F3911BD0FB425C80AB982304DE0B2 /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B3E6AA126A971418B57B78A6B4E753E3 /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = F204A5C827EC85783599AC240E31A949 /* OCMInvocationExpectation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B40D8DAB504B721D2BC6A6DDFDD82067 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E8930E04FAE9BA9BA73980CC786BE8C0 /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B42B8EFE65F8B07957190A15F590093A /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD68A9918F423DEDF7BDBC265456306 /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B66FB06824BBED66619F17DB82CC2A64 /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 78828399BAAE423C4724C9533F5382ED /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B72787B0D2CBFD8823F59E3F6AC6084C /* Pods-Merhaba-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAFB4145388F15ADA685295A34C07F2 /* Pods-Merhaba-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B852DBE3593443215A94EEFD59786402 /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED5D196ED6695091361EB66B17B516 /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BD181F7E8C0BB325B051DA9F2FBD71BC /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C25193A5E9C61D1794961715EDE9167 /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58A1912C2861E95974BE922846AF496 /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 830309A702F237D68D921430DBB485E5 /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8F0773299B792F1569C64F65C83A3BF /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5C74D09BD47EF096CBBE32F5E183F2 /* NSNotificationCenter+OCMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A905D5315EA02FDC45D58A33B5E1C7FD /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B7E045809E69473EB9CF8D08813AB3 /* OCProtocolMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADF112461E157E01A03D1C114A6B21E6 /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC0AAB05F53193CADBBA7138BF06728 /* OCMRealObjectForwarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE85AEE39AB8BD409F7165214AA0D1CE /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5E5E26C80F712177210D1887866D3 /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF032388A1D513D2785D16E623412E9D /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F0B66FEAE82493279EF65A9398306 /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B0A365A4C9B48B434DCD05BF5DA21930 /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BD99B9DE4CF80D105FFD40180B222 /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2337A2698C8B0743A9F219E9C80B3B6 /* Pods-Merhaba-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D19BE39D289C4DA92DB6398FC2789 /* Pods-Merhaba-iOSTests-dummy.m */; };
+		B2B3D5C8890D2D8F49CB8F967C89B081 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 557094DE094520DE07F2D0121FC7D690 /* OCMReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4B14D098647F6EBBA69FDDC6182EC9E /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C19D4E7148CB4899716EC9D836025 /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6014B4C007FE8B4B8A2F44B9954010C /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BE6DC8366AE53571A5DDBF83AAC11C /* OCMMacroState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6D0E6504675C144702EF99B208BA3C5 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F83AC864486AA12288F9444CDA1CC5 /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B9C18E0BB696374FE4A1DF359E4D7ECE /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = E037134FFA03F561EFAF3B719760427D /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF013525C7E41D997F33711F9B11F86E /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0ED690DEAACBBA241725A46599DBC /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BF9C88E1E5305AC79DDD2983DAC01716 /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60948E1B4B1DF6C73ACE18D8CA09AD92 /* MRBServer.m */; };
-		C65A28088F0668711386816290C3880E /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB60D32FDFF43D1FB49565D828CEAA /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CC2C1A15C25533A85E0EF848B23F702A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		CF451EAA94004B370612757B61B46D2D /* OCMArgAction.m in Sources */ = {isa = PBXBuildFile; fileRef = AE093FF8DAAFC0AE4129BE706CF3D49D /* OCMArgAction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D9C7A57A574090442C8631BA856B1599 /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7D9DE3022861A3013E7199979D7C96 /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DC436E0D0F29C964FC7C50F35E468C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E14A5FC189CD75054825E45DA6D9F293 /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF3CC6167DFB2EBB7A8361DD6C6C05F /* OCMBoxedReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C226C4103703CF18F9B6DF3B59DAC564 /* OCMBlockCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = A70CD12A81C220205900D6F979E714F6 /* OCMBlockCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2F924213E91CFAB1F6D1E4D5F1412D8 /* OCMPassByRefSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 351459B7D65CDEF3AF6845D02B843A00 /* OCMPassByRefSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C546C6F4DF6E794F110861752598F79C /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DC03782C1050C9960FB30F1E363D6412 /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C549C5A9782C2A7226C38370C7BC3B4A /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30F6F5A19D893D2F4397D27F1BD0EB /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C704EB312561FEB56CBD0348797F068C /* OCMock-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 920CDFD8DC566830074C0A2A33E725D6 /* OCMock-OSX-dummy.m */; };
+		C743E58F663BF97ACBD5EE877B7BF5C9 /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB3F5A3028CC1FDAFFCA1B461706ECA /* OCMInvocationStub.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C801BD211D74825A63F28C4093328048 /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8258D88FAD679E42DE8031AB086FBD80 /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C81EC866F8F766561AB727B27BC9D816 /* OCMBlockCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = DC68138B119FAC9D85A1C9F72500A884 /* OCMBlockCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CBF2BA488CE1E559F66C1A542E668E27 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB184D5947C66909EF6B83BDC381BD5 /* OCMStubRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC4A2966A8D5CF5E5B29B301D6B59E6E /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8258D88FAD679E42DE8031AB086FBD80 /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD277EAFC67D922748860581D4BB7C2F /* OCMPassByRefSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 351459B7D65CDEF3AF6845D02B843A00 /* OCMPassByRefSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD2A2C4C50C59929DEA513233DD7FDA8 /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = AB562795F1E1E021C6B37F5AE4C9F778 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D089406B313D33BAEA964B2658C85616 /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 336251B31320E4EC920B15412FAFBC14 /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1FFD90EADA99C7E5080C51C528AC5E5 /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 037FA11356E47A919C0231FBF950528A /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3928D9CFC03EC590D5809DEF826BB6E /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D45D64CFE41E30A9D28AF3D11F96EF /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3C6E8192F07A623EE06D76716DE5370 /* OCMock-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 789A8D43BB25EE8AF4E027F9606CA801 /* OCMock-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D42D54396BB95609192EC023C721545C /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A032D9C1202214D08FAFA375D178C8 /* OCMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D570A7811F24AB23576BC843A54B241D /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C19D4E7148CB4899716EC9D836025 /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D7E3915623E0D0D3794DBCF5BD6B0C02 /* OCMock-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E38E2634E5FB8948239695EACDF719 /* OCMock-iOS-dummy.m */; };
+		DB795CFD7B9B2631A283F4AC73B7DD29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
+		DBD475C3D7775FB26A02C9A74088D90E /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 670D1A79A0A6218731A84D6453134BCB /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC74D39BFA83BD2973C2AA8798BAC11A /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B81F696C2DDAF33E261EA8AF7FD5D4C /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDBCC055238DEA73682EA7BD2AAF203E /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE03DBA7C140DE13098B6F3180D3F /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF004ACCF5195EF339EEFE8FB928716E /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BC66FF9D67516214FEE13183B64093 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E07F31A9209C08E4283739A8C22D4D7D /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D3A6DEB9E7055A845149D4A415A5 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E14E8382347719DA5686A94856799636 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4E2EF5060696D94DF5F0E9FA7415DC /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E153771A49FE19C9EAD764259A04AEA9 /* Pods-iOS Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3263C3C0B8EBE55F2D79D79CD51C89 /* Pods-iOS Sample-dummy.m */; };
-		E20EBF4A79511B14759C9EC2110E8C11 /* Pods-Merhaba-macOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7248EFA8D5F22D141664D14764B3160F /* Pods-Merhaba-macOSTests-dummy.m */; };
-		E4070427AD7F08E573CAA22DCEB79FB1 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 859324D40F656D9FAC02D350D9E86DCC /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E4A87D8BA9BA24EE81DEC41C8BE98F2B /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = C708F9D1AC2A31EC5B88E35AB01D1803 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E61FEAB563814E928FFF2C1EF239058A /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E4E4895F865EEF7EA98ED41EA08E5E /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E6F1B20197D630B80285B5F6E5FAE80F /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = A82D5159309BE7DE746FF948BBB0386F /* OCMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC2C3EDC08C022BA660EBF6D044881F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		EC33739AB54F71355C4FD5AAEF92F4B1 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C57DAADD9E64CDE2A65AC521D4854FFE /* OCMStubRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B46119B376F9049D0A2B2BB2FD186B /* OCMArgAction.m in Sources */ = {isa = PBXBuildFile; fileRef = FC517E0CFD18D3FD53184DC40656865B /* OCMArgAction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E2D7F60B5F96908E95DA0C2C78F17B38 /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = E037134FFA03F561EFAF3B719760427D /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3E009AF6D979D7580F7E502D718C03C /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = E1283CBC2291292808C21F7F418E85AB /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E567DCF3C413F10BC93DBB11363E116C /* OCMExceptionReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C07C7CB320AA75E32676EBD720BA316A /* OCMExceptionReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5BC8F559D884A12517B06B2103047A5 /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DC03782C1050C9960FB30F1E363D6412 /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E87099BFB29DEA7C394CFEAEFAA0D23A /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 037FA11356E47A919C0231FBF950528A /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8EFF84AFBF8E690854BD6D965604DA9 /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8831329DBF43C8D229AB8125C6B7EEC1 /* NSMethodSignature+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EA282EDCDA92B1BCA41472D45CC15501 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F0B66FEAE82493279EF65A9398306 /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDEF1EB64BA6ABAE804D6A25678D11FB /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FC608F430207E41325DDB610217B2620 /* OCMExpectationRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDFD3D190B222597DCDF4876794B99EE /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BC66FF9D67516214FEE13183B64093 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EE39BBB0CA18CE2FFBD08060146BE31D /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9AA5DE7E19A196540F554F7EE276DE /* OCMIndirectReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EE3F02C7E6073B7195E077693EFF70BE /* Merhaba-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BD37B93AA1F6DFCC113D252C44938F /* Merhaba-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFC1318446EB79DC091867000F45D61C /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E391137595D97EE03696803F5E8ED63 /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F02C2CD0A94965FFA8928B316D5825CB /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = E989ED7E432C95C679195590A1557FF0 /* OCMArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F16FC91F9BACBAC30A631D326BFB6924 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
+		F1DCBB9C80A9B4DE14A5BCA6298F3683 /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BD99B9DE4CF80D105FFD40180B222 /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4C8A14309EFE6D0F7B750590B68BE42 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 557094DE094520DE07F2D0121FC7D690 /* OCMReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F83B94573265C2AA4B1017E963063163 /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E419CAD2497965A2CC13E2F8882E64 /* OCObserverMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F895ED0DBE43F497251492AFE7C44A7A /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = 7500DA04627E0DD88FB3DD7B26141171 /* Merhaba.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F98852F58D5FDF0191647087678ABE70 /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B119366CF65475CAADDD43E2402FCDA /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FAB7A1E7E1414DC657BA79D07135E15B /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB97AC1C7396228E044FF8431B454C2 /* OCMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBD596B095C58C7A3AA647CAB7802226 /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4380441697183E5A977D7529FA30A1CF /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8AF237B2B2EE0DEB2D96125A2DCA99C /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DBB110702946438B84683F31242CBF /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8E319249E5654E2193FDDE625B90600 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8829B65F43C15C772386E60F856507BC /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F96F3EDFB2ED9E0AD6AD258D9A061422 /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0ED690DEAACBBA241725A46599DBC /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD07D94C4AF3CCF8E600AFE82B2D5667 /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B7E045809E69473EB9CF8D08813AB3 /* OCProtocolMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FD1292AB5F7F0993D0F5D2EA4E46EFF0 /* Pods-Merhaba-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D614C017F8BBCBBAE628321EF456B4 /* Pods-Merhaba-iOS-dummy.m */; };
 		FE73A44C2A909A44C802399CED704378 /* Merhaba-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85918F5DF2DAF82F35D9C91283CCBAA6 /* Merhaba-dummy.m */; };
+		FEA41A4CD0B50730FCD5A0EA6745D7B4 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0B84F0200B68F02C64442C30FC75E /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FF89EF7CA8E327F425D294BD19A3C98B /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ACCDF424289CD571AF0E95ABE28239 /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FF8FFF38C07A9881C902FC90ACF9CDFF /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AAB4F5911BC2046AE69688E1273B99 /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF996E15B6BD95EB4432A3FE0B67307B /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 56056F30481FC363F3959E74A25FED61 /* OCMArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,187 +180,203 @@
 			remoteGlobalIDString = D888B76AAD2648EE2F4DF52D533902DE;
 			remoteInfo = Merhaba;
 		};
-		9818431A2759DB59D8BB77B063A1568E /* PBXContainerItemProxy */ = {
+		933893D0138D56D86BFD9DC77408D54C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC54C98851E54D349520C786701A1845;
-			remoteInfo = OCMock;
+			remoteGlobalIDString = 0A729251E99614645AAE0BB18C5FB227;
+			remoteInfo = "OCMock-OSX";
 		};
-		9A9BBD14C45E924A7950396EDDF9CEE9 /* PBXContainerItemProxy */ = {
+		D7605227931958001E51671B473D44A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC54C98851E54D349520C786701A1845;
-			remoteInfo = OCMock;
+			remoteGlobalIDString = 9E4CD84314FBA1F3281B2DA08A57572F;
+			remoteInfo = "OCMock-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0019314F609F1083CF413C5A482273CD /* OCProtocolMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCProtocolMockObject.h; path = Source/OCMock/OCProtocolMockObject.h; sourceTree = "<group>"; };
-		06EA21C3E134F1D54000BCDF7C8664EB /* OCMBlockArgCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockArgCaller.h; path = Source/OCMock/OCMBlockArgCaller.h; sourceTree = "<group>"; };
-		0C4986DFED7588B139B136986CFEE092 /* OCMock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCMock.xcconfig; sourceTree = "<group>"; };
-		0C4EADA58A9EB3715F2BDA00E4C36F99 /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMReturnValueProvider.m; path = Source/OCMock/OCMReturnValueProvider.m; sourceTree = "<group>"; };
-		0CA6A5763FEA7E7A0A3B69677F1C3F10 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
-		0E391137595D97EE03696803F5E8ED63 /* OCMLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMLocation.m; path = Source/OCMock/OCMLocation.m; sourceTree = "<group>"; };
-		11788970FD4F576A2F3F7DB227C42E8A /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMPassByRefSetter.h; path = Source/OCMock/OCMPassByRefSetter.h; sourceTree = "<group>"; };
+		0277F947B929882310FA01A139DC2D0F /* OCMock-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "OCMock-OSX.modulemap"; sourceTree = "<group>"; };
+		037FA11356E47A919C0231FBF950528A /* OCMFunctionsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctionsPrivate.h; path = Source/OCMock/OCMFunctionsPrivate.h; sourceTree = "<group>"; };
+		054B8F3FAD64574C5DDC964923610660 /* OCMock-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "OCMock-iOS.xcconfig"; path = "../OCMock-iOS/OCMock-iOS.xcconfig"; sourceTree = "<group>"; };
+		0BD0ED690DEAACBBA241725A46599DBC /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+OCMAdditions.m"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
+		107ACBFE70ABF66FBE5B8E2B957B8580 /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
 		1369D58FAAD5FB05328C477C8E0D1FE9 /* Pods-Merhaba-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		13BA22647766F5BB0D84C9194D9D91F0 /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS_Sample.framework; path = "Pods-iOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA09D5166D233E3C0603D92C548599 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15062B0BB9D90D0726DA36A9D9930892 /* Pods_Merhaba_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOS.framework; path = "Pods-Merhaba-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16777C01B964EA01119234A7A88B18EA /* Pods-Merhaba-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		16CB51379CDB00EB7467E6B4B0C79F2B /* OCMFunctionsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctionsPrivate.h; path = Source/OCMock/OCMFunctionsPrivate.h; sourceTree = "<group>"; };
+		16A032D9C1202214D08FAFA375D178C8 /* OCMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Source/OCMock/OCMock.h; sourceTree = "<group>"; };
 		17B44F45E0429024B809A9C996C5C5BD /* Pods-Merhaba-iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-resources.sh"; sourceTree = "<group>"; };
-		18F5B34D0FFB5DA6271A15FEA6FE0A62 /* OCMBlockCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockCaller.h; path = Source/OCMock/OCMBlockCaller.h; sourceTree = "<group>"; };
-		1B119366CF65475CAADDD43E2402FCDA /* OCMArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArg.m; path = Source/OCMock/OCMArg.m; sourceTree = "<group>"; };
-		1B4B840C9BF509C2FE1EA6170246E5C1 /* OCMConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMConstraint.m; path = Source/OCMock/OCMConstraint.m; sourceTree = "<group>"; };
-		1BD2C8647E50AE8EDA8410F14D68EFA0 /* OCObserverMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCObserverMockObject.m; path = Source/OCMock/OCObserverMockObject.m; sourceTree = "<group>"; };
+		1951C6FC35FD6573998EF6A94365D42D /* OCMObserverRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMObserverRecorder.m; path = Source/OCMock/OCMObserverRecorder.m; sourceTree = "<group>"; };
 		1BD8EF0C394273A45D4C4857E97A1EC2 /* Pods-Merhaba-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		1D995B0C49A4DAF4E7F56399094C0EB2 /* OCMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Source/OCMock/OCMockObject.h; sourceTree = "<group>"; };
+		1F6F0B66FEAE82493279EF65A9398306 /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMPassByRefSetter.m; path = Source/OCMock/OCMPassByRefSetter.m; sourceTree = "<group>"; };
 		1FAFB4145388F15ADA685295A34C07F2 /* Pods-Merhaba-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-iOSTests-umbrella.h"; sourceTree = "<group>"; };
 		21C3B7D6AC83189942726A7879896B42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2389CAB62CC2FCCFAD6B1CB52DE4F838 /* OCMRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRecorder.m; path = Source/OCMock/OCMRecorder.m; sourceTree = "<group>"; };
 		249DB861E0D5C2626963FCF4B59D7685 /* Pods-Merhaba-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-macOS-dummy.m"; sourceTree = "<group>"; };
 		24B975B44EDA18434FEB44C90DA047B1 /* Pods-Merhaba-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24E2E1C06E9D87B632B9884062EB2C4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280B6DFC385A71E12E2F6B3A41949C84 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = "OCMock-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3263C3C0B8EBE55F2D79D79CD51C89 /* Pods-iOS Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS Sample-dummy.m"; sourceTree = "<group>"; };
-		2B424290BCF97ED3D0872878957394F0 /* OCMFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMFunctions.m; path = Source/OCMock/OCMFunctions.m; sourceTree = "<group>"; };
-		2DA65C1F57D866B096BDF75847837CB5 /* OCMNotificationPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMNotificationPoster.h; path = Source/OCMock/OCMNotificationPoster.h; sourceTree = "<group>"; };
+		2D30F6F5A19D893D2F4397D27F1BD0EB /* NSObject+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OCMAdditions.m"; path = "Source/OCMock/NSObject+OCMAdditions.m"; sourceTree = "<group>"; };
+		2DB364255F6FA1E7295921CCF11414F4 /* OCMock-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "OCMock-iOS.modulemap"; path = "../OCMock-iOS/OCMock-iOS.modulemap"; sourceTree = "<group>"; };
+		2DB5ADF68042E658C9304A0BAF4EC5A4 /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC5E5E26C80F712177210D1887866D3 /* OCPartialMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCPartialMockObject.m; path = Source/OCMock/OCPartialMockObject.m; sourceTree = "<group>"; };
 		2EEEB7E0A9FCAFECA034134CFFAA65C6 /* Pods-iOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.release.xcconfig"; sourceTree = "<group>"; };
+		2FB3F5A3028CC1FDAFFCA1B461706ECA /* OCMInvocationStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationStub.h; path = Source/OCMock/OCMInvocationStub.h; sourceTree = "<group>"; };
 		30419ED9C4CA74C635F19D02A4DB7EBA /* Pods-Merhaba-macOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		32E62B54D8CC0A06F44F82FE88964262 /* OCMNotificationPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMNotificationPoster.h; path = Source/OCMock/OCMNotificationPoster.h; sourceTree = "<group>"; };
+		336251B31320E4EC920B15412FAFBC14 /* OCMLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMLocation.h; path = Source/OCMock/OCMLocation.h; sourceTree = "<group>"; };
 		33C894B309E2C5459AF7633E59F8C4EF /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		35DB60D32FDFF43D1FB49565D828CEAA /* OCMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMockObject.m; path = Source/OCMock/OCMockObject.m; sourceTree = "<group>"; };
+		351459B7D65CDEF3AF6845D02B843A00 /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMPassByRefSetter.h; path = Source/OCMock/OCMPassByRefSetter.h; sourceTree = "<group>"; };
 		363EBC537D4FB1862D882610BEBE249C /* Pods-iOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOS Sample.modulemap"; sourceTree = "<group>"; };
-		37E416DDC21B2A1738A82E5642E04D23 /* OCMRealObjectForwarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRealObjectForwarder.h; path = Source/OCMock/OCMRealObjectForwarder.h; sourceTree = "<group>"; };
-		39EB4FBD5BCC3955049231A027E6C7CD /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Source/OCMock/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
-		3DDC4BFEE8296742ED75DD86CB40AB71 /* OCClassMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCClassMockObject.h; path = Source/OCMock/OCClassMockObject.h; sourceTree = "<group>"; };
+		379EC972743EA115FC8201C699465FA6 /* Pods_Merhaba_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOSTests.framework; path = "Pods-Merhaba-macOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4122B8A96EF2FDA1B4220A34F6BAC5C9 /* Pods-Merhaba-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-macOS.modulemap"; sourceTree = "<group>"; };
-		42215B7B41E6269E6C9FBEB695D7686E /* NSValue+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+OCMAdditions.h"; path = "Source/OCMock/NSValue+OCMAdditions.h"; sourceTree = "<group>"; };
-		4380441697183E5A977D7529FA30A1CF /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Source/OCMock/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
+		4292A3062DD60D11DE49855FA2DB5D65 /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExceptionReturnValueProvider.m; path = Source/OCMock/OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
 		45011AB641B8319E8058F53052F9A7FB /* Pods-Merhaba-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-macOS-umbrella.h"; sourceTree = "<group>"; };
 		453F29E6D02303019D9FAEF8375641B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D5FADABEF386D3CD54AD481EB3CFFB /* Merhaba-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Merhaba-prefix.pch"; sourceTree = "<group>"; };
+		47ABE03DBA7C140DE13098B6F3180D3F /* OCProtocolMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCProtocolMockObject.m; path = Source/OCMock/OCProtocolMockObject.m; sourceTree = "<group>"; };
 		486D19BE39D289C4DA92DB6398FC2789 /* Pods-Merhaba-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOSTests-dummy.m"; sourceTree = "<group>"; };
 		49BD37B93AA1F6DFCC113D252C44938F /* Merhaba-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Merhaba-umbrella.h"; sourceTree = "<group>"; };
+		4A8C47EDCB140CC1BBCD7FB3ADEE98CC /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
 		4BCCB4F0D2A78FFEF4D0F999B4C8D27B /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4C25193A5E9C61D1794961715EDE9167 /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+OCMAdditions.m"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
+		4C1D89E9B0BDEDA012AADF3625E648FA /* OCMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Source/OCMock/OCMockObject.h; sourceTree = "<group>"; };
+		4C3BBF50DD7904D3C136E84C68BD0670 /* OCMock-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-OSX-prefix.pch"; sourceTree = "<group>"; };
+		4D0E576A473CEE5985750851A66DE933 /* NSValue+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+OCMAdditions.h"; path = "Source/OCMock/NSValue+OCMAdditions.h"; sourceTree = "<group>"; };
 		4DA37041FB2CEDEC1CDFB0F75B45DCEB /* Pods-Merhaba-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4E71CF170F9D6C4E737D4E6999F2AA86 /* Pods-Merhaba-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		5E7BECB422D10AE40510522E186389FD /* OCMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OCMock.modulemap; sourceTree = "<group>"; };
+		557094DE094520DE07F2D0121FC7D690 /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMReturnValueProvider.h; path = Source/OCMock/OCMReturnValueProvider.h; sourceTree = "<group>"; };
+		56056F30481FC363F3959E74A25FED61 /* OCMArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Source/OCMock/OCMArg.h; sourceTree = "<group>"; };
+		59F0B84F0200B68F02C64442C30FC75E /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
+		5B5C74D09BD47EF096CBBE32F5E183F2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		5C2BD99B9DE4CF80D105FFD40180B222 /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
+		5CC8A202E31F85F2FD597F70C31A2ACE /* OCMBlockArgCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockArgCaller.h; path = Source/OCMock/OCMBlockArgCaller.h; sourceTree = "<group>"; };
+		5F9AA5DE7E19A196540F554F7EE276DE /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMIndirectReturnValueProvider.h; path = Source/OCMock/OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
+		602B262CA594A8BF2C9F182398CCA154 /* OCMInvocationExpectation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationExpectation.m; path = Source/OCMock/OCMInvocationExpectation.m; sourceTree = "<group>"; };
 		604B5A00FAF0F67CAC88EA633B2B84B2 /* Pods-Merhaba-macOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOSTests-resources.sh"; sourceTree = "<group>"; };
 		60948E1B4B1DF6C73ACE18D8CA09AD92 /* MRBServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRBServer.m; sourceTree = "<group>"; };
-		60EA7631C4547D4450BC19ED6FD1D662 /* OCMRealObjectForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRealObjectForwarder.m; path = Source/OCMock/OCMRealObjectForwarder.m; sourceTree = "<group>"; };
+		61E02F7F4F5A3FBF8E2B1DDA97A88DEE /* OCMInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationMatcher.m; path = Source/OCMock/OCMInvocationMatcher.m; sourceTree = "<group>"; };
+		622187D79EACB4370FADBB5FEC92F6BA /* OCMock-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OCMock-OSX.xcconfig"; sourceTree = "<group>"; };
+		65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		670D1A79A0A6218731A84D6453134BCB /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
+		67BEC27530093239FB6AD8E3755BBA41 /* OCMock-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OCMock-iOS-umbrella.h"; path = "../OCMock-iOS/OCMock-iOS-umbrella.h"; sourceTree = "<group>"; };
 		67FF023E6B97A7F5B18134F9A5D85E0A /* Merhaba.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Merhaba.modulemap; sourceTree = "<group>"; };
-		6AD68A9918F423DEDF7BDBC265456306 /* OCMInvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationMatcher.h; path = Source/OCMock/OCMInvocationMatcher.h; sourceTree = "<group>"; };
-		6D1FAB30430DED5EA1A357096C2D353B /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMReturnValueProvider.h; path = Source/OCMock/OCMReturnValueProvider.h; sourceTree = "<group>"; };
-		6DEFB3CA39480952785E373FFC61A970 /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
-		714E8F53BA7277A3EB4FEECA54249CB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B81F696C2DDAF33E261EA8AF7FD5D4C /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Source/OCMock/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
 		7248EFA8D5F22D141664D14764B3160F /* Pods-Merhaba-macOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-macOSTests-dummy.m"; sourceTree = "<group>"; };
+		72B6C5291A7A705C2A951C0F32893C84 /* OCMInvocationExpectation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationExpectation.h; path = Source/OCMock/OCMInvocationExpectation.h; sourceTree = "<group>"; };
+		72F5C9B431ED64B35083045C114EF23F /* OCClassMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCClassMockObject.h; path = Source/OCMock/OCClassMockObject.h; sourceTree = "<group>"; };
 		73EF6094BBB5B8E34E01ECC728A87585 /* Merhaba.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Merhaba.xcconfig; sourceTree = "<group>"; };
 		7500DA04627E0DD88FB3DD7B26141171 /* Merhaba.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Merhaba.h; sourceTree = "<group>"; };
-		78828399BAAE423C4724C9533F5382ED /* OCMLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMLocation.h; path = Source/OCMock/OCMLocation.h; sourceTree = "<group>"; };
-		78E4E4895F865EEF7EA98ED41EA08E5E /* NSObject+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+OCMAdditions.h"; path = "Source/OCMock/NSObject+OCMAdditions.h"; sourceTree = "<group>"; };
-		79A1E89D7AD7E000B8104191B7B27BCC /* OCMExpectationRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExpectationRecorder.h; path = Source/OCMock/OCMExpectationRecorder.h; sourceTree = "<group>"; };
-		7A9C9C272CA12E76D64E7F458C8D85FF /* OCMObserverRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMObserverRecorder.m; path = Source/OCMock/OCMObserverRecorder.m; sourceTree = "<group>"; };
-		7BE8A8EF6CACB0B742A6E8F6DB9B5EA7 /* OCMInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationMatcher.m; path = Source/OCMock/OCMInvocationMatcher.m; sourceTree = "<group>"; };
+		75137520F37B63C4576CA61DE588306D /* OCPartialMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCPartialMockObject.h; path = Source/OCMock/OCPartialMockObject.h; sourceTree = "<group>"; };
+		77DBB110702946438B84683F31242CBF /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
+		789A8D43BB25EE8AF4E027F9606CA801 /* OCMock-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-OSX-umbrella.h"; sourceTree = "<group>"; };
+		7D70DAAD6D6FAAF9B03D89AAF7CE4A29 /* OCMArgAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArgAction.h; path = Source/OCMock/OCMArgAction.h; sourceTree = "<group>"; };
+		7EB184D5947C66909EF6B83BDC381BD5 /* OCMStubRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMStubRecorder.h; path = Source/OCMock/OCMStubRecorder.h; sourceTree = "<group>"; };
+		7EC0AAB05F53193CADBBA7138BF06728 /* OCMRealObjectForwarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRealObjectForwarder.h; path = Source/OCMock/OCMRealObjectForwarder.h; sourceTree = "<group>"; };
+		7F2958C329C6723D823ED17BC954DC0B /* OCMInvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationMatcher.h; path = Source/OCMock/OCMInvocationMatcher.h; sourceTree = "<group>"; };
 		81AC7D9C66D7087367D0D9C5C3F5B276 /* Pods-Merhaba-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOS-resources.sh"; sourceTree = "<group>"; };
-		81BE16F4CF360CC1D099CDD695A599E5 /* OCMMacroState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = Source/OCMock/OCMMacroState.h; sourceTree = "<group>"; };
+		8258D88FAD679E42DE8031AB086FBD80 /* OCMExpectationRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExpectationRecorder.m; path = Source/OCMock/OCMExpectationRecorder.m; sourceTree = "<group>"; };
+		830309A702F237D68D921430DBB485E5 /* OCMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMockObject.m; path = Source/OCMock/OCMockObject.m; sourceTree = "<group>"; };
 		85918F5DF2DAF82F35D9C91283CCBAA6 /* Merhaba-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Merhaba-dummy.m"; sourceTree = "<group>"; };
-		859324D40F656D9FAC02D350D9E86DCC /* OCProtocolMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCProtocolMockObject.m; path = Source/OCMock/OCProtocolMockObject.m; sourceTree = "<group>"; };
-		863114BC8DC62295516F12FCBE22088E /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMPassByRefSetter.m; path = Source/OCMock/OCMPassByRefSetter.m; sourceTree = "<group>"; };
-		88ED5D196ED6695091361EB66B17B516 /* NSObject+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OCMAdditions.m"; path = "Source/OCMock/NSObject+OCMAdditions.m"; sourceTree = "<group>"; };
+		8829B65F43C15C772386E60F856507BC /* OCClassMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCClassMockObject.m; path = Source/OCMock/OCClassMockObject.m; sourceTree = "<group>"; };
+		8831329DBF43C8D229AB8125C6B7EEC1 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+OCMAdditions.h"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
+		8A4BA246A81252E17D851C0A6C23D32D /* OCMLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMLocation.m; path = Source/OCMock/OCMLocation.m; sourceTree = "<group>"; };
+		8E20D9321EBECDF43F067598A6EA39A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4C19D4E7148CB4899716EC9D836025 /* OCMInvocationStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationStub.m; path = Source/OCMock/OCMInvocationStub.m; sourceTree = "<group>"; };
+		90B7E045809E69473EB9CF8D08813AB3 /* OCProtocolMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCProtocolMockObject.h; path = Source/OCMock/OCProtocolMockObject.h; sourceTree = "<group>"; };
+		920CDFD8DC566830074C0A2A33E725D6 /* OCMock-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMock-OSX-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		982A63F5BE4D65D758ABD5E4A3C9067F /* OCMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-prefix.pch"; sourceTree = "<group>"; };
-		98361CD81CF91315EF11AED46899AF53 /* OCMExpectationRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExpectationRecorder.m; path = Source/OCMock/OCMExpectationRecorder.m; sourceTree = "<group>"; };
-		99D5B74466019811454B50420EE1F13C /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AF3CC6167DFB2EBB7A8361DD6C6C05F /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
+		94E419CAD2497965A2CC13E2F8882E64 /* OCObserverMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCObserverMockObject.h; path = Source/OCMock/OCObserverMockObject.h; sourceTree = "<group>"; };
+		99D45D64CFE41E30A9D28AF3D11F96EF /* OCMFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMFunctions.m; path = Source/OCMock/OCMFunctions.m; sourceTree = "<group>"; };
+		9B7682910F232394E6A7E91020687252 /* Pods_Merhaba_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOS.framework; path = "Pods-Merhaba-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5996A408B31CEB192D04F925550A6F /* Pods-Merhaba-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-iOS-umbrella.h"; sourceTree = "<group>"; };
 		9C87E16EF10FDEBA227B37962320E053 /* Pods-Merhaba-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9CEC66EBFCC6CD8A62DA5CE53EC13518 /* Pods-iOS Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS Sample-acknowledgements.plist"; sourceTree = "<group>"; };
-		9F462FE47AF1DFE8D35CDD66D12A06F0 /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OCMAdditions.m"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
+		9F5894962363180755BCBA26A8252ACD /* OCMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRecorder.h; path = Source/OCMock/OCMRecorder.h; sourceTree = "<group>"; };
 		A19489086B77BAD98A146098F3AC8C30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5BBB90F3FB0A3B9701FC9632B79D1C1 /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS_Sample.framework; path = "Pods-iOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6A34341D84E14BC5541177000A44363 /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExceptionReturnValueProvider.m; path = Source/OCMock/OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
-		A82D5159309BE7DE746FF948BBB0386F /* OCMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRecorder.h; path = Source/OCMock/OCMRecorder.h; sourceTree = "<group>"; };
-		A9972E0EB79E284AA82925084077E738 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+OCMAdditions.h"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
-		A9B30FF38C0A6CCDFD2CC460779C887A /* OCMArgAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArgAction.h; path = Source/OCMock/OCMArgAction.h; sourceTree = "<group>"; };
+		A2BC66FF9D67516214FEE13183B64093 /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OCMAdditions.m"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
+		A70CD12A81C220205900D6F979E714F6 /* OCMBlockCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockCaller.h; path = Source/OCMock/OCMBlockCaller.h; sourceTree = "<group>"; };
+		AB562795F1E1E021C6B37F5AE4C9F778 /* OCMVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMVerifier.h; path = Source/OCMock/OCMVerifier.h; sourceTree = "<group>"; };
+		AD501D4ED2F17C5D09FE778412A5FF1E /* OCObserverMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCObserverMockObject.m; path = Source/OCMock/OCObserverMockObject.m; sourceTree = "<group>"; };
 		AE03118E26621AB20C5FF796D122F863 /* Pods-Merhaba-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0894428C8C43B65B7CCC8950E86718 /* Pods-iOS Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AE093FF8DAAFC0AE4129BE706CF3D49D /* OCMArgAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArgAction.m; path = Source/OCMock/OCMArgAction.m; sourceTree = "<group>"; };
+		AF64CDAC44A4209CACA923120B0C7F8C /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOS.framework; path = "Pods-Merhaba-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BB5DA5B0E3E3C6D8180CA3039818CE /* Pods-Merhaba-macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		B3D614C017F8BBCBBAE628321EF456B4 /* Pods-Merhaba-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOS-dummy.m"; sourceTree = "<group>"; };
+		B436A639101FEF3F92C5B288697E27F2 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = "OCMock-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44BB5341CD6B5BF698B0F29B1C774B3 /* Pods-Merhaba-macOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-macOSTests-umbrella.h"; sourceTree = "<group>"; };
-		B61F3911BD0FB425C80AB982304DE0B2 /* OCMInvocationStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationStub.m; path = Source/OCMock/OCMInvocationStub.m; sourceTree = "<group>"; };
-		B6798923DD4F2989DAA1B7B5B4435EAD /* OCMBlockArgCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockArgCaller.m; path = Source/OCMock/OCMBlockArgCaller.m; sourceTree = "<group>"; };
+		B6BE6DC8366AE53571A5DDBF83AAC11C /* OCMMacroState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = Source/OCMock/OCMMacroState.h; sourceTree = "<group>"; };
 		B6C74A19B288155202F57B63272F1F98 /* Pods-Merhaba-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B712153E36071C843ADBFCD39BE7580C /* Pods-Merhaba-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOSTests.modulemap"; sourceTree = "<group>"; };
 		B816640BCA6BD3CEF1512EDC0EB69001 /* Pods-Merhaba-macOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-macOSTests.modulemap"; sourceTree = "<group>"; };
-		B9B9E4866B3FAD54B5BA8978ED84C0FD /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
-		BA960E63E3163BDF10AA22CEACA2700C /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOS.framework; path = "Pods-Merhaba-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C82B57692BC2FA8E311684C9A017F3 /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMReturnValueProvider.m; path = Source/OCMock/OCMReturnValueProvider.m; sourceTree = "<group>"; };
+		B8E38E2634E5FB8948239695EACDF719 /* OCMock-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OCMock-iOS-dummy.m"; path = "../OCMock-iOS/OCMock-iOS-dummy.m"; sourceTree = "<group>"; };
+		BC097730A7D168D6B41408A7386B275E /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
 		BCCB9326BE1762C3E7F3E935AF8DC006 /* Pods-iOS Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS Sample-umbrella.h"; sourceTree = "<group>"; };
 		BD1CC3F23EBDAEF413BEA9493E9703C7 /* Pods-iOS Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Sample-resources.sh"; sourceTree = "<group>"; };
-		BF7F882D3201BE8599F20865B78F0FE9 /* OCMInvocationExpectation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationExpectation.m; path = Source/OCMock/OCMInvocationExpectation.m; sourceTree = "<group>"; };
-		C50BBB18EFAF1190419B602AE585FE81 /* OCPartialMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCPartialMockObject.m; path = Source/OCMock/OCPartialMockObject.m; sourceTree = "<group>"; };
-		C57DAADD9E64CDE2A65AC521D4854FFE /* OCMStubRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMStubRecorder.h; path = Source/OCMock/OCMStubRecorder.h; sourceTree = "<group>"; };
-		C5D1E6244E73ACDAD3F6B49B7592B7F6 /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExceptionReturnValueProvider.h; path = Source/OCMock/OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
+		BF7D3ECDB915E089FDBE647697645E52 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Source/OCMock/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
+		C07C7CB320AA75E32676EBD720BA316A /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExceptionReturnValueProvider.h; path = Source/OCMock/OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
+		C0F83AC864486AA12288F9444CDA1CC5 /* OCMRealObjectForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRealObjectForwarder.m; path = Source/OCMock/OCMRealObjectForwarder.m; sourceTree = "<group>"; };
 		C6B414A52CF031089F22DD2058C51712 /* MRBServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRBServer.h; sourceTree = "<group>"; };
-		C708F9D1AC2A31EC5B88E35AB01D1803 /* OCMVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMVerifier.h; path = Source/OCMock/OCMVerifier.h; sourceTree = "<group>"; };
 		C81D7FDD39FE2CEB5FBA44CDFA2D0717 /* Pods-Merhaba-macOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-macOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C8AB74FF050FF7D0E1825DE4C5BB6579 /* Pods-Merhaba-macOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOS-resources.sh"; sourceTree = "<group>"; };
-		CA20AD763085232EB811ADB451250CFE /* OCMInvocationStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationStub.h; path = Source/OCMock/OCMInvocationStub.h; sourceTree = "<group>"; };
 		CB5330D4C6C7052C3BD3CAB78295FF20 /* Pods-Merhaba-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CE89C71BAFB5295AC2D415B32ABDCF94 /* OCMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMock-dummy.m"; sourceTree = "<group>"; };
-		D0DEBF126A54046F1346F2E4E78E74E1 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB76E55EA22A0991CA1BB4C7896DA58 /* OCMock-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OCMock-iOS-prefix.pch"; path = "../OCMock-iOS/OCMock-iOS-prefix.pch"; sourceTree = "<group>"; };
+		CDA8149ECC788A092C9686E0E32EBEE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../OCMock-iOS/Info.plist"; sourceTree = "<group>"; };
+		CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		D1ACCDF424289CD571AF0E95ABE28239 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
 		D55777317BCDC1AD3425D118E0237EFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6BF69075B157BF8BC3287C893599B15 /* OCPartialMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCPartialMockObject.h; path = Source/OCMock/OCPartialMockObject.h; sourceTree = "<group>"; };
-		D6DC99DFD40020ABD61383BAD8225562 /* OCMFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctions.h; path = Source/OCMock/OCMFunctions.h; sourceTree = "<group>"; };
-		D9359CB3F2FE8FD51F7987C9C637438B /* OCClassMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCClassMockObject.m; path = Source/OCMock/OCClassMockObject.m; sourceTree = "<group>"; };
-		DE4C7C6F737C71AA76258E5304A4E0A2 /* OCMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-umbrella.h"; sourceTree = "<group>"; };
+		D5AAB4F5911BC2046AE69688E1273B99 /* OCMObserverRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMObserverRecorder.h; path = Source/OCMock/OCMObserverRecorder.h; sourceTree = "<group>"; };
+		DB31497AEF0DDB451FC60782B6996335 /* OCMArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArg.m; path = Source/OCMock/OCMArg.m; sourceTree = "<group>"; };
+		DC03782C1050C9960FB30F1E363D6412 /* NSObject+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+OCMAdditions.h"; path = "Source/OCMock/NSObject+OCMAdditions.h"; sourceTree = "<group>"; };
+		DC4E2EF5060696D94DF5F0E9FA7415DC /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBoxedReturnValueProvider.m; path = Source/OCMock/OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
+		DC68138B119FAC9D85A1C9F72500A884 /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
+		DED9D3A6DEB9E7055A845149D4A415A5 /* OCMConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMConstraint.m; path = Source/OCMock/OCMConstraint.m; sourceTree = "<group>"; };
 		DF3A821B4CAA1C018482BE777EF2BACD /* Pods-Merhaba-macOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-macOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E0631D3AEC6C764E0FB5D19E9D617C1D /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
-		E0D8DE538FDA5D3E664C5ADD23CC24E5 /* OCMObserverRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMObserverRecorder.h; path = Source/OCMock/OCMObserverRecorder.h; sourceTree = "<group>"; };
-		E335CE147F4FCC4E93A585A0688083D2 /* OCMRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRecorder.m; path = Source/OCMock/OCMRecorder.m; sourceTree = "<group>"; };
-		E4AF8AE70C11F95DF78AE7E9ABFB78A1 /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
+		E037134FFA03F561EFAF3B719760427D /* OCMFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctions.h; path = Source/OCMock/OCMFunctions.h; sourceTree = "<group>"; };
+		E1283CBC2291292808C21F7F418E85AB /* OCMBlockArgCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockArgCaller.m; path = Source/OCMock/OCMBlockArgCaller.m; sourceTree = "<group>"; };
 		E7DFD9CCD42090239D621CA44832BBDD /* Pods-Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
-		E808E4218926AE48D170B4FBDE4CFC5E /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMIndirectReturnValueProvider.h; path = Source/OCMock/OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
-		E8930E04FAE9BA9BA73980CC786BE8C0 /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
 		E8DF51CB05EED61983092A8CB71F2164 /* Pods-iOS Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Sample-frameworks.sh"; sourceTree = "<group>"; };
-		E989ED7E432C95C679195590A1557FF0 /* OCMArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Source/OCMock/OCMArg.h; sourceTree = "<group>"; };
-		EB55F4C5E7223618F9F856AB203E40AA /* OCObserverMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCObserverMockObject.h; path = Source/OCMock/OCObserverMockObject.h; sourceTree = "<group>"; };
-		EC7D9DE3022861A3013E7199979D7C96 /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
 		EEDFBE67E8B308F121127767BDB46A06 /* Pods-iOS Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		F009DCE68D64F7345F4FC78620509D92 /* Pods-Merhaba-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F06433365D92F578442371BE2D3264A9 /* Pods_Merhaba_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOSTests.framework; path = "Pods-Merhaba-macOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F204A5C827EC85783599AC240E31A949 /* OCMInvocationExpectation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationExpectation.h; path = Source/OCMock/OCMInvocationExpectation.h; sourceTree = "<group>"; };
-		F389E14DBE71DB2C71EAF4C876BF62F9 /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBoxedReturnValueProvider.m; path = Source/OCMock/OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
-		FA9A59FD7C4F619BB5878A38A415A12F /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
 		FBA98A8C23579F6D4FDC23BE25DD2127 /* Pods-Merhaba-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FBDD2EC82A084F9025ED6A81BAFA0569 /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOSTests.framework; path = "Pods-Merhaba-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD111DD460FD04F5C37983E3FD5D4EC0 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		FFB97AC1C7396228E044FF8431B454C2 /* OCMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Source/OCMock/OCMock.h; sourceTree = "<group>"; };
+		FC517E0CFD18D3FD53184DC40656865B /* OCMArgAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArgAction.m; path = Source/OCMock/OCMArgAction.m; sourceTree = "<group>"; };
+		FC608F430207E41325DDB610217B2620 /* OCMExpectationRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExpectationRecorder.h; path = Source/OCMock/OCMExpectationRecorder.h; sourceTree = "<group>"; };
+		FC8F27F38E13180033BDDEEE41F96313 /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOSTests.framework; path = "Pods-Merhaba-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		27B3A23715A9E1BB299CD932EAA12B73 /* Frameworks */ = {
+		0A08A7C3149251F02408141CC68DCF18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC436E0D0F29C964FC7C50F35E468C2F /* Foundation.framework in Frameworks */,
+				DB795CFD7B9B2631A283F4AC73B7DD29 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D29925DDA06F94E7C818CA2403C1B0B /* Frameworks */ = {
+		729A0CFF421080919CA467EDDDED004A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2C1A15C25533A85E0EF848B23F702A /* Foundation.framework in Frameworks */,
+				048AFE46BC9D0B3E1F8A703AA805F9B7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		859A000FDAB3A43BBA271B80C0818B93 /* Frameworks */ = {
+		B6ADD629A1F62669AC43256CEECE2D47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2C3EDC08C022BA660EBF6D044881F2 /* Foundation.framework in Frameworks */,
+				F16FC91F9BACBAC30A631D326BFB6924 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B0F69BADF8B235ABCB33BA66818A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A16118C6A6AB841816EE8131D3F1AF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +396,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD9910A63CAADCB18B731A689AB2D338 /* Frameworks */ = {
+		F1D53F780EF53581548089CA56BD848D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A20C39855E46308C11B905F847E428 /* Foundation.framework in Frameworks */,
+				28451294D6122B123B86C7D5BFACDD37 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,18 +415,133 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D7758382315777F426443F634033534 /* Products */ = {
+		09E3B8E19D2A18A7D2161DC989C603AF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				99D5B74466019811454B50420EE1F13C /* Merhaba.framework */,
-				D0DEBF126A54046F1346F2E4E78E74E1 /* OCMock.framework */,
-				A5BBB90F3FB0A3B9701FC9632B79D1C1 /* Pods_iOS_Sample.framework */,
-				BA960E63E3163BDF10AA22CEACA2700C /* Pods_Merhaba_iOS.framework */,
-				FBDD2EC82A084F9025ED6A81BAFA0569 /* Pods_Merhaba_iOSTests.framework */,
-				15062B0BB9D90D0726DA36A9D9930892 /* Pods_Merhaba_macOS.framework */,
-				F06433365D92F578442371BE2D3264A9 /* Pods_Merhaba_macOSTests.framework */,
+				CDA8149ECC788A092C9686E0E32EBEE7 /* Info.plist */,
+				8E20D9321EBECDF43F067598A6EA39A4 /* Info.plist */,
+				2DB364255F6FA1E7295921CCF11414F4 /* OCMock-iOS.modulemap */,
+				054B8F3FAD64574C5DDC964923610660 /* OCMock-iOS.xcconfig */,
+				B8E38E2634E5FB8948239695EACDF719 /* OCMock-iOS-dummy.m */,
+				CCB76E55EA22A0991CA1BB4C7896DA58 /* OCMock-iOS-prefix.pch */,
+				67BEC27530093239FB6AD8E3755BBA41 /* OCMock-iOS-umbrella.h */,
+				0277F947B929882310FA01A139DC2D0F /* OCMock-OSX.modulemap */,
+				622187D79EACB4370FADBB5FEC92F6BA /* OCMock-OSX.xcconfig */,
+				920CDFD8DC566830074C0A2A33E725D6 /* OCMock-OSX-dummy.m */,
+				4C3BBF50DD7904D3C136E84C68BD0670 /* OCMock-OSX-prefix.pch */,
+				789A8D43BB25EE8AF4E027F9606CA801 /* OCMock-OSX-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OCMock-OSX";
+			sourceTree = "<group>";
+		};
+		2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		33C10619F8BDE7B570F1533874A828C3 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				BF7D3ECDB915E089FDBE647697645E52 /* NSInvocation+OCMAdditions.h */,
+				6B81F696C2DDAF33E261EA8AF7FD5D4C /* NSInvocation+OCMAdditions.m */,
+				8831329DBF43C8D229AB8125C6B7EEC1 /* NSMethodSignature+OCMAdditions.h */,
+				0BD0ED690DEAACBBA241725A46599DBC /* NSMethodSignature+OCMAdditions.m */,
+				5B5C74D09BD47EF096CBBE32F5E183F2 /* NSNotificationCenter+OCMAdditions.h */,
+				A2BC66FF9D67516214FEE13183B64093 /* NSNotificationCenter+OCMAdditions.m */,
+				DC03782C1050C9960FB30F1E363D6412 /* NSObject+OCMAdditions.h */,
+				2D30F6F5A19D893D2F4397D27F1BD0EB /* NSObject+OCMAdditions.m */,
+				4D0E576A473CEE5985750851A66DE933 /* NSValue+OCMAdditions.h */,
+				BC097730A7D168D6B41408A7386B275E /* NSValue+OCMAdditions.m */,
+				72F5C9B431ED64B35083045C114EF23F /* OCClassMockObject.h */,
+				8829B65F43C15C772386E60F856507BC /* OCClassMockObject.m */,
+				56056F30481FC363F3959E74A25FED61 /* OCMArg.h */,
+				DB31497AEF0DDB451FC60782B6996335 /* OCMArg.m */,
+				7D70DAAD6D6FAAF9B03D89AAF7CE4A29 /* OCMArgAction.h */,
+				FC517E0CFD18D3FD53184DC40656865B /* OCMArgAction.m */,
+				5CC8A202E31F85F2FD597F70C31A2ACE /* OCMBlockArgCaller.h */,
+				E1283CBC2291292808C21F7F418E85AB /* OCMBlockArgCaller.m */,
+				A70CD12A81C220205900D6F979E714F6 /* OCMBlockCaller.h */,
+				DC68138B119FAC9D85A1C9F72500A884 /* OCMBlockCaller.m */,
+				4A8C47EDCB140CC1BBCD7FB3ADEE98CC /* OCMBoxedReturnValueProvider.h */,
+				DC4E2EF5060696D94DF5F0E9FA7415DC /* OCMBoxedReturnValueProvider.m */,
+				670D1A79A0A6218731A84D6453134BCB /* OCMConstraint.h */,
+				DED9D3A6DEB9E7055A845149D4A415A5 /* OCMConstraint.m */,
+				C07C7CB320AA75E32676EBD720BA316A /* OCMExceptionReturnValueProvider.h */,
+				4292A3062DD60D11DE49855FA2DB5D65 /* OCMExceptionReturnValueProvider.m */,
+				FC608F430207E41325DDB610217B2620 /* OCMExpectationRecorder.h */,
+				8258D88FAD679E42DE8031AB086FBD80 /* OCMExpectationRecorder.m */,
+				E037134FFA03F561EFAF3B719760427D /* OCMFunctions.h */,
+				99D45D64CFE41E30A9D28AF3D11F96EF /* OCMFunctions.m */,
+				037FA11356E47A919C0231FBF950528A /* OCMFunctionsPrivate.h */,
+				5F9AA5DE7E19A196540F554F7EE276DE /* OCMIndirectReturnValueProvider.h */,
+				107ACBFE70ABF66FBE5B8E2B957B8580 /* OCMIndirectReturnValueProvider.m */,
+				72B6C5291A7A705C2A951C0F32893C84 /* OCMInvocationExpectation.h */,
+				602B262CA594A8BF2C9F182398CCA154 /* OCMInvocationExpectation.m */,
+				7F2958C329C6723D823ED17BC954DC0B /* OCMInvocationMatcher.h */,
+				61E02F7F4F5A3FBF8E2B1DDA97A88DEE /* OCMInvocationMatcher.m */,
+				2FB3F5A3028CC1FDAFFCA1B461706ECA /* OCMInvocationStub.h */,
+				8E4C19D4E7148CB4899716EC9D836025 /* OCMInvocationStub.m */,
+				336251B31320E4EC920B15412FAFBC14 /* OCMLocation.h */,
+				8A4BA246A81252E17D851C0A6C23D32D /* OCMLocation.m */,
+				B6BE6DC8366AE53571A5DDBF83AAC11C /* OCMMacroState.h */,
+				5C2BD99B9DE4CF80D105FFD40180B222 /* OCMMacroState.m */,
+				32E62B54D8CC0A06F44F82FE88964262 /* OCMNotificationPoster.h */,
+				D1ACCDF424289CD571AF0E95ABE28239 /* OCMNotificationPoster.m */,
+				D5AAB4F5911BC2046AE69688E1273B99 /* OCMObserverRecorder.h */,
+				1951C6FC35FD6573998EF6A94365D42D /* OCMObserverRecorder.m */,
+				16A032D9C1202214D08FAFA375D178C8 /* OCMock.h */,
+				4C1D89E9B0BDEDA012AADF3625E648FA /* OCMockObject.h */,
+				830309A702F237D68D921430DBB485E5 /* OCMockObject.m */,
+				351459B7D65CDEF3AF6845D02B843A00 /* OCMPassByRefSetter.h */,
+				1F6F0B66FEAE82493279EF65A9398306 /* OCMPassByRefSetter.m */,
+				7EC0AAB05F53193CADBBA7138BF06728 /* OCMRealObjectForwarder.h */,
+				C0F83AC864486AA12288F9444CDA1CC5 /* OCMRealObjectForwarder.m */,
+				9F5894962363180755BCBA26A8252ACD /* OCMRecorder.h */,
+				2389CAB62CC2FCCFAD6B1CB52DE4F838 /* OCMRecorder.m */,
+				557094DE094520DE07F2D0121FC7D690 /* OCMReturnValueProvider.h */,
+				B8C82B57692BC2FA8E311684C9A017F3 /* OCMReturnValueProvider.m */,
+				7EB184D5947C66909EF6B83BDC381BD5 /* OCMStubRecorder.h */,
+				59F0B84F0200B68F02C64442C30FC75E /* OCMStubRecorder.m */,
+				AB562795F1E1E021C6B37F5AE4C9F778 /* OCMVerifier.h */,
+				77DBB110702946438B84683F31242CBF /* OCMVerifier.m */,
+				94E419CAD2497965A2CC13E2F8882E64 /* OCObserverMockObject.h */,
+				AD501D4ED2F17C5D09FE778412A5FF1E /* OCObserverMockObject.m */,
+				75137520F37B63C4576CA61DE588306D /* OCPartialMockObject.h */,
+				2EC5E5E26C80F712177210D1887866D3 /* OCPartialMockObject.m */,
+				90B7E045809E69473EB9CF8D08813AB3 /* OCProtocolMockObject.h */,
+				47ABE03DBA7C140DE13098B6F3180D3F /* OCProtocolMockObject.m */,
+				09E3B8E19D2A18A7D2161DC989C603AF /* Support Files */,
+			);
+			name = OCMock;
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		38435DC7981BEE840D797A3AF27B8D2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5ADF68042E658C9304A0BAF4EC5A4 /* Merhaba.framework */,
+				B436A639101FEF3F92C5B288697E27F2 /* OCMock.framework */,
+				280B6DFC385A71E12E2F6B3A41949C84 /* OCMock.framework */,
+				13BA22647766F5BB0D84C9194D9D91F0 /* Pods_iOS_Sample.framework */,
+				AF64CDAC44A4209CACA923120B0C7F8C /* Pods_Merhaba_iOS.framework */,
+				FC8F27F38E13180033BDDEEE41F96313 /* Pods_Merhaba_iOSTests.framework */,
+				9B7682910F232394E6A7E91020687252 /* Pods_Merhaba_macOS.framework */,
+				379EC972743EA115FC8201C699465FA6 /* Pods_Merhaba_macOSTests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A165433BB896B7C2CAF2425A40BF8D /* iOS */,
+				2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4A23F63CE3BBA8963FC9CABA3B78F6DC /* Pods-iOS Sample */ = {
@@ -363,31 +565,9 @@
 		635C585E46EEBA10F04C631B779EBEE6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A59CBDDD942954C97809A7A6E34474F8 /* OCMock */,
+				33C10619F8BDE7B570F1533874A828C3 /* OCMock */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7552A9B19C130C69294D11B33940BC3E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				714E8F53BA7277A3EB4FEECA54249CB2 /* Info.plist */,
-				5E7BECB422D10AE40510522E186389FD /* OCMock.modulemap */,
-				0C4986DFED7588B139B136986CFEE092 /* OCMock.xcconfig */,
-				CE89C71BAFB5295AC2D415B32ABDCF94 /* OCMock-dummy.m */,
-				982A63F5BE4D65D758ABD5E4A3C9067F /* OCMock-prefix.pch */,
-				DE4C7C6F737C71AA76258E5304A4E0A2 /* OCMock-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/OCMock";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -395,9 +575,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				993F4BF29683A0E0C0B793FCC68FF41F /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */,
 				635C585E46EEBA10F04C631B779EBEE6 /* Pods */,
-				3D7758382315777F426443F634033534 /* Products */,
+				38435DC7981BEE840D797A3AF27B8D2C /* Products */,
 				8FD10388FBD71F38D2AB4D508871BBD7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -430,6 +610,14 @@
 				89FDB89AF0BDDB46952F864C951B8AFA /* Pods-Merhaba-macOSTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		95A165433BB896B7C2CAF2425A40BF8D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		993F4BF29683A0E0C0B793FCC68FF41F /* Development Pods */ = {
@@ -475,83 +663,6 @@
 			path = "Target Support Files/Pods-Merhaba-iOSTests";
 			sourceTree = "<group>";
 		};
-		A59CBDDD942954C97809A7A6E34474F8 /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				4380441697183E5A977D7529FA30A1CF /* NSInvocation+OCMAdditions.h */,
-				39EB4FBD5BCC3955049231A027E6C7CD /* NSInvocation+OCMAdditions.m */,
-				A9972E0EB79E284AA82925084077E738 /* NSMethodSignature+OCMAdditions.h */,
-				4C25193A5E9C61D1794961715EDE9167 /* NSMethodSignature+OCMAdditions.m */,
-				FD111DD460FD04F5C37983E3FD5D4EC0 /* NSNotificationCenter+OCMAdditions.h */,
-				9F462FE47AF1DFE8D35CDD66D12A06F0 /* NSNotificationCenter+OCMAdditions.m */,
-				78E4E4895F865EEF7EA98ED41EA08E5E /* NSObject+OCMAdditions.h */,
-				88ED5D196ED6695091361EB66B17B516 /* NSObject+OCMAdditions.m */,
-				42215B7B41E6269E6C9FBEB695D7686E /* NSValue+OCMAdditions.h */,
-				B9B9E4866B3FAD54B5BA8978ED84C0FD /* NSValue+OCMAdditions.m */,
-				3DDC4BFEE8296742ED75DD86CB40AB71 /* OCClassMockObject.h */,
-				D9359CB3F2FE8FD51F7987C9C637438B /* OCClassMockObject.m */,
-				E989ED7E432C95C679195590A1557FF0 /* OCMArg.h */,
-				1B119366CF65475CAADDD43E2402FCDA /* OCMArg.m */,
-				A9B30FF38C0A6CCDFD2CC460779C887A /* OCMArgAction.h */,
-				AE093FF8DAAFC0AE4129BE706CF3D49D /* OCMArgAction.m */,
-				06EA21C3E134F1D54000BCDF7C8664EB /* OCMBlockArgCaller.h */,
-				B6798923DD4F2989DAA1B7B5B4435EAD /* OCMBlockArgCaller.m */,
-				18F5B34D0FFB5DA6271A15FEA6FE0A62 /* OCMBlockCaller.h */,
-				6DEFB3CA39480952785E373FFC61A970 /* OCMBlockCaller.m */,
-				9AF3CC6167DFB2EBB7A8361DD6C6C05F /* OCMBoxedReturnValueProvider.h */,
-				F389E14DBE71DB2C71EAF4C876BF62F9 /* OCMBoxedReturnValueProvider.m */,
-				E8930E04FAE9BA9BA73980CC786BE8C0 /* OCMConstraint.h */,
-				1B4B840C9BF509C2FE1EA6170246E5C1 /* OCMConstraint.m */,
-				C5D1E6244E73ACDAD3F6B49B7592B7F6 /* OCMExceptionReturnValueProvider.h */,
-				A6A34341D84E14BC5541177000A44363 /* OCMExceptionReturnValueProvider.m */,
-				79A1E89D7AD7E000B8104191B7B27BCC /* OCMExpectationRecorder.h */,
-				98361CD81CF91315EF11AED46899AF53 /* OCMExpectationRecorder.m */,
-				D6DC99DFD40020ABD61383BAD8225562 /* OCMFunctions.h */,
-				2B424290BCF97ED3D0872878957394F0 /* OCMFunctions.m */,
-				16CB51379CDB00EB7467E6B4B0C79F2B /* OCMFunctionsPrivate.h */,
-				E808E4218926AE48D170B4FBDE4CFC5E /* OCMIndirectReturnValueProvider.h */,
-				FA9A59FD7C4F619BB5878A38A415A12F /* OCMIndirectReturnValueProvider.m */,
-				F204A5C827EC85783599AC240E31A949 /* OCMInvocationExpectation.h */,
-				BF7F882D3201BE8599F20865B78F0FE9 /* OCMInvocationExpectation.m */,
-				6AD68A9918F423DEDF7BDBC265456306 /* OCMInvocationMatcher.h */,
-				7BE8A8EF6CACB0B742A6E8F6DB9B5EA7 /* OCMInvocationMatcher.m */,
-				CA20AD763085232EB811ADB451250CFE /* OCMInvocationStub.h */,
-				B61F3911BD0FB425C80AB982304DE0B2 /* OCMInvocationStub.m */,
-				78828399BAAE423C4724C9533F5382ED /* OCMLocation.h */,
-				0E391137595D97EE03696803F5E8ED63 /* OCMLocation.m */,
-				81BE16F4CF360CC1D099CDD695A599E5 /* OCMMacroState.h */,
-				EC7D9DE3022861A3013E7199979D7C96 /* OCMMacroState.m */,
-				2DA65C1F57D866B096BDF75847837CB5 /* OCMNotificationPoster.h */,
-				0CA6A5763FEA7E7A0A3B69677F1C3F10 /* OCMNotificationPoster.m */,
-				E0D8DE538FDA5D3E664C5ADD23CC24E5 /* OCMObserverRecorder.h */,
-				7A9C9C272CA12E76D64E7F458C8D85FF /* OCMObserverRecorder.m */,
-				FFB97AC1C7396228E044FF8431B454C2 /* OCMock.h */,
-				1D995B0C49A4DAF4E7F56399094C0EB2 /* OCMockObject.h */,
-				35DB60D32FDFF43D1FB49565D828CEAA /* OCMockObject.m */,
-				11788970FD4F576A2F3F7DB227C42E8A /* OCMPassByRefSetter.h */,
-				863114BC8DC62295516F12FCBE22088E /* OCMPassByRefSetter.m */,
-				37E416DDC21B2A1738A82E5642E04D23 /* OCMRealObjectForwarder.h */,
-				60EA7631C4547D4450BC19ED6FD1D662 /* OCMRealObjectForwarder.m */,
-				A82D5159309BE7DE746FF948BBB0386F /* OCMRecorder.h */,
-				E335CE147F4FCC4E93A585A0688083D2 /* OCMRecorder.m */,
-				6D1FAB30430DED5EA1A357096C2D353B /* OCMReturnValueProvider.h */,
-				0C4EADA58A9EB3715F2BDA00E4C36F99 /* OCMReturnValueProvider.m */,
-				C57DAADD9E64CDE2A65AC521D4854FFE /* OCMStubRecorder.h */,
-				E4AF8AE70C11F95DF78AE7E9ABFB78A1 /* OCMStubRecorder.m */,
-				C708F9D1AC2A31EC5B88E35AB01D1803 /* OCMVerifier.h */,
-				E0631D3AEC6C764E0FB5D19E9D617C1D /* OCMVerifier.m */,
-				EB55F4C5E7223618F9F856AB203E40AA /* OCObserverMockObject.h */,
-				1BD2C8647E50AE8EDA8410F14D68EFA0 /* OCObserverMockObject.m */,
-				D6BF69075B157BF8BC3287C893599B15 /* OCPartialMockObject.h */,
-				C50BBB18EFAF1190419B602AE585FE81 /* OCPartialMockObject.m */,
-				0019314F609F1083CF413C5A482273CD /* OCProtocolMockObject.h */,
-				859324D40F656D9FAC02D350D9E86DCC /* OCProtocolMockObject.m */,
-				7552A9B19C130C69294D11B33940BC3E /* Support Files */,
-			);
-			name = OCMock;
-			path = OCMock;
-			sourceTree = "<group>";
-		};
 		A8D3C625C5F42661AA971A3834F7751C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,14 +675,6 @@
 			);
 			name = "Support Files";
 			path = "Pods/Target Support Files/Merhaba";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C59EC128084A293DBA627D15984E6434 /* Pods-Merhaba-iOS */ = {
@@ -615,11 +718,89 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0D17D9A2097D63F48FB9B9816FD4AF3F /* Headers */ = {
+		36F7EA4A0C943A4B33825F7822CC3DA5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B72787B0D2CBFD8823F59E3F6AC6084C /* Pods-Merhaba-iOSTests-umbrella.h in Headers */,
+				3405A299DCEFF2856208155756396A3D /* NSInvocation+OCMAdditions.h in Headers */,
+				601A726A1B63D596C3D6732F5A8022BA /* NSMethodSignature+OCMAdditions.h in Headers */,
+				A8F0773299B792F1569C64F65C83A3BF /* NSNotificationCenter+OCMAdditions.h in Headers */,
+				E5BC8F559D884A12517B06B2103047A5 /* NSObject+OCMAdditions.h in Headers */,
+				598050427AC77B6942DE248280214411 /* NSValue+OCMAdditions.h in Headers */,
+				1A4E54404B24198C1DCB3AE19DC9DC0D /* OCClassMockObject.h in Headers */,
+				FF996E15B6BD95EB4432A3FE0B67307B /* OCMArg.h in Headers */,
+				62C554F2A93AD695C0E3F29AA53135F7 /* OCMArgAction.h in Headers */,
+				2C085E0370DF04D22314D12A946C047D /* OCMBlockArgCaller.h in Headers */,
+				9DACB447A61C1B0E9E309328675F255A /* OCMBlockCaller.h in Headers */,
+				0BAE60880563F8673902FD37E9EE5591 /* OCMBoxedReturnValueProvider.h in Headers */,
+				DBD475C3D7775FB26A02C9A74088D90E /* OCMConstraint.h in Headers */,
+				E567DCF3C413F10BC93DBB11363E116C /* OCMExceptionReturnValueProvider.h in Headers */,
+				80AE7477987265027C2BD0236CEE155D /* OCMExpectationRecorder.h in Headers */,
+				B9C18E0BB696374FE4A1DF359E4D7ECE /* OCMFunctions.h in Headers */,
+				E87099BFB29DEA7C394CFEAEFAA0D23A /* OCMFunctionsPrivate.h in Headers */,
+				617E5C66231874BAC6005FFD68209A78 /* OCMIndirectReturnValueProvider.h in Headers */,
+				0CCE08AAE74539F9F69E19F6DF47C3DC /* OCMInvocationExpectation.h in Headers */,
+				2EACC6FC63A12941C8086CD6BBF6DED2 /* OCMInvocationMatcher.h in Headers */,
+				6A28E242EEE71E85C169FF31269E783F /* OCMInvocationStub.h in Headers */,
+				D089406B313D33BAEA964B2658C85616 /* OCMLocation.h in Headers */,
+				1B112574321D68FD7C21552BE9364A00 /* OCMMacroState.h in Headers */,
+				4D844C0B3EB53F8D37EAC9C6D36C501E /* OCMNotificationPoster.h in Headers */,
+				614ED3A1698A2AA913F37AF07243CF7C /* OCMObserverRecorder.h in Headers */,
+				2B4FB12EDF5086C456F55CF1016CE772 /* OCMock-iOS-umbrella.h in Headers */,
+				D42D54396BB95609192EC023C721545C /* OCMock.h in Headers */,
+				8380CDE194C7308D7667785F18441AF9 /* OCMockObject.h in Headers */,
+				CD277EAFC67D922748860581D4BB7C2F /* OCMPassByRefSetter.h in Headers */,
+				ADF112461E157E01A03D1C114A6B21E6 /* OCMRealObjectForwarder.h in Headers */,
+				9DB585E23792759989D015E043E5F572 /* OCMRecorder.h in Headers */,
+				F4C8A14309EFE6D0F7B750590B68BE42 /* OCMReturnValueProvider.h in Headers */,
+				5D872F35FC0BC9741E18232ABF3F1A2C /* OCMStubRecorder.h in Headers */,
+				CD2A2C4C50C59929DEA513233DD7FDA8 /* OCMVerifier.h in Headers */,
+				F83B94573265C2AA4B1017E963063163 /* OCObserverMockObject.h in Headers */,
+				9F14BAC0B3453AA86B12049304FF5C56 /* OCPartialMockObject.h in Headers */,
+				FD07D94C4AF3CCF8E600AFE82B2D5667 /* OCProtocolMockObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49697DB05F1E734879408883D708F6ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB39BAFB5CF83659B78489516F685F /* NSInvocation+OCMAdditions.h in Headers */,
+				E8EFF84AFBF8E690854BD6D965604DA9 /* NSMethodSignature+OCMAdditions.h in Headers */,
+				8F9809FB18CE8320B8045B6AE9D62B52 /* NSNotificationCenter+OCMAdditions.h in Headers */,
+				C546C6F4DF6E794F110861752598F79C /* NSObject+OCMAdditions.h in Headers */,
+				78D3211702CC14F3BFB481F85DA5C949 /* NSValue+OCMAdditions.h in Headers */,
+				4B4F35A7D12C1D0A69AA5B77DBB84C3D /* OCClassMockObject.h in Headers */,
+				1320420C963F1637BEE47E59B4B2BE82 /* OCMArg.h in Headers */,
+				494F19F88A0F2C3AECF63CCD8476E926 /* OCMArgAction.h in Headers */,
+				3C97EC7110C5233A89D64F9A872CD772 /* OCMBlockArgCaller.h in Headers */,
+				C226C4103703CF18F9B6DF3B59DAC564 /* OCMBlockCaller.h in Headers */,
+				7EE67CF7BB28EA1ACFE337379A04004F /* OCMBoxedReturnValueProvider.h in Headers */,
+				6450774DD6792D849A9F189FD146A3E0 /* OCMConstraint.h in Headers */,
+				1C35CF057F38F77F6964DBFF7C529CB9 /* OCMExceptionReturnValueProvider.h in Headers */,
+				EDEF1EB64BA6ABAE804D6A25678D11FB /* OCMExpectationRecorder.h in Headers */,
+				E2D7F60B5F96908E95DA0C2C78F17B38 /* OCMFunctions.h in Headers */,
+				D1FFD90EADA99C7E5080C51C528AC5E5 /* OCMFunctionsPrivate.h in Headers */,
+				EE39BBB0CA18CE2FFBD08060146BE31D /* OCMIndirectReturnValueProvider.h in Headers */,
+				85D0ADC32A0B3E789777AA475CFF2DB5 /* OCMInvocationExpectation.h in Headers */,
+				54ED5083E878C3B98E4676E8408A74E3 /* OCMInvocationMatcher.h in Headers */,
+				C743E58F663BF97ACBD5EE877B7BF5C9 /* OCMInvocationStub.h in Headers */,
+				34DA9F92D7C7ED58EABE869C4712035A /* OCMLocation.h in Headers */,
+				B6014B4C007FE8B4B8A2F44B9954010C /* OCMMacroState.h in Headers */,
+				48F2978053E7CB9460DB572C0AD18327 /* OCMNotificationPoster.h in Headers */,
+				FF8FFF38C07A9881C902FC90ACF9CDFF /* OCMObserverRecorder.h in Headers */,
+				D3C6E8192F07A623EE06D76716DE5370 /* OCMock-OSX-umbrella.h in Headers */,
+				4FC9DEBF36B74B128823CF0AB060CDDD /* OCMock.h in Headers */,
+				954E460D0266FAF01D00372531849E28 /* OCMockObject.h in Headers */,
+				C2F924213E91CFAB1F6D1E4D5F1412D8 /* OCMPassByRefSetter.h in Headers */,
+				05A4B9B41ABE7FAA8EEAA20CA2098ABA /* OCMRealObjectForwarder.h in Headers */,
+				4B20586B6098F1E56D2E4577754AD45B /* OCMRecorder.h in Headers */,
+				B2B3D5C8890D2D8F49CB8F967C89B081 /* OCMReturnValueProvider.h in Headers */,
+				CBF2BA488CE1E559F66C1A542E668E27 /* OCMStubRecorder.h in Headers */,
+				84444BA4B7ABAA8C1CAF80F5A3111D4C /* OCMVerifier.h in Headers */,
+				88151BC5B1825243BBA01DB13F991C49 /* OCObserverMockObject.h in Headers */,
+				1F7779EFD7CFAA682F4F9D055ECE4205 /* OCPartialMockObject.h in Headers */,
+				A905D5315EA02FDC45D58A33B5E1C7FD /* OCProtocolMockObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,46 +820,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		808E9C27E7118677651A7526B0945512 /* Headers */ = {
+		82876E8D4D2275047761D1829C8FE984 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD596B095C58C7A3AA647CAB7802226 /* NSInvocation+OCMAdditions.h in Headers */,
-				5037A042D2012439DEC932F10FC51B95 /* NSMethodSignature+OCMAdditions.h in Headers */,
-				A1268C3E1B318712F159EF222F19BD8B /* NSNotificationCenter+OCMAdditions.h in Headers */,
-				E61FEAB563814E928FFF2C1EF239058A /* NSObject+OCMAdditions.h in Headers */,
-				1DD2C9A900B7D7B5F3862D15C1A8AD7E /* NSValue+OCMAdditions.h in Headers */,
-				28B5E9BDDC2F53432C7D7D244837F1B5 /* OCClassMockObject.h in Headers */,
-				F02C2CD0A94965FFA8928B316D5825CB /* OCMArg.h in Headers */,
-				6DEAD4CD0FF9467DA3FD3F22816418C6 /* OCMArgAction.h in Headers */,
-				86FF90618135B7C9032BC7075343F236 /* OCMBlockArgCaller.h in Headers */,
-				0310B1523123778B0E3FB78BE3A14095 /* OCMBlockCaller.h in Headers */,
-				E14A5FC189CD75054825E45DA6D9F293 /* OCMBoxedReturnValueProvider.h in Headers */,
-				B40D8DAB504B721D2BC6A6DDFDD82067 /* OCMConstraint.h in Headers */,
-				974362D040AC870A5D72E365B21A8CE4 /* OCMExceptionReturnValueProvider.h in Headers */,
-				01F7D55919C59833456188558FE8D7FA /* OCMExpectationRecorder.h in Headers */,
-				15081C3A4D626D9631A9594847D2E2A6 /* OCMFunctions.h in Headers */,
-				72C8CC2855787B9DC1A37DDEB5E24155 /* OCMFunctionsPrivate.h in Headers */,
-				1D53147F49F02FC693C33D8526049C90 /* OCMIndirectReturnValueProvider.h in Headers */,
-				B3E6AA126A971418B57B78A6B4E753E3 /* OCMInvocationExpectation.h in Headers */,
-				B42B8EFE65F8B07957190A15F590093A /* OCMInvocationMatcher.h in Headers */,
-				15FEDB8A315321D48BC7E535429ADB48 /* OCMInvocationStub.h in Headers */,
-				B66FB06824BBED66619F17DB82CC2A64 /* OCMLocation.h in Headers */,
-				A4AF7E8EF9BB26F4CE7FD9EA32D4AD4C /* OCMMacroState.h in Headers */,
-				1583087CE691D66E050A0AE7C07296BD /* OCMNotificationPoster.h in Headers */,
-				4552366371FE1ACA9600897C31D70E4C /* OCMObserverRecorder.h in Headers */,
-				9A92686CF21CC8ECAB69A3CFB621FA4B /* OCMock-umbrella.h in Headers */,
-				FAB7A1E7E1414DC657BA79D07135E15B /* OCMock.h in Headers */,
-				8EE2E0824E8AD382EC6553104A60430E /* OCMockObject.h in Headers */,
-				92F61FA0ACB1B709FFEBE1D9DC2C68E5 /* OCMPassByRefSetter.h in Headers */,
-				38D5085895B3757AF0DCED078EF8B145 /* OCMRealObjectForwarder.h in Headers */,
-				E6F1B20197D630B80285B5F6E5FAE80F /* OCMRecorder.h in Headers */,
-				A4CD01540B9FCF8F26D52856704571D7 /* OCMReturnValueProvider.h in Headers */,
-				EC33739AB54F71355C4FD5AAEF92F4B1 /* OCMStubRecorder.h in Headers */,
-				E4A87D8BA9BA24EE81DEC41C8BE98F2B /* OCMVerifier.h in Headers */,
-				147E00CDCEDB145F0012FA174BA4E545 /* OCObserverMockObject.h in Headers */,
-				353759005B92EEC29E4B15765C4D3EEB /* OCPartialMockObject.h in Headers */,
-				45E91E6E79D1EEACF0F7A668E3D9A89D /* OCProtocolMockObject.h in Headers */,
+				8E8008574422042CA0398507DD5464CF /* Pods-Merhaba-macOSTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,11 +836,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE4DD8BFA94BB22A94E95B75D2037F78 /* Headers */ = {
+		B7A19E8CA983BD626FF1949322FFCF23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E791576B071ABA40E9B299CD9D8FF57 /* Pods-Merhaba-macOSTests-umbrella.h in Headers */,
+				4BB955C46516BBB906231F90992452C7 /* Pods-Merhaba-iOSTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +857,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0A729251E99614645AAE0BB18C5FB227 /* OCMock-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC9AD00A961E81B6D42A388C2135DCC /* Build configuration list for PBXNativeTarget "OCMock-OSX" */;
+			buildPhases = (
+				C3FC76E5745AB7EF75572600CAC6BD19 /* Sources */,
+				729A0CFF421080919CA467EDDDED004A /* Frameworks */,
+				49697DB05F1E734879408883D708F6ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OCMock-OSX";
+			productName = "OCMock-OSX";
+			productReference = B436A639101FEF3F92C5B288697E27F2 /* OCMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		17D514F2ECCD9A84CE5D541734556907 /* Pods-Merhaba-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B72CF9D03A7A7C6DC9E15490ECEAD018 /* Build configuration list for PBXNativeTarget "Pods-Merhaba-iOS" */;
@@ -725,7 +888,25 @@
 			);
 			name = "Pods-Merhaba-iOS";
 			productName = "Pods-Merhaba-iOS";
-			productReference = BA960E63E3163BDF10AA22CEACA2700C /* Pods_Merhaba_iOS.framework */;
+			productReference = AF64CDAC44A4209CACA923120B0C7F8C /* Pods_Merhaba_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48EEB8722581DAB4ED2D3D91E0D78E5D /* Pods-Merhaba-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FB30D60D300C9813B7702BF3F1575A /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOSTests" */;
+			buildPhases = (
+				B760986BF82E7C64F21872831EEDB503 /* Sources */,
+				0A08A7C3149251F02408141CC68DCF18 /* Frameworks */,
+				82876E8D4D2275047761D1829C8FE984 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B74C5406465C5A02AE419099EE86268 /* PBXTargetDependency */,
+			);
+			name = "Pods-Merhaba-macOSTests";
+			productName = "Pods-Merhaba-macOSTests";
+			productReference = 379EC972743EA115FC8201C699465FA6 /* Pods_Merhaba_macOSTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7A14DB9DAA748967E5FB1A1680FFC418 /* Pods-Merhaba-macOS */ = {
@@ -733,7 +914,7 @@
 			buildConfigurationList = B76A9738E963499DC1676A87676E1B7C /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOS" */;
 			buildPhases = (
 				FA4F3FFF832731867E1880CD62FBEC23 /* Sources */,
-				859A000FDAB3A43BBA271B80C0818B93 /* Frameworks */,
+				F1D53F780EF53581548089CA56BD848D /* Frameworks */,
 				A2F57780DAC496916E6E263597164C4B /* Headers */,
 			);
 			buildRules = (
@@ -742,25 +923,42 @@
 			);
 			name = "Pods-Merhaba-macOS";
 			productName = "Pods-Merhaba-macOS";
-			productReference = 15062B0BB9D90D0726DA36A9D9930892 /* Pods_Merhaba_macOS.framework */;
+			productReference = 9B7682910F232394E6A7E91020687252 /* Pods_Merhaba_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AFAFE1400126B6C8062B8E4B793F9DE1 /* Pods-Merhaba-iOSTests */ = {
+		99B022194ED8BCF84E62B752A3DB70BA /* Pods-Merhaba-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C80CF8E775DFD7419D92649178583E3B /* Build configuration list for PBXNativeTarget "Pods-Merhaba-iOSTests" */;
+			buildConfigurationList = 8DBCB179DB5E79387C2088A3430BD22A /* Build configuration list for PBXNativeTarget "Pods-Merhaba-iOSTests" */;
 			buildPhases = (
-				841782030A3F4F3641AC9512A985A579 /* Sources */,
-				27B3A23715A9E1BB299CD932EAA12B73 /* Frameworks */,
-				0D17D9A2097D63F48FB9B9816FD4AF3F /* Headers */,
+				51E588AE6EE1DF97DA50D69394EC31E1 /* Sources */,
+				B6ADD629A1F62669AC43256CEECE2D47 /* Frameworks */,
+				B7A19E8CA983BD626FF1949322FFCF23 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				658282CA1C3984BCBEE16E949A8EB41C /* PBXTargetDependency */,
+				F732B3E66771CCFA857FE92F7B586897 /* PBXTargetDependency */,
 			);
 			name = "Pods-Merhaba-iOSTests";
 			productName = "Pods-Merhaba-iOSTests";
-			productReference = FBDD2EC82A084F9025ED6A81BAFA0569 /* Pods_Merhaba_iOSTests.framework */;
+			productReference = FC8F27F38E13180033BDDEEE41F96313 /* Pods_Merhaba_iOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E4CD84314FBA1F3281B2DA08A57572F /* OCMock-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFAFE321F1F660B7A474791DFF1570D /* Build configuration list for PBXNativeTarget "OCMock-iOS" */;
+			buildPhases = (
+				C560B80AEEB25D3BF04B47671A9A0A4C /* Sources */,
+				B8B0F69BADF8B235ABCB33BA66818A52 /* Frameworks */,
+				36F7EA4A0C943A4B33825F7822CC3DA5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OCMock-iOS";
+			productName = "OCMock-iOS";
+			productReference = 280B6DFC385A71E12E2F6B3A41949C84 /* OCMock.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7A00BA7235F234272F9B5D40E5C20FA /* Pods-iOS Sample */ = {
@@ -778,7 +976,7 @@
 			);
 			name = "Pods-iOS Sample";
 			productName = "Pods-iOS Sample";
-			productReference = A5BBB90F3FB0A3B9701FC9632B79D1C1 /* Pods_iOS_Sample.framework */;
+			productReference = 13BA22647766F5BB0D84C9194D9D91F0 /* Pods_iOS_Sample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D888B76AAD2648EE2F4DF52D533902DE /* Merhaba */ = {
@@ -795,42 +993,7 @@
 			);
 			name = Merhaba;
 			productName = Merhaba;
-			productReference = 99D5B74466019811454B50420EE1F13C /* Merhaba.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DC54C98851E54D349520C786701A1845 /* OCMock */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE8BA48E64C0BE4DC719C4BAE69F06A8 /* Build configuration list for PBXNativeTarget "OCMock" */;
-			buildPhases = (
-				BE952139340A1F69DCCDE76D81E60234 /* Sources */,
-				7D29925DDA06F94E7C818CA2403C1B0B /* Frameworks */,
-				808E9C27E7118677651A7526B0945512 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OCMock;
-			productName = OCMock;
-			productReference = D0DEBF126A54046F1346F2E4E78E74E1 /* OCMock.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FE6326903734D13CEF348F192692E5DA /* Pods-Merhaba-macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AEB89BE145BBE60B8E220C7681ACA61 /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOSTests" */;
-			buildPhases = (
-				ED445BCA2935776DCDD32B4FCDCBD8E2 /* Sources */,
-				FD9910A63CAADCB18B731A689AB2D338 /* Frameworks */,
-				DE4DD8BFA94BB22A94E95B75D2037F78 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BF44B8094516E8AFC725D203F865177A /* PBXTargetDependency */,
-			);
-			name = "Pods-Merhaba-macOSTests";
-			productName = "Pods-Merhaba-macOSTests";
-			productReference = F06433365D92F578442371BE2D3264A9 /* Pods_Merhaba_macOSTests.framework */;
+			productReference = 2DB5ADF68042E658C9304A0BAF4EC5A4 /* Merhaba.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -850,17 +1013,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3D7758382315777F426443F634033534 /* Products */;
+			productRefGroup = 38435DC7981BEE840D797A3AF27B8D2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D888B76AAD2648EE2F4DF52D533902DE /* Merhaba */,
-				DC54C98851E54D349520C786701A1845 /* OCMock */,
+				9E4CD84314FBA1F3281B2DA08A57572F /* OCMock-iOS */,
+				0A729251E99614645AAE0BB18C5FB227 /* OCMock-OSX */,
 				B7A00BA7235F234272F9B5D40E5C20FA /* Pods-iOS Sample */,
 				17D514F2ECCD9A84CE5D541734556907 /* Pods-Merhaba-iOS */,
-				AFAFE1400126B6C8062B8E4B793F9DE1 /* Pods-Merhaba-iOSTests */,
+				99B022194ED8BCF84E62B752A3DB70BA /* Pods-Merhaba-iOSTests */,
 				7A14DB9DAA748967E5FB1A1680FFC418 /* Pods-Merhaba-macOS */,
-				FE6326903734D13CEF348F192692E5DA /* Pods-Merhaba-macOSTests */,
+				48EEB8722581DAB4ED2D3D91E0D78E5D /* Pods-Merhaba-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -874,6 +1038,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51E588AE6EE1DF97DA50D69394EC31E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2337A2698C8B0743A9F219E9C80B3B6 /* Pods-Merhaba-iOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59AE875E8745F36C1B090136A296225C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -882,60 +1054,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		841782030A3F4F3641AC9512A985A579 /* Sources */ = {
+		B760986BF82E7C64F21872831EEDB503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6B622029844E49D7A35AA4827A162B /* Pods-Merhaba-iOSTests-dummy.m in Sources */,
+				4936BD6F85C8BED593E073D41CBF1186 /* Pods-Merhaba-macOSTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE952139340A1F69DCCDE76D81E60234 /* Sources */ = {
+		C3FC76E5745AB7EF75572600CAC6BD19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71213523998EC4038EEF2881118A57A1 /* NSInvocation+OCMAdditions.m in Sources */,
-				BD181F7E8C0BB325B051DA9F2FBD71BC /* NSMethodSignature+OCMAdditions.m in Sources */,
-				51CAB174257235556CE8902084F0E662 /* NSNotificationCenter+OCMAdditions.m in Sources */,
-				B852DBE3593443215A94EEFD59786402 /* NSObject+OCMAdditions.m in Sources */,
-				59578DBAB2520015A65B5B160722A370 /* NSValue+OCMAdditions.m in Sources */,
-				116FA1BBD719AFAA5593D71332D2A926 /* OCClassMockObject.m in Sources */,
-				F98852F58D5FDF0191647087678ABE70 /* OCMArg.m in Sources */,
-				CF451EAA94004B370612757B61B46D2D /* OCMArgAction.m in Sources */,
-				4F02F5DD4EC7C3AFD1EC38E2F55B0C4A /* OCMBlockArgCaller.m in Sources */,
-				7B006E74668E41702B8881E724728DE9 /* OCMBlockCaller.m in Sources */,
-				0D183650A2D88CB6DAD886030A3A2B62 /* OCMBoxedReturnValueProvider.m in Sources */,
-				B200AEB2373802A1B871987A18D08F75 /* OCMConstraint.m in Sources */,
-				915751C97068AF644D3FE4498633DAB1 /* OCMExceptionReturnValueProvider.m in Sources */,
-				13A1051CA96D84674E588FECAF52DD43 /* OCMExpectationRecorder.m in Sources */,
-				3D1CB7A4AB9B00BC95F06CF858F18BCE /* OCMFunctions.m in Sources */,
-				7D94DE66B8B5E3B4A0B5E53A88C3FAEE /* OCMIndirectReturnValueProvider.m in Sources */,
-				A59AE6011C58D3D2F009DEF7F5AA259B /* OCMInvocationExpectation.m in Sources */,
-				54471D429F63760B736E52506A0B861B /* OCMInvocationMatcher.m in Sources */,
-				B33B6DFAA43992C898AF6D4F1C539A8A /* OCMInvocationStub.m in Sources */,
-				EFC1318446EB79DC091867000F45D61C /* OCMLocation.m in Sources */,
-				D9C7A57A574090442C8631BA856B1599 /* OCMMacroState.m in Sources */,
-				4F4A7459D96FDABBAB640D1D1B1BB42E /* OCMNotificationPoster.m in Sources */,
-				74BC62D6FEB722F4976016FD4DCA870B /* OCMObserverRecorder.m in Sources */,
-				24394811C369F117D75337F436C81222 /* OCMock-dummy.m in Sources */,
-				C65A28088F0668711386816290C3880E /* OCMockObject.m in Sources */,
-				4E8250BDB662F542F9294F6941333373 /* OCMPassByRefSetter.m in Sources */,
-				58FB50DB554239F854ECBEC3C86F3A92 /* OCMRealObjectForwarder.m in Sources */,
-				0AEAD2BEB61CCA26BB0798F2E527BF84 /* OCMRecorder.m in Sources */,
-				A9571E56544CD912F0DA62E545DB2419 /* OCMReturnValueProvider.m in Sources */,
-				0E32A8C1B69250199C8EC0794CF3A3B6 /* OCMStubRecorder.m in Sources */,
-				13AA024ACA7FE3FAD7E0FFD5AC77370D /* OCMVerifier.m in Sources */,
-				82558AE4441757075270A8A260B34EC9 /* OCObserverMockObject.m in Sources */,
-				543D9D71DD92175A9CC5F0831CF2A028 /* OCPartialMockObject.m in Sources */,
-				E4070427AD7F08E573CAA22DCEB79FB1 /* OCProtocolMockObject.m in Sources */,
+				DC74D39BFA83BD2973C2AA8798BAC11A /* NSInvocation+OCMAdditions.m in Sources */,
+				F96F3EDFB2ED9E0AD6AD258D9A061422 /* NSMethodSignature+OCMAdditions.m in Sources */,
+				EDFD3D190B222597DCDF4876794B99EE /* NSNotificationCenter+OCMAdditions.m in Sources */,
+				C549C5A9782C2A7226C38370C7BC3B4A /* NSObject+OCMAdditions.m in Sources */,
+				7473AC4A86DDDAC10F248F2919EED556 /* NSValue+OCMAdditions.m in Sources */,
+				67DE7B73C15ACCFC6ECE0B88A8E17F42 /* OCClassMockObject.m in Sources */,
+				0397DC7C473FC941495E24436B709501 /* OCMArg.m in Sources */,
+				2481FFB4180CD9DB70867F07E7F02224 /* OCMArgAction.m in Sources */,
+				55565730FA2261221BEB94C52DD100FD /* OCMBlockArgCaller.m in Sources */,
+				41CE9780AF638F4FA2B6C302A284A73F /* OCMBlockCaller.m in Sources */,
+				5685ED3ACD158078EF30C63105786AE7 /* OCMBoxedReturnValueProvider.m in Sources */,
+				E07F31A9209C08E4283739A8C22D4D7D /* OCMConstraint.m in Sources */,
+				0D94489AA74E7483733EF66B5EEDF536 /* OCMExceptionReturnValueProvider.m in Sources */,
+				C801BD211D74825A63F28C4093328048 /* OCMExpectationRecorder.m in Sources */,
+				D3928D9CFC03EC590D5809DEF826BB6E /* OCMFunctions.m in Sources */,
+				27093694126C4DE36D1CB11E1F32B9A4 /* OCMIndirectReturnValueProvider.m in Sources */,
+				A111008B150FA804C568C94C076F658F /* OCMInvocationExpectation.m in Sources */,
+				7B7F0A788C0A2828EC33715125CCC0BA /* OCMInvocationMatcher.m in Sources */,
+				D570A7811F24AB23576BC843A54B241D /* OCMInvocationStub.m in Sources */,
+				358E2C8E9740230E09175C0D84A768E4 /* OCMLocation.m in Sources */,
+				F1DCBB9C80A9B4DE14A5BCA6298F3683 /* OCMMacroState.m in Sources */,
+				758691EE3C53B93296C7F02BA892018F /* OCMNotificationPoster.m in Sources */,
+				9B19B4E53B53C85BCC16F6ECFC539B83 /* OCMObserverRecorder.m in Sources */,
+				C704EB312561FEB56CBD0348797F068C /* OCMock-OSX-dummy.m in Sources */,
+				891787B151EDDEE8B21418AC0ACE41CD /* OCMockObject.m in Sources */,
+				EA282EDCDA92B1BCA41472D45CC15501 /* OCMPassByRefSetter.m in Sources */,
+				B6D0E6504675C144702EF99B208BA3C5 /* OCMRealObjectForwarder.m in Sources */,
+				42118033E5BF098B7844F4763B063BF5 /* OCMRecorder.m in Sources */,
+				174F522B684A56F6C8DF7EAA83379152 /* OCMReturnValueProvider.m in Sources */,
+				1D2B591C3256225E9108788B03E7F784 /* OCMStubRecorder.m in Sources */,
+				0225196EF91A222B27D9DA8C8FB1951D /* OCMVerifier.m in Sources */,
+				7192343DB0CD7B5D8E1145C8C6C48968 /* OCObserverMockObject.m in Sources */,
+				1B95409B84BDF9D180DD156F034A04C2 /* OCPartialMockObject.m in Sources */,
+				3C8FB8E5F0A967794F65891DD1DB8A1C /* OCProtocolMockObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED445BCA2935776DCDD32B4FCDCBD8E2 /* Sources */ = {
+		C560B80AEEB25D3BF04B47671A9A0A4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20EBF4A79511B14759C9EC2110E8C11 /* Pods-Merhaba-macOSTests-dummy.m in Sources */,
+				1564D898B850501CFE497D4B2BED9D9F /* NSInvocation+OCMAdditions.m in Sources */,
+				BF013525C7E41D997F33711F9B11F86E /* NSMethodSignature+OCMAdditions.m in Sources */,
+				DF004ACCF5195EF339EEFE8FB928716E /* NSNotificationCenter+OCMAdditions.m in Sources */,
+				058FE9575B5F826F43B046E9E9B3EBB8 /* NSObject+OCMAdditions.m in Sources */,
+				7E41329B6F65E07FF7FF4149709A09E9 /* NSValue+OCMAdditions.m in Sources */,
+				F8E319249E5654E2193FDDE625B90600 /* OCClassMockObject.m in Sources */,
+				60EE6A6524A1DA966CD4BD25B303E03D /* OCMArg.m in Sources */,
+				E1B46119B376F9049D0A2B2BB2FD186B /* OCMArgAction.m in Sources */,
+				E3E009AF6D979D7580F7E502D718C03C /* OCMBlockArgCaller.m in Sources */,
+				C81EC866F8F766561AB727B27BC9D816 /* OCMBlockCaller.m in Sources */,
+				E14E8382347719DA5686A94856799636 /* OCMBoxedReturnValueProvider.m in Sources */,
+				7086FB32667B13D95C6ED5AECD08ACC8 /* OCMConstraint.m in Sources */,
+				3EAE127C429A3BBA5B45692CA6E2DD83 /* OCMExceptionReturnValueProvider.m in Sources */,
+				CC4A2966A8D5CF5E5B29B301D6B59E6E /* OCMExpectationRecorder.m in Sources */,
+				0D4BED83360F9121EE46D63F00650E66 /* OCMFunctions.m in Sources */,
+				4BE70F437F3069206BC181BDF6B1D2E7 /* OCMIndirectReturnValueProvider.m in Sources */,
+				276A3CDAA4C1F7B70D0227824B84AE67 /* OCMInvocationExpectation.m in Sources */,
+				236B061333AC4B59CCEA0EA10210CBCE /* OCMInvocationMatcher.m in Sources */,
+				B4B14D098647F6EBBA69FDDC6182EC9E /* OCMInvocationStub.m in Sources */,
+				61C9B68B680C6E42845D1164564F39EE /* OCMLocation.m in Sources */,
+				B0A365A4C9B48B434DCD05BF5DA21930 /* OCMMacroState.m in Sources */,
+				FF89EF7CA8E327F425D294BD19A3C98B /* OCMNotificationPoster.m in Sources */,
+				966A2493149C23322000163E1D42F9D5 /* OCMObserverRecorder.m in Sources */,
+				D7E3915623E0D0D3794DBCF5BD6B0C02 /* OCMock-iOS-dummy.m in Sources */,
+				A58A1912C2861E95974BE922846AF496 /* OCMockObject.m in Sources */,
+				AF032388A1D513D2785D16E623412E9D /* OCMPassByRefSetter.m in Sources */,
+				5F61569E7EFFC4B13A3499AAD30B8EB9 /* OCMRealObjectForwarder.m in Sources */,
+				7FF99F521B6BAABE710FC13CE7361BE5 /* OCMRecorder.m in Sources */,
+				831BAEA2109C9A8DDEEF4025E24AA54F /* OCMReturnValueProvider.m in Sources */,
+				FEA41A4CD0B50730FCD5A0EA6745D7B4 /* OCMStubRecorder.m in Sources */,
+				F8AF237B2B2EE0DEB2D96125A2DCA99C /* OCMVerifier.m in Sources */,
+				6F0FD4E7F4521338B63A028098CF3ECD /* OCObserverMockObject.m in Sources */,
+				AE85AEE39AB8BD409F7165214AA0D1CE /* OCPartialMockObject.m in Sources */,
+				DDBCC055238DEA73682EA7BD2AAF203E /* OCProtocolMockObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -959,17 +1164,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		658282CA1C3984BCBEE16E949A8EB41C /* PBXTargetDependency */ = {
+		1B74C5406465C5A02AE419099EE86268 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = OCMock;
-			target = DC54C98851E54D349520C786701A1845 /* OCMock */;
-			targetProxy = 9A9BBD14C45E924A7950396EDDF9CEE9 /* PBXContainerItemProxy */;
-		};
-		BF44B8094516E8AFC725D203F865177A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OCMock;
-			target = DC54C98851E54D349520C786701A1845 /* OCMock */;
-			targetProxy = 9818431A2759DB59D8BB77B063A1568E /* PBXContainerItemProxy */;
+			name = "OCMock-OSX";
+			target = 0A729251E99614645AAE0BB18C5FB227 /* OCMock-OSX */;
+			targetProxy = 933893D0138D56D86BFD9DC77408D54C /* PBXContainerItemProxy */;
 		};
 		C2ECE75D481836152DA146A01FF76DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -977,40 +1176,15 @@
 			target = D888B76AAD2648EE2F4DF52D533902DE /* Merhaba */;
 			targetProxy = 7DD194BE9A99BBF4169F8217E29207C7 /* PBXContainerItemProxy */;
 		};
+		F732B3E66771CCFA857FE92F7B586897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OCMock-iOS";
+			target = 9E4CD84314FBA1F3281B2DA08A57572F /* OCMock-iOS */;
+			targetProxy = D7605227931958001E51671B473D44A4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		014146C0C5567965569864E91D361A65 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C4986DFED7588B139B136986CFEE092 /* OCMock.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCMock/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OCMock/OCMock.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = OCMock;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		055C797A3E9C1870A04A6F8487B11378 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73EF6094BBB5B8E34E01ECC728A87585 /* Merhaba.xcconfig */;
@@ -1041,6 +1215,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		083272C86C2CF6018BDBB28D58E97B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16777C01B964EA01119234A7A88B18EA /* Pods-Merhaba-macOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOSTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		12608038EA0E46DBCA5D7465230E4452 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1077,7 +1288,203 @@
 			};
 			name = Debug;
 		};
-		27A11B4E647B589BCA99C8D0381AE5DA /* Debug */ = {
+		142F9F8856C31F9CC0B7AD3EC937928D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE03118E26621AB20C5FF796D122F863 /* Pods-Merhaba-macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28AF31EC352846965D6CE038EB5B8F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054B8F3FAD64574C5DDC964923610660 /* OCMock-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock-iOS/OCMock-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMock-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCMock-iOS/OCMock-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OCMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2990A23CCE58E1C91B123B76DAE8E0F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622187D79EACB4370FADBB5FEC92F6BA /* OCMock-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock-OSX/OCMock-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMock-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/OCMock-OSX/OCMock-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OCMock;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E46713734CE90C1A30FFD206B763863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73EF6094BBB5B8E34E01ECC728A87585 /* Merhaba.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Merhaba/Merhaba-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Merhaba/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Merhaba/Merhaba.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Merhaba;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F2DCFE08B730F0B51262F3E20E08D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622187D79EACB4370FADBB5FEC92F6BA /* OCMock-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock-OSX/OCMock-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMock-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/OCMock-OSX/OCMock-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OCMock;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		769EB0D19C689B31CFC4E5BA6B66A2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054B8F3FAD64574C5DDC964923610660 /* OCMock-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock-iOS/OCMock-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMock-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCMock-iOS/OCMock-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OCMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE6DB35D162EE6AD87E94BE3C6B20FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BCCB4F0D2A78FFEF4D0F999B4C8D27B /* Pods-Merhaba-iOSTests.debug.xcconfig */;
 			buildSettings = {
@@ -1111,327 +1518,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		2E46713734CE90C1A30FFD206B763863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73EF6094BBB5B8E34E01ECC728A87585 /* Merhaba.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Merhaba/Merhaba-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Merhaba/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Merhaba/Merhaba.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Merhaba;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		353F04AF586D433964C82B7737CCC295 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C4986DFED7588B139B136986CFEE092 /* OCMock.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCMock/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OCMock/OCMock.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = OCMock;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3A05D0DEBE886D2D623458CC39CD5EE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB5330D4C6C7052C3BD3CAB78295FF20 /* Pods-Merhaba-iOSTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-iOSTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Merhaba_iOSTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4012349218F97ED7412DD1038AE45BB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE03118E26621AB20C5FF796D122F863 /* Pods-Merhaba-macOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Merhaba_macOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		45DE1E1284EACB04DE8C91B056121459 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C74A19B288155202F57B63272F1F98 /* Pods-Merhaba-macOSTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Merhaba_macOSTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		7B383BE7E67ACAD0222F2BDA1D2C28FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16777C01B964EA01119234A7A88B18EA /* Pods-Merhaba-macOSTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Merhaba_macOSTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AAB1A2E582BC95F05CE79C47DBE524B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E71CF170F9D6C4E737D4E6999F2AA86 /* Pods-Merhaba-macOS.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Merhaba_macOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		C414C15736E9881A955BD40E4E4302D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1468,6 +1554,47 @@
 			};
 			name = Debug;
 		};
+		C9424971979FF16024A69F2119E57FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D659DDC623B9953F5513E395431D4F0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2EEEB7E0A9FCAFECA034134CFFAA65C6 /* Pods-iOS Sample.release.xcconfig */;
@@ -1495,6 +1622,123 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_iOS_Sample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD81E1E34EA384F6388660FE0C1EF541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E71CF170F9D6C4E737D4E6999F2AA86 /* Pods-Merhaba-macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEACB73CBA5CB8C8E8EA308E7CDEF8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E505F2A5F0CA62E85489A06EFE34244A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5330D4C6C7052C3BD3CAB78295FF20 /* Pods-Merhaba-iOSTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-iOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_iOSTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1538,23 +1782,69 @@
 			};
 			name = Release;
 		};
+		F70B2346463C044D6C6082069257CFA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C74A19B288155202F57B63272F1F98 /* Pods-Merhaba-macOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOSTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
-				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+				DEACB73CBA5CB8C8E8EA308E7CDEF8D2 /* Debug */,
+				C9424971979FF16024A69F2119E57FAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AEB89BE145BBE60B8E220C7681ACA61 /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOSTests" */ = {
+		4DFAFE321F1F660B7A474791DFF1570D /* Build configuration list for PBXNativeTarget "OCMock-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45DE1E1284EACB04DE8C91B056121459 /* Debug */,
-				7B383BE7E67ACAD0222F2BDA1D2C28FF /* Release */,
+				769EB0D19C689B31CFC4E5BA6B66A2FD /* Debug */,
+				28AF31EC352846965D6CE038EB5B8F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DBCB179DB5E79387C2088A3430BD22A /* Build configuration list for PBXNativeTarget "Pods-Merhaba-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6DB35D162EE6AD87E94BE3C6B20FC1 /* Debug */,
+				E505F2A5F0CA62E85489A06EFE34244A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1564,15 +1854,6 @@
 			buildConfigurations = (
 				055C797A3E9C1870A04A6F8487B11378 /* Debug */,
 				2E46713734CE90C1A30FFD206B763863 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AE8BA48E64C0BE4DC719C4BAE69F06A8 /* Build configuration list for PBXNativeTarget "OCMock" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				353F04AF586D433964C82B7737CCC295 /* Debug */,
-				014146C0C5567965569864E91D361A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1589,17 +1870,26 @@
 		B76A9738E963499DC1676A87676E1B7C /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4012349218F97ED7412DD1038AE45BB1 /* Debug */,
-				AAB1A2E582BC95F05CE79C47DBE524B9 /* Release */,
+				142F9F8856C31F9CC0B7AD3EC937928D /* Debug */,
+				DD81E1E34EA384F6388660FE0C1EF541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C80CF8E775DFD7419D92649178583E3B /* Build configuration list for PBXNativeTarget "Pods-Merhaba-iOSTests" */ = {
+		B7FB30D60D300C9813B7702BF3F1575A /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27A11B4E647B589BCA99C8D0381AE5DA /* Debug */,
-				3A05D0DEBE886D2D623458CC39CD5EE3 /* Release */,
+				F70B2346463C044D6C6082069257CFA1 /* Debug */,
+				083272C86C2CF6018BDBB28D58E97B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC9AD00A961E81B6D42A388C2135DCC /* Build configuration list for PBXNativeTarget "OCMock-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2DCFE08B730F0B51262F3E20E08D9C /* Debug */,
+				2990A23CCE58E1C91B123B76DAE8E0F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
