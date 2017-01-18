@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A46BBD051E2FEB1A007C5F5E"
-               BuildableName = "Merhaba-macOS.framework"
+               BuildableName = "Merhaba.framework"
                BlueprintName = "Merhaba-macOS"
                ReferencedContainer = "container:Merhaba.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A46BBD051E2FEB1A007C5F5E"
-            BuildableName = "Merhaba-macOS.framework"
+            BuildableName = "Merhaba.framework"
             BlueprintName = "Merhaba-macOS"
             ReferencedContainer = "container:Merhaba.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A46BBD051E2FEB1A007C5F5E"
-            BuildableName = "Merhaba-macOS.framework"
+            BuildableName = "Merhaba.framework"
             BlueprintName = "Merhaba-macOS"
             ReferencedContainer = "container:Merhaba.xcodeproj">
          </BuildableReference>

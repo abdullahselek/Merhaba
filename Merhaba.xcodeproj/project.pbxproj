@@ -10,8 +10,6 @@
 		09F900850506D9F51B92B942 /* Pods_Merhaba_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */; };
 		8CE58820A2FF2C45DEB33C0D /* Pods_Merhaba_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358C2950AE66A705EC3A50CB /* Pods_Merhaba_iOSTests.framework */; };
 		A40A2A1A1E297678003B0761 /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9121E1B04F700C0D50D /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A41E5FC81E24296400FE9EAC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A41E5FC71E24296400FE9EAC /* data.json */; };
-		A41E5FCB1E242AFF00FE9EAC /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = A41E5FCA1E242AFF00FE9EAC /* Fixture.m */; };
 		A45CE9231E1B059400C0D50D /* Merhaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45CE9191E1B059400C0D50D /* Merhaba.framework */; };
 		A45CE9311E1B059F00C0D50D /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45CE9131E1B04F700C0D50D /* MRBServer.m */; };
 		A45CE9351E1B086D00C0D50D /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9331E1B086D00C0D50D /* Merhaba.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,7 +19,10 @@
 		A46BBD211E2FEBC5007C5F5E /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9121E1B04F700C0D50D /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46BBD221E2FED46007C5F5E /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A46BBD1D1E2FEB40007C5F5E /* Info-macOS.plist */; };
 		A46BBD231E2FED4B007C5F5E /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A45CE9321E1B086D00C0D50D /* Info-iOS.plist */; };
-		A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */; };
+		A46BBD301E2FEEE0007C5F5E /* MRBServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD2B1E2FEEAF007C5F5E /* MRBServerTests.m */; };
+		A46BBD311E2FEEEE007C5F5E /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD291E2FEEAF007C5F5E /* Fixture.m */; };
+		A46BBD321E2FEEF8007C5F5E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A46BBD261E2FEEA2007C5F5E /* data.json */; };
+		A46BBD331E2FEF07007C5F5E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A46BBD2A1E2FEEAF007C5F5E /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,20 +48,20 @@
 		3662A5A307F39425A07C1047 /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7826D822F6E69F6C3F318093 /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOS/Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		A41E5FC71E24296400FE9EAC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = Resources/data.json; sourceTree = "<group>"; };
-		A41E5FC91E242AFF00FE9EAC /* Fixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fixture.h; sourceTree = "<group>"; };
-		A41E5FCA1E242AFF00FE9EAC /* Fixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixture.m; sourceTree = "<group>"; };
 		A45CE9121E1B04F700C0D50D /* MRBServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MRBServer.h; path = Sources/MRBServer.h; sourceTree = "<group>"; };
 		A45CE9131E1B04F700C0D50D /* MRBServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MRBServer.m; path = Sources/MRBServer.m; sourceTree = "<group>"; };
 		A45CE9191E1B059400C0D50D /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45CE9221E1B059400C0D50D /* Merhaba-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Merhaba-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A45CE9291E1B059400C0D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45CE9321E1B086D00C0D50D /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		A45CE9331E1B086D00C0D50D /* Merhaba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Merhaba.h; path = Sources/Merhaba.h; sourceTree = "<group>"; };
 		A46BBD061E2FEB1A007C5F5E /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BBD0E1E2FEB1A007C5F5E /* Merhaba-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Merhaba-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BBD1D1E2FEB40007C5F5E /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
-		A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBServerTests.m; sourceTree = "<group>"; };
+		A46BBD261E2FEEA2007C5F5E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = Tests/Resources/data.json; sourceTree = "<group>"; };
+		A46BBD281E2FEEAF007C5F5E /* Fixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fixture.h; path = Tests/Fixture.h; sourceTree = "<group>"; };
+		A46BBD291E2FEEAF007C5F5E /* Fixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fixture.m; path = Tests/Fixture.m; sourceTree = "<group>"; };
+		A46BBD2A1E2FEEAF007C5F5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		A46BBD2B1E2FEEAF007C5F5E /* MRBServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRBServerTests.m; path = Tests/MRBServerTests.m; sourceTree = "<group>"; };
 		BF44925C50770907E1644335 /* Pods-Merhaba-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOS/Pods-Merhaba-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,19 +121,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A41E5FC61E24293800FE9EAC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A41E5FC71E24296400FE9EAC /* data.json */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		A45CE9091E1B033F00C0D50D = {
 			isa = PBXGroup;
 			children = (
 				A45CE9101E1B037200C0D50D /* Sources */,
-				A45CE9261E1B059400C0D50D /* Merhaba-iOSTests */,
+				A46BBD241E2FEE84007C5F5E /* Tests */,
 				A45CE91A1E1B059400C0D50D /* Products */,
 				89ACC038B83BEC31EBF7E4E4 /* Pods */,
 				4FFD14CE68A94EEF7458E086 /* Frameworks */,
@@ -162,16 +155,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A45CE9261E1B059400C0D50D /* Merhaba-iOSTests */ = {
+		A46BBD241E2FEE84007C5F5E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A41E5FC61E24293800FE9EAC /* Resources */,
-				A4D64F3E1E1C325B00DDC8C5 /* MRBServerTests.m */,
-				A45CE9291E1B059400C0D50D /* Info.plist */,
-				A41E5FC91E242AFF00FE9EAC /* Fixture.h */,
-				A41E5FCA1E242AFF00FE9EAC /* Fixture.m */,
+				A46BBD251E2FEE94007C5F5E /* Resources */,
+				A46BBD2B1E2FEEAF007C5F5E /* MRBServerTests.m */,
+				A46BBD281E2FEEAF007C5F5E /* Fixture.h */,
+				A46BBD291E2FEEAF007C5F5E /* Fixture.m */,
+				A46BBD2A1E2FEEAF007C5F5E /* Info.plist */,
 			);
-			path = "Merhaba-iOSTests";
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		A46BBD251E2FEE94007C5F5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A46BBD261E2FEEA2007C5F5E /* data.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +335,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A41E5FC81E24296400FE9EAC /* data.json in Resources */,
+				A46BBD331E2FEF07007C5F5E /* Info.plist in Resources */,
+				A46BBD321E2FEEF8007C5F5E /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D64F3F1E1C325B00DDC8C5 /* MRBServerTests.m in Sources */,
-				A41E5FCB1E242AFF00FE9EAC /* Fixture.m in Sources */,
+				A46BBD301E2FEEE0007C5F5E /* MRBServerTests.m in Sources */,
+				A46BBD311E2FEEEE007C5F5E /* Fixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Merhaba-iOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -705,7 +707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Merhaba-iOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
