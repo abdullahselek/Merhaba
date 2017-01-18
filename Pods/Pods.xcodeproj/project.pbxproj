@@ -13,13 +13,14 @@
 		0D183650A2D88CB6DAD886030A3A2B62 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F389E14DBE71DB2C71EAF4C876BF62F9 /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0E32A8C1B69250199C8EC0794CF3A3B6 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AF8AE70C11F95DF78AE7E9ABFB78A1 /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		116FA1BBD719AFAA5593D71332D2A926 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9359CB3F2FE8FD51F7987C9C637438B /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11A20C39855E46308C11B905F847E428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		13A1051CA96D84674E588FECAF52DD43 /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 98361CD81CF91315EF11AED46899AF53 /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		13AA024ACA7FE3FAD7E0FFD5AC77370D /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E0631D3AEC6C764E0FB5D19E9D617C1D /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		147E00CDCEDB145F0012FA174BA4E545 /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EB55F4C5E7223618F9F856AB203E40AA /* OCObserverMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15081C3A4D626D9631A9594847D2E2A6 /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DC99DFD40020ABD61383BAD8225562 /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1583087CE691D66E050A0AE7C07296BD /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA65C1F57D866B096BDF75847837CB5 /* OCMNotificationPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15FEDB8A315321D48BC7E535429ADB48 /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = CA20AD763085232EB811ADB451250CFE /* OCMInvocationStub.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1A6B622029844E49D7A35AA4827A162B /* Pods-Merhaba-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D837E0327F367E90D4EC567B6A57 /* Pods-Merhaba-iOSTests-dummy.m */; };
+		1A6B622029844E49D7A35AA4827A162B /* Pods-Merhaba-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D19BE39D289C4DA92DB6398FC2789 /* Pods-Merhaba-iOSTests-dummy.m */; };
 		1D53147F49F02FC693C33D8526049C90 /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E808E4218926AE48D170B4FBDE4CFC5E /* OCMIndirectReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1DD2C9A900B7D7B5F3862D15C1A8AD7E /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 42215B7B41E6269E6C9FBEB695D7686E /* NSValue+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		24394811C369F117D75337F436C81222 /* OCMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89C71BAFB5295AC2D415B32ABDCF94 /* OCMock-dummy.m */; };
@@ -28,9 +29,11 @@
 		38D5085895B3757AF0DCED078EF8B145 /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E416DDC21B2A1738A82E5642E04D23 /* OCMRealObjectForwarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3C8FD3A5E38D51394AB809B48B442216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3D1CB7A4AB9B00BC95F06CF858F18BCE /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B424290BCF97ED3D0872878957394F0 /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		43E3CF3407865180114E58DA5BDF15C7 /* Pods-iOS Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB927EBEF8A27A085C8E4CA24D56AA8 /* Pods-iOS Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E791576B071ABA40E9B299CD9D8FF57 /* Pods-Merhaba-macOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44BB5341CD6B5BF698B0F29B1C774B3 /* Pods-Merhaba-macOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E3CF3407865180114E58DA5BDF15C7 /* Pods-iOS Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCB9326BE1762C3E7F3E935AF8DC006 /* Pods-iOS Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4552366371FE1ACA9600897C31D70E4C /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D8DE538FDA5D3E664C5ADD23CC24E5 /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		45E91E6E79D1EEACF0F7A668E3D9A89D /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0019314F609F1083CF413C5A482273CD /* OCProtocolMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48AB2F5421844894FDB9FE7A7DC2C199 /* Pods-Merhaba-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45011AB641B8319E8058F53052F9A7FB /* Pods-Merhaba-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E8250BDB662F542F9294F6941333373 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 863114BC8DC62295516F12FCBE22088E /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4F02F5DD4EC7C3AFD1EC38E2F55B0C4A /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B6798923DD4F2989DAA1B7B5B4435EAD /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4F4A7459D96FDABBAB640D1D1B1BB42E /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6A5763FEA7E7A0A3B69677F1C3F10 /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -43,6 +46,7 @@
 		58FB50DB554239F854ECBEC3C86F3A92 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA7631C4547D4450BC19ED6FD1D662 /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		59578DBAB2520015A65B5B160722A370 /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B9E4866B3FAD54B5BA8978ED84C0FD /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		62830C78B907E292ACAD894B97F02171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6B679C55A74D34F31F7DDCB88AA47803 /* Pods-Merhaba-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 249DB861E0D5C2626963FCF4B59D7685 /* Pods-Merhaba-macOS-dummy.m */; };
 		6DEAD4CD0FF9467DA3FD3F22816418C6 /* OCMArgAction.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B30FF38C0A6CCDFD2CC460779C887A /* OCMArgAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		71213523998EC4038EEF2881118A57A1 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EB4FBD5BCC3955049231A027E6C7CD /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		72C8CC2855787B9DC1A37DDEB5E24155 /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CB51379CDB00EB7467E6B4B0C79F2B /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -59,7 +63,7 @@
 		A1268C3E1B318712F159EF222F19BD8B /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FD111DD460FD04F5C37983E3FD5D4EC0 /* NSNotificationCenter+OCMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4AF7E8EF9BB26F4CE7FD9EA32D4AD4C /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BE16F4CF360CC1D099CDD695A599E5 /* OCMMacroState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4CD01540B9FCF8F26D52856704571D7 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1FAB30430DED5EA1A357096C2D353B /* OCMReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A556FEA3B1334E39F9BD7535E99FFF33 /* Pods-Merhaba-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 913AA2E7DD2AB34E4AFB09DBD3ECE854 /* Pods-Merhaba-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A556FEA3B1334E39F9BD7535E99FFF33 /* Pods-Merhaba-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5996A408B31CEB192D04F925550A6F /* Pods-Merhaba-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A59AE6011C58D3D2F009DEF7F5AA259B /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F882D3201BE8599F20865B78F0FE9 /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A9571E56544CD912F0DA62E545DB2419 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EADA58A9EB3715F2BDA00E4C36F99 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B200AEB2373802A1B871987A18D08F75 /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B840C9BF509C2FE1EA6170246E5C1 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -68,7 +72,7 @@
 		B40D8DAB504B721D2BC6A6DDFDD82067 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E8930E04FAE9BA9BA73980CC786BE8C0 /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B42B8EFE65F8B07957190A15F590093A /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD68A9918F423DEDF7BDBC265456306 /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B66FB06824BBED66619F17DB82CC2A64 /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 78828399BAAE423C4724C9533F5382ED /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B72787B0D2CBFD8823F59E3F6AC6084C /* Pods-Merhaba-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C3443560E36A3D9DC5494E1990E56F /* Pods-Merhaba-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B72787B0D2CBFD8823F59E3F6AC6084C /* Pods-Merhaba-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAFB4145388F15ADA685295A34C07F2 /* Pods-Merhaba-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B852DBE3593443215A94EEFD59786402 /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED5D196ED6695091361EB66B17B516 /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BD181F7E8C0BB325B051DA9F2FBD71BC /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C25193A5E9C61D1794961715EDE9167 /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BF9C88E1E5305AC79DDD2983DAC01716 /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60948E1B4B1DF6C73ACE18D8CA09AD92 /* MRBServer.m */; };
@@ -78,11 +82,13 @@
 		D9C7A57A574090442C8631BA856B1599 /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7D9DE3022861A3013E7199979D7C96 /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DC436E0D0F29C964FC7C50F35E468C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		E14A5FC189CD75054825E45DA6D9F293 /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF3CC6167DFB2EBB7A8361DD6C6C05F /* OCMBoxedReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E153771A49FE19C9EAD764259A04AEA9 /* Pods-iOS Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A00D94ED1B614BE82C1DCEA500D76DE /* Pods-iOS Sample-dummy.m */; };
+		E153771A49FE19C9EAD764259A04AEA9 /* Pods-iOS Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3263C3C0B8EBE55F2D79D79CD51C89 /* Pods-iOS Sample-dummy.m */; };
+		E20EBF4A79511B14759C9EC2110E8C11 /* Pods-Merhaba-macOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7248EFA8D5F22D141664D14764B3160F /* Pods-Merhaba-macOSTests-dummy.m */; };
 		E4070427AD7F08E573CAA22DCEB79FB1 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 859324D40F656D9FAC02D350D9E86DCC /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E4A87D8BA9BA24EE81DEC41C8BE98F2B /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = C708F9D1AC2A31EC5B88E35AB01D1803 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E61FEAB563814E928FFF2C1EF239058A /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E4E4895F865EEF7EA98ED41EA08E5E /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E6F1B20197D630B80285B5F6E5FAE80F /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = A82D5159309BE7DE746FF948BBB0386F /* OCMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2C3EDC08C022BA660EBF6D044881F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		EC33739AB54F71355C4FD5AAEF92F4B1 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C57DAADD9E64CDE2A65AC521D4854FFE /* OCMStubRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE3F02C7E6073B7195E077693EFF70BE /* Merhaba-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BD37B93AA1F6DFCC113D252C44938F /* Merhaba-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFC1318446EB79DC091867000F45D61C /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E391137595D97EE03696803F5E8ED63 /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -91,7 +97,7 @@
 		F98852F58D5FDF0191647087678ABE70 /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B119366CF65475CAADDD43E2402FCDA /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FAB7A1E7E1414DC657BA79D07135E15B /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB97AC1C7396228E044FF8431B454C2 /* OCMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD596B095C58C7A3AA647CAB7802226 /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4380441697183E5A977D7529FA30A1CF /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FD1292AB5F7F0993D0F5D2EA4E46EFF0 /* Pods-Merhaba-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B31FBF7589037EC51DF8EB30F1BAD7F4 /* Pods-Merhaba-iOS-dummy.m */; };
+		FD1292AB5F7F0993D0F5D2EA4E46EFF0 /* Pods-Merhaba-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D614C017F8BBCBBAE628321EF456B4 /* Pods-Merhaba-iOS-dummy.m */; };
 		FE73A44C2A909A44C802399CED704378 /* Merhaba-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85918F5DF2DAF82F35D9C91283CCBAA6 /* Merhaba-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +108,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D888B76AAD2648EE2F4DF52D533902DE;
 			remoteInfo = Merhaba;
+		};
+		9818431A2759DB59D8BB77B063A1568E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC54C98851E54D349520C786701A1845;
+			remoteInfo = OCMock;
 		};
 		9A9BBD14C45E924A7950396EDDF9CEE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -115,55 +128,61 @@
 /* Begin PBXFileReference section */
 		0019314F609F1083CF413C5A482273CD /* OCProtocolMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCProtocolMockObject.h; path = Source/OCMock/OCProtocolMockObject.h; sourceTree = "<group>"; };
 		06EA21C3E134F1D54000BCDF7C8664EB /* OCMBlockArgCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockArgCaller.h; path = Source/OCMock/OCMBlockArgCaller.h; sourceTree = "<group>"; };
-		0A00D94ED1B614BE82C1DCEA500D76DE /* Pods-iOS Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS Sample-dummy.m"; sourceTree = "<group>"; };
 		0C4986DFED7588B139B136986CFEE092 /* OCMock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCMock.xcconfig; sourceTree = "<group>"; };
 		0C4EADA58A9EB3715F2BDA00E4C36F99 /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMReturnValueProvider.m; path = Source/OCMock/OCMReturnValueProvider.m; sourceTree = "<group>"; };
 		0CA6A5763FEA7E7A0A3B69677F1C3F10 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
 		0E391137595D97EE03696803F5E8ED63 /* OCMLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMLocation.m; path = Source/OCMock/OCMLocation.m; sourceTree = "<group>"; };
 		11788970FD4F576A2F3F7DB227C42E8A /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMPassByRefSetter.h; path = Source/OCMock/OCMPassByRefSetter.h; sourceTree = "<group>"; };
-		1233618A44468CC75A2E4177C9A93F07 /* Pods-Merhaba-iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-resources.sh"; sourceTree = "<group>"; };
-		12E069AD072B635C67D7B60F9F310D37 /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1369D58FAAD5FB05328C477C8E0D1FE9 /* Pods-Merhaba-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
 		13CA09D5166D233E3C0603D92C548599 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15062B0BB9D90D0726DA36A9D9930892 /* Pods_Merhaba_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOS.framework; path = "Pods-Merhaba-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16777C01B964EA01119234A7A88B18EA /* Pods-Merhaba-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		16CB51379CDB00EB7467E6B4B0C79F2B /* OCMFunctionsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctionsPrivate.h; path = Source/OCMock/OCMFunctionsPrivate.h; sourceTree = "<group>"; };
+		17B44F45E0429024B809A9C996C5C5BD /* Pods-Merhaba-iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-resources.sh"; sourceTree = "<group>"; };
 		18F5B34D0FFB5DA6271A15FEA6FE0A62 /* OCMBlockCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockCaller.h; path = Source/OCMock/OCMBlockCaller.h; sourceTree = "<group>"; };
-		1906AF65BA30D5063BEB9614390BB9AB /* Pods-Merhaba-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
 		1B119366CF65475CAADDD43E2402FCDA /* OCMArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArg.m; path = Source/OCMock/OCMArg.m; sourceTree = "<group>"; };
 		1B4B840C9BF509C2FE1EA6170246E5C1 /* OCMConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMConstraint.m; path = Source/OCMock/OCMConstraint.m; sourceTree = "<group>"; };
 		1BD2C8647E50AE8EDA8410F14D68EFA0 /* OCObserverMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCObserverMockObject.m; path = Source/OCMock/OCObserverMockObject.m; sourceTree = "<group>"; };
+		1BD8EF0C394273A45D4C4857E97A1EC2 /* Pods-Merhaba-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		1D995B0C49A4DAF4E7F56399094C0EB2 /* OCMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Source/OCMock/OCMockObject.h; sourceTree = "<group>"; };
-		25B7F14921271E5AEAD54F8EDDF11BEE /* Pods-iOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOS Sample.modulemap"; sourceTree = "<group>"; };
-		266A3DAB0F7C480EDC7372F1EAC1A05D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B39E329458AA41228B3072F0B0768C0 /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS_Sample.framework; path = "Pods-iOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAFB4145388F15ADA685295A34C07F2 /* Pods-Merhaba-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		21C3B7D6AC83189942726A7879896B42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249DB861E0D5C2626963FCF4B59D7685 /* Pods-Merhaba-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-macOS-dummy.m"; sourceTree = "<group>"; };
+		24B975B44EDA18434FEB44C90DA047B1 /* Pods-Merhaba-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24E2E1C06E9D87B632B9884062EB2C4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A3263C3C0B8EBE55F2D79D79CD51C89 /* Pods-iOS Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS Sample-dummy.m"; sourceTree = "<group>"; };
 		2B424290BCF97ED3D0872878957394F0 /* OCMFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMFunctions.m; path = Source/OCMock/OCMFunctions.m; sourceTree = "<group>"; };
 		2DA65C1F57D866B096BDF75847837CB5 /* OCMNotificationPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMNotificationPoster.h; path = Source/OCMock/OCMNotificationPoster.h; sourceTree = "<group>"; };
-		2F2697B7E6BCFA217C181A41F8095524 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35CBC769F56788FC2902189BC57A13FB /* Pods-Merhaba-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EEEB7E0A9FCAFECA034134CFFAA65C6 /* Pods-iOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.release.xcconfig"; sourceTree = "<group>"; };
+		30419ED9C4CA74C635F19D02A4DB7EBA /* Pods-Merhaba-macOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		33C894B309E2C5459AF7633E59F8C4EF /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		35DB60D32FDFF43D1FB49565D828CEAA /* OCMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMockObject.m; path = Source/OCMock/OCMockObject.m; sourceTree = "<group>"; };
-		36017A1BF0BB3F8A5CACC32B55AC0344 /* Pods-Merhaba-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOSTests.modulemap"; sourceTree = "<group>"; };
+		363EBC537D4FB1862D882610BEBE249C /* Pods-iOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOS Sample.modulemap"; sourceTree = "<group>"; };
 		37E416DDC21B2A1738A82E5642E04D23 /* OCMRealObjectForwarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRealObjectForwarder.h; path = Source/OCMock/OCMRealObjectForwarder.h; sourceTree = "<group>"; };
-		39AADFC086012A6D3F72D77838C7E5A9 /* Pods-Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
 		39EB4FBD5BCC3955049231A027E6C7CD /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Source/OCMock/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
 		3DDC4BFEE8296742ED75DD86CB40AB71 /* OCClassMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCClassMockObject.h; path = Source/OCMock/OCClassMockObject.h; sourceTree = "<group>"; };
+		4122B8A96EF2FDA1B4220A34F6BAC5C9 /* Pods-Merhaba-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-macOS.modulemap"; sourceTree = "<group>"; };
 		42215B7B41E6269E6C9FBEB695D7686E /* NSValue+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+OCMAdditions.h"; path = "Source/OCMock/NSValue+OCMAdditions.h"; sourceTree = "<group>"; };
 		4380441697183E5A977D7529FA30A1CF /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Source/OCMock/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
-		43C3443560E36A3D9DC5494E1990E56F /* Pods-Merhaba-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-iOSTests-umbrella.h"; sourceTree = "<group>"; };
-		4436B098F87BFEABC90DB4E62C7CD6AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45011AB641B8319E8058F53052F9A7FB /* Pods-Merhaba-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-macOS-umbrella.h"; sourceTree = "<group>"; };
+		453F29E6D02303019D9FAEF8375641B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D5FADABEF386D3CD54AD481EB3CFFB /* Merhaba-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Merhaba-prefix.pch"; sourceTree = "<group>"; };
+		486D19BE39D289C4DA92DB6398FC2789 /* Pods-Merhaba-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOSTests-dummy.m"; sourceTree = "<group>"; };
 		49BD37B93AA1F6DFCC113D252C44938F /* Merhaba-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Merhaba-umbrella.h"; sourceTree = "<group>"; };
+		4BCCB4F0D2A78FFEF4D0F999B4C8D27B /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C25193A5E9C61D1794961715EDE9167 /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+OCMAdditions.m"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
-		56E038A460EA6313CF2A9264A338C59A /* Pods-Merhaba-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DA37041FB2CEDEC1CDFB0F75B45DCEB /* Pods-Merhaba-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4E71CF170F9D6C4E737D4E6999F2AA86 /* Pods-Merhaba-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		5E7BECB422D10AE40510522E186389FD /* OCMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OCMock.modulemap; sourceTree = "<group>"; };
+		604B5A00FAF0F67CAC88EA633B2B84B2 /* Pods-Merhaba-macOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOSTests-resources.sh"; sourceTree = "<group>"; };
 		60948E1B4B1DF6C73ACE18D8CA09AD92 /* MRBServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRBServer.m; sourceTree = "<group>"; };
 		60EA7631C4547D4450BC19ED6FD1D662 /* OCMRealObjectForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRealObjectForwarder.m; path = Source/OCMock/OCMRealObjectForwarder.m; sourceTree = "<group>"; };
-		633B1B814B92CF824C4289D0A52D2154 /* Pods-iOS Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Sample-resources.sh"; sourceTree = "<group>"; };
-		64AC5F9C8731BFB199D0284B10E9FD03 /* Pods-Merhaba-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		67FF023E6B97A7F5B18134F9A5D85E0A /* Merhaba.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Merhaba.modulemap; sourceTree = "<group>"; };
 		6AD68A9918F423DEDF7BDBC265456306 /* OCMInvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationMatcher.h; path = Source/OCMock/OCMInvocationMatcher.h; sourceTree = "<group>"; };
 		6D1FAB30430DED5EA1A357096C2D353B /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMReturnValueProvider.h; path = Source/OCMock/OCMReturnValueProvider.h; sourceTree = "<group>"; };
 		6DEFB3CA39480952785E373FFC61A970 /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
-		6E012270B511586A609C087BB67169A9 /* Pods-Merhaba-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		70E1B82CD4BF995FCA738AD9272A4D77 /* Pods-iOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.release.xcconfig"; sourceTree = "<group>"; };
 		714E8F53BA7277A3EB4FEECA54249CB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7248EFA8D5F22D141664D14764B3160F /* Pods-Merhaba-macOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-macOSTests-dummy.m"; sourceTree = "<group>"; };
 		73EF6094BBB5B8E34E01ECC728A87585 /* Merhaba.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Merhaba.xcconfig; sourceTree = "<group>"; };
 		7500DA04627E0DD88FB3DD7B26141171 /* Merhaba.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Merhaba.h; sourceTree = "<group>"; };
 		78828399BAAE423C4724C9533F5382ED /* OCMLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMLocation.h; path = Source/OCMock/OCMLocation.h; sourceTree = "<group>"; };
@@ -171,66 +190,81 @@
 		79A1E89D7AD7E000B8104191B7B27BCC /* OCMExpectationRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExpectationRecorder.h; path = Source/OCMock/OCMExpectationRecorder.h; sourceTree = "<group>"; };
 		7A9C9C272CA12E76D64E7F458C8D85FF /* OCMObserverRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMObserverRecorder.m; path = Source/OCMock/OCMObserverRecorder.m; sourceTree = "<group>"; };
 		7BE8A8EF6CACB0B742A6E8F6DB9B5EA7 /* OCMInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationMatcher.m; path = Source/OCMock/OCMInvocationMatcher.m; sourceTree = "<group>"; };
-		7E3C40ED611F8389FF17D707D6A26166 /* Pods-iOS Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Sample-frameworks.sh"; sourceTree = "<group>"; };
+		81AC7D9C66D7087367D0D9C5C3F5B276 /* Pods-Merhaba-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOS-resources.sh"; sourceTree = "<group>"; };
 		81BE16F4CF360CC1D099CDD695A599E5 /* OCMMacroState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = Source/OCMock/OCMMacroState.h; sourceTree = "<group>"; };
 		85918F5DF2DAF82F35D9C91283CCBAA6 /* Merhaba-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Merhaba-dummy.m"; sourceTree = "<group>"; };
 		859324D40F656D9FAC02D350D9E86DCC /* OCProtocolMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCProtocolMockObject.m; path = Source/OCMock/OCProtocolMockObject.m; sourceTree = "<group>"; };
 		863114BC8DC62295516F12FCBE22088E /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMPassByRefSetter.m; path = Source/OCMock/OCMPassByRefSetter.m; sourceTree = "<group>"; };
 		88ED5D196ED6695091361EB66B17B516 /* NSObject+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OCMAdditions.m"; path = "Source/OCMock/NSObject+OCMAdditions.m"; sourceTree = "<group>"; };
-		90B7D837E0327F367E90D4EC567B6A57 /* Pods-Merhaba-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOSTests-dummy.m"; sourceTree = "<group>"; };
-		913AA2E7DD2AB34E4AFB09DBD3ECE854 /* Pods-Merhaba-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-iOS-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		982A63F5BE4D65D758ABD5E4A3C9067F /* OCMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-prefix.pch"; sourceTree = "<group>"; };
 		98361CD81CF91315EF11AED46899AF53 /* OCMExpectationRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExpectationRecorder.m; path = Source/OCMock/OCMExpectationRecorder.m; sourceTree = "<group>"; };
+		99D5B74466019811454B50420EE1F13C /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3CC6167DFB2EBB7A8361DD6C6C05F /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
-		9CC8A021102ACA690436369AFEAFCA65 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5996A408B31CEB192D04F925550A6F /* Pods-Merhaba-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-iOS-umbrella.h"; sourceTree = "<group>"; };
+		9C87E16EF10FDEBA227B37962320E053 /* Pods-Merhaba-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9CEC66EBFCC6CD8A62DA5CE53EC13518 /* Pods-iOS Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS Sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		9F462FE47AF1DFE8D35CDD66D12A06F0 /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OCMAdditions.m"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
+		A19489086B77BAD98A146098F3AC8C30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BBB90F3FB0A3B9701FC9632B79D1C1 /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS_Sample.framework; path = "Pods-iOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A34341D84E14BC5541177000A44363 /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExceptionReturnValueProvider.m; path = Source/OCMock/OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
 		A82D5159309BE7DE746FF948BBB0386F /* OCMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRecorder.h; path = Source/OCMock/OCMRecorder.h; sourceTree = "<group>"; };
 		A9972E0EB79E284AA82925084077E738 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+OCMAdditions.h"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
 		A9B30FF38C0A6CCDFD2CC460779C887A /* OCMArgAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArgAction.h; path = Source/OCMock/OCMArgAction.h; sourceTree = "<group>"; };
-		AC10B057099717DFDE541DAB757A4B1F /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOS.framework; path = "Pods-Merhaba-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE03118E26621AB20C5FF796D122F863 /* Pods-Merhaba-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0894428C8C43B65B7CCC8950E86718 /* Pods-iOS Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AE093FF8DAAFC0AE4129BE706CF3D49D /* OCMArgAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArgAction.m; path = Source/OCMock/OCMArgAction.m; sourceTree = "<group>"; };
-		B31FBF7589037EC51DF8EB30F1BAD7F4 /* Pods-Merhaba-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOS-dummy.m"; sourceTree = "<group>"; };
-		B57CF1D9262B5FD00C320B661636C512 /* Pods-iOS Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS Sample-acknowledgements.plist"; sourceTree = "<group>"; };
-		B5D477604730A06CD3B35FBAE7423E27 /* Pods-iOS Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		B2BB5DA5B0E3E3C6D8180CA3039818CE /* Pods-Merhaba-macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		B3D614C017F8BBCBBAE628321EF456B4 /* Pods-Merhaba-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOS-dummy.m"; sourceTree = "<group>"; };
+		B44BB5341CD6B5BF698B0F29B1C774B3 /* Pods-Merhaba-macOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-macOSTests-umbrella.h"; sourceTree = "<group>"; };
 		B61F3911BD0FB425C80AB982304DE0B2 /* OCMInvocationStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationStub.m; path = Source/OCMock/OCMInvocationStub.m; sourceTree = "<group>"; };
 		B6798923DD4F2989DAA1B7B5B4435EAD /* OCMBlockArgCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockArgCaller.m; path = Source/OCMock/OCMBlockArgCaller.m; sourceTree = "<group>"; };
-		B6F788599CE06517BD43C6D3E8799A5D /* Pods-Merhaba-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7C8BC440914808BC45F175D1D30F0B7 /* Pods-Merhaba-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOS-resources.sh"; sourceTree = "<group>"; };
+		B6C74A19B288155202F57B63272F1F98 /* Pods-Merhaba-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B712153E36071C843ADBFCD39BE7580C /* Pods-Merhaba-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOSTests.modulemap"; sourceTree = "<group>"; };
+		B816640BCA6BD3CEF1512EDC0EB69001 /* Pods-Merhaba-macOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-macOSTests.modulemap"; sourceTree = "<group>"; };
 		B9B9E4866B3FAD54B5BA8978ED84C0FD /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
+		BA960E63E3163BDF10AA22CEACA2700C /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOS.framework; path = "Pods-Merhaba-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCB9326BE1762C3E7F3E935AF8DC006 /* Pods-iOS Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS Sample-umbrella.h"; sourceTree = "<group>"; };
+		BD1CC3F23EBDAEF413BEA9493E9703C7 /* Pods-iOS Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Sample-resources.sh"; sourceTree = "<group>"; };
 		BF7F882D3201BE8599F20865B78F0FE9 /* OCMInvocationExpectation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationExpectation.m; path = Source/OCMock/OCMInvocationExpectation.m; sourceTree = "<group>"; };
 		C50BBB18EFAF1190419B602AE585FE81 /* OCPartialMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCPartialMockObject.m; path = Source/OCMock/OCPartialMockObject.m; sourceTree = "<group>"; };
 		C57DAADD9E64CDE2A65AC521D4854FFE /* OCMStubRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMStubRecorder.h; path = Source/OCMock/OCMStubRecorder.h; sourceTree = "<group>"; };
 		C5D1E6244E73ACDAD3F6B49B7592B7F6 /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExceptionReturnValueProvider.h; path = Source/OCMock/OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
 		C6B414A52CF031089F22DD2058C51712 /* MRBServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRBServer.h; sourceTree = "<group>"; };
 		C708F9D1AC2A31EC5B88E35AB01D1803 /* OCMVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMVerifier.h; path = Source/OCMock/OCMVerifier.h; sourceTree = "<group>"; };
+		C81D7FDD39FE2CEB5FBA44CDFA2D0717 /* Pods-Merhaba-macOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-macOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8AB74FF050FF7D0E1825DE4C5BB6579 /* Pods-Merhaba-macOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOS-resources.sh"; sourceTree = "<group>"; };
 		CA20AD763085232EB811ADB451250CFE /* OCMInvocationStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationStub.h; path = Source/OCMock/OCMInvocationStub.h; sourceTree = "<group>"; };
+		CB5330D4C6C7052C3BD3CAB78295FF20 /* Pods-Merhaba-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE89C71BAFB5295AC2D415B32ABDCF94 /* OCMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMock-dummy.m"; sourceTree = "<group>"; };
+		D0DEBF126A54046F1346F2E4E78E74E1 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55777317BCDC1AD3425D118E0237EFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6BF69075B157BF8BC3287C893599B15 /* OCPartialMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCPartialMockObject.h; path = Source/OCMock/OCPartialMockObject.h; sourceTree = "<group>"; };
 		D6DC99DFD40020ABD61383BAD8225562 /* OCMFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctions.h; path = Source/OCMock/OCMFunctions.h; sourceTree = "<group>"; };
 		D9359CB3F2FE8FD51F7987C9C637438B /* OCClassMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCClassMockObject.m; path = Source/OCMock/OCClassMockObject.m; sourceTree = "<group>"; };
 		DE4C7C6F737C71AA76258E5304A4E0A2 /* OCMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-umbrella.h"; sourceTree = "<group>"; };
-		DFB927EBEF8A27A085C8E4CA24D56AA8 /* Pods-iOS Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS Sample-umbrella.h"; sourceTree = "<group>"; };
+		DF3A821B4CAA1C018482BE777EF2BACD /* Pods-Merhaba-macOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-macOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E0631D3AEC6C764E0FB5D19E9D617C1D /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
 		E0D8DE538FDA5D3E664C5ADD23CC24E5 /* OCMObserverRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMObserverRecorder.h; path = Source/OCMock/OCMObserverRecorder.h; sourceTree = "<group>"; };
 		E335CE147F4FCC4E93A585A0688083D2 /* OCMRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRecorder.m; path = Source/OCMock/OCMRecorder.m; sourceTree = "<group>"; };
-		E3EA55C10B3E3794C4D61ED00FDB09FF /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOSTests.framework; path = "Pods-Merhaba-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF8AE70C11F95DF78AE7E9ABFB78A1 /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
+		E7DFD9CCD42090239D621CA44832BBDD /* Pods-Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
 		E808E4218926AE48D170B4FBDE4CFC5E /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMIndirectReturnValueProvider.h; path = Source/OCMock/OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
 		E8930E04FAE9BA9BA73980CC786BE8C0 /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
+		E8DF51CB05EED61983092A8CB71F2164 /* Pods-iOS Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Sample-frameworks.sh"; sourceTree = "<group>"; };
 		E989ED7E432C95C679195590A1557FF0 /* OCMArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Source/OCMock/OCMArg.h; sourceTree = "<group>"; };
 		EB55F4C5E7223618F9F856AB203E40AA /* OCObserverMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCObserverMockObject.h; path = Source/OCMock/OCObserverMockObject.h; sourceTree = "<group>"; };
 		EC7D9DE3022861A3013E7199979D7C96 /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
+		EEDFBE67E8B308F121127767BDB46A06 /* Pods-iOS Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		F009DCE68D64F7345F4FC78620509D92 /* Pods-Merhaba-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F06433365D92F578442371BE2D3264A9 /* Pods_Merhaba_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOSTests.framework; path = "Pods-Merhaba-macOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F204A5C827EC85783599AC240E31A949 /* OCMInvocationExpectation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationExpectation.h; path = Source/OCMock/OCMInvocationExpectation.h; sourceTree = "<group>"; };
 		F389E14DBE71DB2C71EAF4C876BF62F9 /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBoxedReturnValueProvider.m; path = Source/OCMock/OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
-		F53B1016FAC2DDB80022B5353808E247 /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9A59FD7C4F619BB5878A38A415A12F /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
-		FAF96801D7CF6623BA834411D35233D1 /* Pods-iOS Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FB9D79F69C41B53A624018174F200377 /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		FBA98A8C23579F6D4FDC23BE25DD2127 /* Pods-Merhaba-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FBDD2EC82A084F9025ED6A81BAFA0569 /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOSTests.framework; path = "Pods-Merhaba-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD111DD460FD04F5C37983E3FD5D4EC0 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		FF8DE1C3BB06DFBB082CF45047390425 /* Pods-Merhaba-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FFB97AC1C7396228E044FF8431B454C2 /* OCMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Source/OCMock/OCMock.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +285,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		859A000FDAB3A43BBA271B80C0818B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2C3EDC08C022BA660EBF6D044881F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C06DC95D0EF3CF3878508368CE533480 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +309,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD9910A63CAADCB18B731A689AB2D338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A20C39855E46308C11B905F847E428 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE5015433371F338A5CF44DEFFAB50A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,40 +328,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2571FCDC1B0A1272BE3A0EA2F2867E01 /* Pods-iOS Sample */ = {
+		3D7758382315777F426443F634033534 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				266A3DAB0F7C480EDC7372F1EAC1A05D /* Info.plist */,
-				25B7F14921271E5AEAD54F8EDDF11BEE /* Pods-iOS Sample.modulemap */,
-				FAF96801D7CF6623BA834411D35233D1 /* Pods-iOS Sample-acknowledgements.markdown */,
-				B57CF1D9262B5FD00C320B661636C512 /* Pods-iOS Sample-acknowledgements.plist */,
-				0A00D94ED1B614BE82C1DCEA500D76DE /* Pods-iOS Sample-dummy.m */,
-				7E3C40ED611F8389FF17D707D6A26166 /* Pods-iOS Sample-frameworks.sh */,
-				633B1B814B92CF824C4289D0A52D2154 /* Pods-iOS Sample-resources.sh */,
-				DFB927EBEF8A27A085C8E4CA24D56AA8 /* Pods-iOS Sample-umbrella.h */,
-				B5D477604730A06CD3B35FBAE7423E27 /* Pods-iOS Sample.debug.xcconfig */,
-				70E1B82CD4BF995FCA738AD9272A4D77 /* Pods-iOS Sample.release.xcconfig */,
+				99D5B74466019811454B50420EE1F13C /* Merhaba.framework */,
+				D0DEBF126A54046F1346F2E4E78E74E1 /* OCMock.framework */,
+				A5BBB90F3FB0A3B9701FC9632B79D1C1 /* Pods_iOS_Sample.framework */,
+				BA960E63E3163BDF10AA22CEACA2700C /* Pods_Merhaba_iOS.framework */,
+				FBDD2EC82A084F9025ED6A81BAFA0569 /* Pods_Merhaba_iOSTests.framework */,
+				15062B0BB9D90D0726DA36A9D9930892 /* Pods_Merhaba_macOS.framework */,
+				F06433365D92F578442371BE2D3264A9 /* Pods_Merhaba_macOSTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A23F63CE3BBA8963FC9CABA3B78F6DC /* Pods-iOS Sample */ = {
+			isa = PBXGroup;
+			children = (
+				21C3B7D6AC83189942726A7879896B42 /* Info.plist */,
+				363EBC537D4FB1862D882610BEBE249C /* Pods-iOS Sample.modulemap */,
+				AE0894428C8C43B65B7CCC8950E86718 /* Pods-iOS Sample-acknowledgements.markdown */,
+				9CEC66EBFCC6CD8A62DA5CE53EC13518 /* Pods-iOS Sample-acknowledgements.plist */,
+				2A3263C3C0B8EBE55F2D79D79CD51C89 /* Pods-iOS Sample-dummy.m */,
+				E8DF51CB05EED61983092A8CB71F2164 /* Pods-iOS Sample-frameworks.sh */,
+				BD1CC3F23EBDAEF413BEA9493E9703C7 /* Pods-iOS Sample-resources.sh */,
+				BCCB9326BE1762C3E7F3E935AF8DC006 /* Pods-iOS Sample-umbrella.h */,
+				EEDFBE67E8B308F121127767BDB46A06 /* Pods-iOS Sample.debug.xcconfig */,
+				2EEEB7E0A9FCAFECA034134CFFAA65C6 /* Pods-iOS Sample.release.xcconfig */,
 			);
 			name = "Pods-iOS Sample";
 			path = "Target Support Files/Pods-iOS Sample";
-			sourceTree = "<group>";
-		};
-		51C6AA9D276ABAA225F36E166C28D051 /* Pods-Merhaba-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				2F2697B7E6BCFA217C181A41F8095524 /* Info.plist */,
-				36017A1BF0BB3F8A5CACC32B55AC0344 /* Pods-Merhaba-iOSTests.modulemap */,
-				56E038A460EA6313CF2A9264A338C59A /* Pods-Merhaba-iOSTests-acknowledgements.markdown */,
-				64AC5F9C8731BFB199D0284B10E9FD03 /* Pods-Merhaba-iOSTests-acknowledgements.plist */,
-				90B7D837E0327F367E90D4EC567B6A57 /* Pods-Merhaba-iOSTests-dummy.m */,
-				1906AF65BA30D5063BEB9614390BB9AB /* Pods-Merhaba-iOSTests-frameworks.sh */,
-				1233618A44468CC75A2E4177C9A93F07 /* Pods-Merhaba-iOSTests-resources.sh */,
-				43C3443560E36A3D9DC5494E1990E56F /* Pods-Merhaba-iOSTests-umbrella.h */,
-				12E069AD072B635C67D7B60F9F310D37 /* Pods-Merhaba-iOSTests.debug.xcconfig */,
-				6E012270B511586A609C087BB67169A9 /* Pods-Merhaba-iOSTests.release.xcconfig */,
-			);
-			name = "Pods-Merhaba-iOSTests";
-			path = "Target Support Files/Pods-Merhaba-iOSTests";
 			sourceTree = "<group>";
 		};
 		635C585E46EEBA10F04C631B779EBEE6 /* Pods */ = {
@@ -351,26 +397,39 @@
 				993F4BF29683A0E0C0B793FCC68FF41F /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				635C585E46EEBA10F04C631B779EBEE6 /* Pods */,
-				B49B15E31E729769F58C0ACB81FA6F89 /* Products */,
-				BA8AE7DB3015F0732F965700A7CCEA47 /* Targets Support Files */,
+				3D7758382315777F426443F634033534 /* Products */,
+				8FD10388FBD71F38D2AB4D508871BBD7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		86C4596D6B7AAF361E044490FE6B9195 /* Pods-Merhaba-iOS */ = {
+		89FDB89AF0BDDB46952F864C951B8AFA /* Pods-Merhaba-macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				4436B098F87BFEABC90DB4E62C7CD6AC /* Info.plist */,
-				39AADFC086012A6D3F72D77838C7E5A9 /* Pods-Merhaba-iOS.modulemap */,
-				35CBC769F56788FC2902189BC57A13FB /* Pods-Merhaba-iOS-acknowledgements.markdown */,
-				B6F788599CE06517BD43C6D3E8799A5D /* Pods-Merhaba-iOS-acknowledgements.plist */,
-				B31FBF7589037EC51DF8EB30F1BAD7F4 /* Pods-Merhaba-iOS-dummy.m */,
-				B7C8BC440914808BC45F175D1D30F0B7 /* Pods-Merhaba-iOS-resources.sh */,
-				913AA2E7DD2AB34E4AFB09DBD3ECE854 /* Pods-Merhaba-iOS-umbrella.h */,
-				FF8DE1C3BB06DFBB082CF45047390425 /* Pods-Merhaba-iOS.debug.xcconfig */,
-				FB9D79F69C41B53A624018174F200377 /* Pods-Merhaba-iOS.release.xcconfig */,
+				453F29E6D02303019D9FAEF8375641B9 /* Info.plist */,
+				B816640BCA6BD3CEF1512EDC0EB69001 /* Pods-Merhaba-macOSTests.modulemap */,
+				C81D7FDD39FE2CEB5FBA44CDFA2D0717 /* Pods-Merhaba-macOSTests-acknowledgements.markdown */,
+				DF3A821B4CAA1C018482BE777EF2BACD /* Pods-Merhaba-macOSTests-acknowledgements.plist */,
+				7248EFA8D5F22D141664D14764B3160F /* Pods-Merhaba-macOSTests-dummy.m */,
+				30419ED9C4CA74C635F19D02A4DB7EBA /* Pods-Merhaba-macOSTests-frameworks.sh */,
+				604B5A00FAF0F67CAC88EA633B2B84B2 /* Pods-Merhaba-macOSTests-resources.sh */,
+				B44BB5341CD6B5BF698B0F29B1C774B3 /* Pods-Merhaba-macOSTests-umbrella.h */,
+				B6C74A19B288155202F57B63272F1F98 /* Pods-Merhaba-macOSTests.debug.xcconfig */,
+				16777C01B964EA01119234A7A88B18EA /* Pods-Merhaba-macOSTests.release.xcconfig */,
 			);
-			name = "Pods-Merhaba-iOS";
-			path = "Target Support Files/Pods-Merhaba-iOS";
+			name = "Pods-Merhaba-macOSTests";
+			path = "Target Support Files/Pods-Merhaba-macOSTests";
+			sourceTree = "<group>";
+		};
+		8FD10388FBD71F38D2AB4D508871BBD7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A23F63CE3BBA8963FC9CABA3B78F6DC /* Pods-iOS Sample */,
+				C59EC128084A293DBA627D15984E6434 /* Pods-Merhaba-iOS */,
+				9D97BB492D83E8B5014B6B6C20C9FE7C /* Pods-Merhaba-iOSTests */,
+				9D04C45BC5FF94EC3AB823573F9C99E6 /* Pods-Merhaba-macOS */,
+				89FDB89AF0BDDB46952F864C951B8AFA /* Pods-Merhaba-macOSTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		993F4BF29683A0E0C0B793FCC68FF41F /* Development Pods */ = {
@@ -379,6 +438,41 @@
 				CD61A0BD807C0CB2D5C44644485EE2F8 /* Merhaba */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9D04C45BC5FF94EC3AB823573F9C99E6 /* Pods-Merhaba-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D55777317BCDC1AD3425D118E0237EFA /* Info.plist */,
+				4122B8A96EF2FDA1B4220A34F6BAC5C9 /* Pods-Merhaba-macOS.modulemap */,
+				F009DCE68D64F7345F4FC78620509D92 /* Pods-Merhaba-macOS-acknowledgements.markdown */,
+				B2BB5DA5B0E3E3C6D8180CA3039818CE /* Pods-Merhaba-macOS-acknowledgements.plist */,
+				249DB861E0D5C2626963FCF4B59D7685 /* Pods-Merhaba-macOS-dummy.m */,
+				C8AB74FF050FF7D0E1825DE4C5BB6579 /* Pods-Merhaba-macOS-resources.sh */,
+				45011AB641B8319E8058F53052F9A7FB /* Pods-Merhaba-macOS-umbrella.h */,
+				AE03118E26621AB20C5FF796D122F863 /* Pods-Merhaba-macOS.debug.xcconfig */,
+				4E71CF170F9D6C4E737D4E6999F2AA86 /* Pods-Merhaba-macOS.release.xcconfig */,
+			);
+			name = "Pods-Merhaba-macOS";
+			path = "Target Support Files/Pods-Merhaba-macOS";
+			sourceTree = "<group>";
+		};
+		9D97BB492D83E8B5014B6B6C20C9FE7C /* Pods-Merhaba-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				24E2E1C06E9D87B632B9884062EB2C4A /* Info.plist */,
+				B712153E36071C843ADBFCD39BE7580C /* Pods-Merhaba-iOSTests.modulemap */,
+				24B975B44EDA18434FEB44C90DA047B1 /* Pods-Merhaba-iOSTests-acknowledgements.markdown */,
+				9C87E16EF10FDEBA227B37962320E053 /* Pods-Merhaba-iOSTests-acknowledgements.plist */,
+				486D19BE39D289C4DA92DB6398FC2789 /* Pods-Merhaba-iOSTests-dummy.m */,
+				1369D58FAAD5FB05328C477C8E0D1FE9 /* Pods-Merhaba-iOSTests-frameworks.sh */,
+				17B44F45E0429024B809A9C996C5C5BD /* Pods-Merhaba-iOSTests-resources.sh */,
+				1FAFB4145388F15ADA685295A34C07F2 /* Pods-Merhaba-iOSTests-umbrella.h */,
+				4BCCB4F0D2A78FFEF4D0F999B4C8D27B /* Pods-Merhaba-iOSTests.debug.xcconfig */,
+				CB5330D4C6C7052C3BD3CAB78295FF20 /* Pods-Merhaba-iOSTests.release.xcconfig */,
+			);
+			name = "Pods-Merhaba-iOSTests";
+			path = "Target Support Files/Pods-Merhaba-iOSTests";
 			sourceTree = "<group>";
 		};
 		A59CBDDD942954C97809A7A6E34474F8 /* OCMock */ = {
@@ -472,34 +566,29 @@
 			path = "Pods/Target Support Files/Merhaba";
 			sourceTree = "<group>";
 		};
-		B49B15E31E729769F58C0ACB81FA6F89 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F53B1016FAC2DDB80022B5353808E247 /* Merhaba.framework */,
-				9CC8A021102ACA690436369AFEAFCA65 /* OCMock.framework */,
-				2B39E329458AA41228B3072F0B0768C0 /* Pods_iOS_Sample.framework */,
-				AC10B057099717DFDE541DAB757A4B1F /* Pods_Merhaba_iOS.framework */,
-				E3EA55C10B3E3794C4D61ED00FDB09FF /* Pods_Merhaba_iOSTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BA8AE7DB3015F0732F965700A7CCEA47 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2571FCDC1B0A1272BE3A0EA2F2867E01 /* Pods-iOS Sample */,
-				86C4596D6B7AAF361E044490FE6B9195 /* Pods-Merhaba-iOS */,
-				51C6AA9D276ABAA225F36E166C28D051 /* Pods-Merhaba-iOSTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C59EC128084A293DBA627D15984E6434 /* Pods-Merhaba-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A19489086B77BAD98A146098F3AC8C30 /* Info.plist */,
+				E7DFD9CCD42090239D621CA44832BBDD /* Pods-Merhaba-iOS.modulemap */,
+				FBA98A8C23579F6D4FDC23BE25DD2127 /* Pods-Merhaba-iOS-acknowledgements.markdown */,
+				1BD8EF0C394273A45D4C4857E97A1EC2 /* Pods-Merhaba-iOS-acknowledgements.plist */,
+				B3D614C017F8BBCBBAE628321EF456B4 /* Pods-Merhaba-iOS-dummy.m */,
+				81AC7D9C66D7087367D0D9C5C3F5B276 /* Pods-Merhaba-iOS-resources.sh */,
+				9C5996A408B31CEB192D04F925550A6F /* Pods-Merhaba-iOS-umbrella.h */,
+				4DA37041FB2CEDEC1CDFB0F75B45DCEB /* Pods-Merhaba-iOS.debug.xcconfig */,
+				33C894B309E2C5459AF7633E59F8C4EF /* Pods-Merhaba-iOS.release.xcconfig */,
+			);
+			name = "Pods-Merhaba-iOS";
+			path = "Target Support Files/Pods-Merhaba-iOS";
 			sourceTree = "<group>";
 		};
 		C9D69DAFE07149F573EAB8127F4B3AED /* Sources */ = {
@@ -593,6 +682,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2F57780DAC496916E6E263597164C4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AB2F5421844894FDB9FE7A7DC2C199 /* Pods-Merhaba-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE4DD8BFA94BB22A94E95B75D2037F78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E791576B071ABA40E9B299CD9D8FF57 /* Pods-Merhaba-macOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4A44CFE361ACBFC7B2D53A3FDD63401 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -620,7 +725,24 @@
 			);
 			name = "Pods-Merhaba-iOS";
 			productName = "Pods-Merhaba-iOS";
-			productReference = AC10B057099717DFDE541DAB757A4B1F /* Pods_Merhaba_iOS.framework */;
+			productReference = BA960E63E3163BDF10AA22CEACA2700C /* Pods_Merhaba_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A14DB9DAA748967E5FB1A1680FFC418 /* Pods-Merhaba-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B76A9738E963499DC1676A87676E1B7C /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOS" */;
+			buildPhases = (
+				FA4F3FFF832731867E1880CD62FBEC23 /* Sources */,
+				859A000FDAB3A43BBA271B80C0818B93 /* Frameworks */,
+				A2F57780DAC496916E6E263597164C4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Merhaba-macOS";
+			productName = "Pods-Merhaba-macOS";
+			productReference = 15062B0BB9D90D0726DA36A9D9930892 /* Pods_Merhaba_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AFAFE1400126B6C8062B8E4B793F9DE1 /* Pods-Merhaba-iOSTests */ = {
@@ -638,7 +760,7 @@
 			);
 			name = "Pods-Merhaba-iOSTests";
 			productName = "Pods-Merhaba-iOSTests";
-			productReference = E3EA55C10B3E3794C4D61ED00FDB09FF /* Pods_Merhaba_iOSTests.framework */;
+			productReference = FBDD2EC82A084F9025ED6A81BAFA0569 /* Pods_Merhaba_iOSTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7A00BA7235F234272F9B5D40E5C20FA /* Pods-iOS Sample */ = {
@@ -656,7 +778,7 @@
 			);
 			name = "Pods-iOS Sample";
 			productName = "Pods-iOS Sample";
-			productReference = 2B39E329458AA41228B3072F0B0768C0 /* Pods_iOS_Sample.framework */;
+			productReference = A5BBB90F3FB0A3B9701FC9632B79D1C1 /* Pods_iOS_Sample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D888B76AAD2648EE2F4DF52D533902DE /* Merhaba */ = {
@@ -673,7 +795,7 @@
 			);
 			name = Merhaba;
 			productName = Merhaba;
-			productReference = F53B1016FAC2DDB80022B5353808E247 /* Merhaba.framework */;
+			productReference = 99D5B74466019811454B50420EE1F13C /* Merhaba.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DC54C98851E54D349520C786701A1845 /* OCMock */ = {
@@ -690,7 +812,25 @@
 			);
 			name = OCMock;
 			productName = OCMock;
-			productReference = 9CC8A021102ACA690436369AFEAFCA65 /* OCMock.framework */;
+			productReference = D0DEBF126A54046F1346F2E4E78E74E1 /* OCMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE6326903734D13CEF348F192692E5DA /* Pods-Merhaba-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AEB89BE145BBE60B8E220C7681ACA61 /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOSTests" */;
+			buildPhases = (
+				ED445BCA2935776DCDD32B4FCDCBD8E2 /* Sources */,
+				FD9910A63CAADCB18B731A689AB2D338 /* Frameworks */,
+				DE4DD8BFA94BB22A94E95B75D2037F78 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF44B8094516E8AFC725D203F865177A /* PBXTargetDependency */,
+			);
+			name = "Pods-Merhaba-macOSTests";
+			productName = "Pods-Merhaba-macOSTests";
+			productReference = F06433365D92F578442371BE2D3264A9 /* Pods_Merhaba_macOSTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -710,7 +850,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B49B15E31E729769F58C0ACB81FA6F89 /* Products */;
+			productRefGroup = 3D7758382315777F426443F634033534 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -719,6 +859,8 @@
 				B7A00BA7235F234272F9B5D40E5C20FA /* Pods-iOS Sample */,
 				17D514F2ECCD9A84CE5D541734556907 /* Pods-Merhaba-iOS */,
 				AFAFE1400126B6C8062B8E4B793F9DE1 /* Pods-Merhaba-iOSTests */,
+				7A14DB9DAA748967E5FB1A1680FFC418 /* Pods-Merhaba-macOS */,
+				FE6326903734D13CEF348F192692E5DA /* Pods-Merhaba-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -789,12 +931,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED445BCA2935776DCDD32B4FCDCBD8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20EBF4A79511B14759C9EC2110E8C11 /* Pods-Merhaba-macOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4735185FE94CF4E2751C74BD75144FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE73A44C2A909A44C802399CED704378 /* Merhaba-dummy.m in Sources */,
 				BF9C88E1E5305AC79DDD2983DAC01716 /* MRBServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4F3FFF832731867E1880CD62FBEC23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B679C55A74D34F31F7DDCB88AA47803 /* Pods-Merhaba-macOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +964,12 @@
 			name = OCMock;
 			target = DC54C98851E54D349520C786701A1845 /* OCMock */;
 			targetProxy = 9A9BBD14C45E924A7950396EDDF9CEE9 /* PBXContainerItemProxy */;
+		};
+		BF44B8094516E8AFC725D203F865177A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMock;
+			target = DC54C98851E54D349520C786701A1845 /* OCMock */;
+			targetProxy = 9818431A2759DB59D8BB77B063A1568E /* PBXContainerItemProxy */;
 		};
 		C2ECE75D481836152DA146A01FF76DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -880,7 +1044,7 @@
 		};
 		12608038EA0E46DBCA5D7465230E4452 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5D477604730A06CD3B35FBAE7423E27 /* Pods-iOS Sample.debug.xcconfig */;
+			baseConfigurationReference = EEDFBE67E8B308F121127767BDB46A06 /* Pods-iOS Sample.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -915,7 +1079,7 @@
 		};
 		27A11B4E647B589BCA99C8D0381AE5DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E069AD072B635C67D7B60F9F310D37 /* Pods-Merhaba-iOSTests.debug.xcconfig */;
+			baseConfigurationReference = 4BCCB4F0D2A78FFEF4D0F999B4C8D27B /* Pods-Merhaba-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1012,7 +1176,7 @@
 		};
 		3A05D0DEBE886D2D623458CC39CD5EE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E012270B511586A609C087BB67169A9 /* Pods-Merhaba-iOSTests.release.xcconfig */;
+			baseConfigurationReference = CB5330D4C6C7052C3BD3CAB78295FF20 /* Pods-Merhaba-iOSTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1044,6 +1208,76 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		4012349218F97ED7412DD1038AE45BB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE03118E26621AB20C5FF796D122F863 /* Pods-Merhaba-macOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45DE1E1284EACB04DE8C91B056121459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C74A19B288155202F57B63272F1F98 /* Pods-Merhaba-macOSTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1089,6 +1323,76 @@
 			};
 			name = Debug;
 		};
+		7B383BE7E67ACAD0222F2BDA1D2C28FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16777C01B964EA01119234A7A88B18EA /* Pods-Merhaba-macOSTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAB1A2E582BC95F05CE79C47DBE524B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E71CF170F9D6C4E737D4E6999F2AA86 /* Pods-Merhaba-macOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Merhaba-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Merhaba_macOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1131,7 +1435,7 @@
 		};
 		C414C15736E9881A955BD40E4E4302D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF8DE1C3BB06DFBB082CF45047390425 /* Pods-Merhaba-iOS.debug.xcconfig */;
+			baseConfigurationReference = 4DA37041FB2CEDEC1CDFB0F75B45DCEB /* Pods-Merhaba-iOS.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1166,7 +1470,7 @@
 		};
 		D659DDC623B9953F5513E395431D4F0C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E1B82CD4BF995FCA738AD9272A4D77 /* Pods-iOS Sample.release.xcconfig */;
+			baseConfigurationReference = 2EEEB7E0A9FCAFECA034134CFFAA65C6 /* Pods-iOS Sample.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1201,7 +1505,7 @@
 		};
 		EFA8301EDA8AD99E9F4C5BA15AB81ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB9D79F69C41B53A624018174F200377 /* Pods-Merhaba-iOS.release.xcconfig */;
+			baseConfigurationReference = 33C894B309E2C5459AF7633E59F8C4EF /* Pods-Merhaba-iOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1246,6 +1550,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3AEB89BE145BBE60B8E220C7681ACA61 /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45DE1E1284EACB04DE8C91B056121459 /* Debug */,
+				7B383BE7E67ACAD0222F2BDA1D2C28FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8F10253529B0ADEC1EF90EB8A0FEBCE2 /* Build configuration list for PBXNativeTarget "Merhaba" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1269,6 +1582,15 @@
 			buildConfigurations = (
 				C414C15736E9881A955BD40E4E4302D9 /* Debug */,
 				EFA8301EDA8AD99E9F4C5BA15AB81ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B76A9738E963499DC1676A87676E1B7C /* Build configuration list for PBXNativeTarget "Pods-Merhaba-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4012349218F97ED7412DD1038AE45BB1 /* Debug */,
+				AAB1A2E582BC95F05CE79C47DBE524B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09F900850506D9F51B92B942 /* Pods_Merhaba_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */; };
+		1405A2A7654B267DD9ADEA45 /* Pods_Merhaba_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66184AA6364671669537BC8B /* Pods_Merhaba_macOS.framework */; };
+		2839E63C97269C6EDD4BCD20 /* Pods_Merhaba_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7346E4BD3A1A63EC364A17E5 /* Pods_Merhaba_macOSTests.framework */; };
 		8CE58820A2FF2C45DEB33C0D /* Pods_Merhaba_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358C2950AE66A705EC3A50CB /* Pods_Merhaba_iOSTests.framework */; };
 		A40A2A1A1E297678003B0761 /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CE9121E1B04F700C0D50D /* MRBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A45CE9231E1B059400C0D50D /* Merhaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45CE9191E1B059400C0D50D /* Merhaba.framework */; };
@@ -43,10 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		168539FD8BECA79F7DF7170A /* Pods-Merhaba-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1B5F24E12729AAB93FAF2896 /* Pods-Merhaba-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-macOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		28A9E17EBAC2B4221DBFAD29 /* Pods-Merhaba-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		358C2950AE66A705EC3A50CB /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3662A5A307F39425A07C1047 /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66184AA6364671669537BC8B /* Pods_Merhaba_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D62BD2A86DEF5009BF9D26A /* Pods-Merhaba-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-macOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7346E4BD3A1A63EC364A17E5 /* Pods_Merhaba_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_macOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7791D0E9324DF1C8C2B6CC12 /* Pods-Merhaba-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		7826D822F6E69F6C3F318093 /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merhaba-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Merhaba-iOS/Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A45CE9121E1B04F700C0D50D /* MRBServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MRBServer.h; path = Sources/MRBServer.h; sourceTree = "<group>"; };
 		A45CE9131E1B04F700C0D50D /* MRBServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MRBServer.m; path = Sources/MRBServer.m; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1405A2A7654B267DD9ADEA45 /* Pods_Merhaba_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46BBD0F1E2FEB1B007C5F5E /* Merhaba.framework in Frameworks */,
+				2839E63C97269C6EDD4BCD20 /* Pods_Merhaba_macOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,8 @@
 			children = (
 				6A25CE71335A529E8ACFED9A /* Pods_Merhaba_iOS.framework */,
 				358C2950AE66A705EC3A50CB /* Pods_Merhaba_iOSTests.framework */,
+				66184AA6364671669537BC8B /* Pods_Merhaba_macOS.framework */,
+				7346E4BD3A1A63EC364A17E5 /* Pods_Merhaba_macOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +129,10 @@
 				7826D822F6E69F6C3F318093 /* Pods-Merhaba-iOS.release.xcconfig */,
 				3662A5A307F39425A07C1047 /* Pods-Merhaba-iOSTests.debug.xcconfig */,
 				28A9E17EBAC2B4221DBFAD29 /* Pods-Merhaba-iOSTests.release.xcconfig */,
+				168539FD8BECA79F7DF7170A /* Pods-Merhaba-macOS.debug.xcconfig */,
+				7791D0E9324DF1C8C2B6CC12 /* Pods-Merhaba-macOS.release.xcconfig */,
+				6D62BD2A86DEF5009BF9D26A /* Pods-Merhaba-macOSTests.debug.xcconfig */,
+				1B5F24E12729AAB93FAF2896 /* Pods-Merhaba-macOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -244,10 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A46BBD1B1E2FEB1B007C5F5E /* Build configuration list for PBXNativeTarget "Merhaba-macOS" */;
 			buildPhases = (
+				7A83CE201BF987358BDC950C /* [CP] Check Pods Manifest.lock */,
 				A46BBD011E2FEB1A007C5F5E /* Sources */,
 				A46BBD021E2FEB1A007C5F5E /* Frameworks */,
 				A46BBD031E2FEB1A007C5F5E /* Headers */,
 				A46BBD041E2FEB1A007C5F5E /* Resources */,
+				DA4755870487F83DC372CE11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A46BBD1C1E2FEB1B007C5F5E /* Build configuration list for PBXNativeTarget "Merhaba-macOSTests" */;
 			buildPhases = (
+				C56EDBCD3925E0254BC76443 /* [CP] Check Pods Manifest.lock */,
 				A46BBD0A1E2FEB1A007C5F5E /* Sources */,
 				A46BBD0B1E2FEB1A007C5F5E /* Frameworks */,
 				A46BBD0C1E2FEB1A007C5F5E /* Resources */,
+				DD62AC30C33D526523E8FECE /* [CP] Embed Pods Frameworks */,
+				EAB71BA338231B69D86E8138 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,6 +424,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Merhaba-iOSTests/Pods-Merhaba-iOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A83CE201BF987358BDC950C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C56EDBCD3925E0254BC76443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4755870487F83DC372CE11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Merhaba-macOS/Pods-Merhaba-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD19187CB337887D8E3B4D82 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +482,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD62AC30C33D526523E8FECE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB71BA338231B69D86E8138 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Merhaba-macOSTests/Pods-Merhaba-macOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F5693C2EAEC32D5167372788 /* [CP] Embed Pods Frameworks */ = {
@@ -720,6 +816,7 @@
 		};
 		A46BBD171E2FEB1B007C5F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168539FD8BECA79F7DF7170A /* Pods-Merhaba-macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -782,6 +879,7 @@
 		};
 		A46BBD181E2FEB1B007C5F5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7791D0E9324DF1C8C2B6CC12 /* Pods-Merhaba-macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -837,6 +935,7 @@
 		};
 		A46BBD191E2FEB1B007C5F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D62BD2A86DEF5009BF9D26A /* Pods-Merhaba-macOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -889,6 +988,7 @@
 		};
 		A46BBD1A1E2FEB1B007C5F5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5F24E12729AAB93FAF2896 /* Pods-Merhaba-macOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

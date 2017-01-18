@@ -18,6 +18,16 @@ target 'Merhaba-iOS' do
   	end
 end
 
+target 'Merhaba-macOS' do
+	project 'Merhaba.xcodeproj'
+  	use_frameworks!
+
+  	target 'Merhaba-macOSTests' do
+    	inherit! :search_paths
+    	pod 'OCMock', '~> 3.4'
+  	end
+end
+
 target 'iOS Sample' do
 	use_frameworks!
     inherit! :search_paths
