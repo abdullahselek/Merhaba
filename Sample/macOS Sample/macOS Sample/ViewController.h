@@ -7,9 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Merhaba/Merhaba.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<MRBServerDelegate, NSTabViewDelegate, NSTableViewDataSource>
 
+@property (nonatomic) MRBServer *server;
+@property (nonatomic) NSMutableArray *services;
+@property (nonatomic) NSInteger selectedRow;
+@property (nonatomic) NSInteger connectedRow;
+@property (nonatomic) BOOL isConnectedToService;
 
 @end
 

@@ -714,6 +714,10 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="YHD-R9-xS8"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="XNK-gl-HNC"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
@@ -740,6 +744,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="connectToService:" target="XfG-lQ-9wD" id="gJl-32-yRv"/>
+                                </connections>
                             </button>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz4-uq-3eP">
                                 <rect key="frame" x="18" y="20" width="59" height="17"/>
@@ -773,6 +780,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="sendText:" target="XfG-lQ-9wD" id="KWl-RQ-oqn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -794,6 +804,10 @@
                             <constraint firstItem="rhE-zg-10u" firstAttribute="leading" secondItem="BCZ-Ag-tgb" secondAttribute="trailing" constant="26" id="xGV-l5-Zos"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bsD-Su-vHk" id="Q9k-A6-iAN"/>
+                        <outlet property="textField" destination="KXl-In-zlr" id="M8B-Fh-btB"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
