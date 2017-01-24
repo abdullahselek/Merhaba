@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
     s.name                  = 'Merhaba'
-    s.version               = '1.0'
-    s.summary               = 'Discovery and connection between iOS devices'
+    s.version               = '1.1.0'
+    s.summary               = 'Discovery and connection between iOS and macOS devices'
     s.homepage              = 'https://github.com/abdullahselek/Merhaba'
     s.license               = {
         :type => 'MIT',
@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
         :tag => s.version.to_s
     }
     s.ios.deployment_target = '9.0'
+    s.osx.deployment_target = '10.9'
     s.source_files          = 'Sources/*.{h,m}'
     s.requires_arc          = true
 
