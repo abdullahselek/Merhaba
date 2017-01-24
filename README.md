@@ -63,6 +63,21 @@ github "abdullahselek/Merhaba" ~> 1.1.0
 
 Run carthage update to build the framework and drag the built Merhaba.framework into your Xcode project.
 
+## Swift Package Manager
+
+```
+import PackageDescription
+
+let package = Package(
+    name: "Your project name",
+    dependencies: [
+        .Package(url: "https://github.com/abdullahselek/Merhaba.git", majorVersion: 1, minor: 1)
+    ]
+)
+```
+
+Run ```swift package fetch```
+
 ## Example Usage
 
 Implement your class with MRBServerDelegate to handle Bonjour events
