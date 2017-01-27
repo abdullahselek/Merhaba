@@ -4,7 +4,6 @@ end
 
 workspace 'Merhaba.xcworkspace'
 project 'Merhaba.xcodeproj'
-project 'Sample/iOS Sample/iOS Sample.xcodeproj'
 
 target 'Merhaba-iOS' do
 	platform :ios, '9.0'
@@ -40,6 +39,14 @@ target 'Merhaba-tvOS' do
 end
 
 target 'iOS Sample' do
+	project 'Sample/iOS Sample/iOS Sample.xcodeproj'
+	use_frameworks!
+    inherit! :search_paths
+    product_pods
+end
+
+target 'macOS Sample' do
+	project 'Sample/macOS Sample/macOS Sample.xcodeproj'
 	use_frameworks!
     inherit! :search_paths
     product_pods

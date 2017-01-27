@@ -1,5 +1,5 @@
 framework module Merhaba {
-  umbrella header "Merhaba-umbrella.h"
+  umbrella header "Merhaba-iOS-umbrella.h"
 
   export *
   module * { export * }

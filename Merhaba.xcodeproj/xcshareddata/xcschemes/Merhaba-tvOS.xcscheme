@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4A210E61E3BE1DE00EBBBC0"
-               BuildableName = "Merhaba-tvOS.framework"
+               BuildableName = "Merhaba.framework"
                BlueprintName = "Merhaba-tvOS"
                ReferencedContainer = "container:Merhaba.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4A210E61E3BE1DE00EBBBC0"
-            BuildableName = "Merhaba-tvOS.framework"
+            BuildableName = "Merhaba.framework"
             BlueprintName = "Merhaba-tvOS"
             ReferencedContainer = "container:Merhaba.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4A210E61E3BE1DE00EBBBC0"
-            BuildableName = "Merhaba-tvOS.framework"
+            BuildableName = "Merhaba.framework"
             BlueprintName = "Merhaba-tvOS"
             ReferencedContainer = "container:Merhaba.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4A210E61E3BE1DE00EBBBC0"
-            BuildableName = "Merhaba-tvOS.framework"
+            BuildableName = "Merhaba.framework"
             BlueprintName = "Merhaba-tvOS"
             ReferencedContainer = "container:Merhaba.xcodeproj">
          </BuildableReference>
