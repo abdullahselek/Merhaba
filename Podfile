@@ -28,6 +28,17 @@ target 'Merhaba-macOS' do
   	end
 end
 
+target 'Merhaba-tvOS' do
+	platform :tvos, '9.0'
+	project 'Merhaba.xcodeproj'
+  	use_frameworks!
+
+  	target 'Merhaba-tvOSTests' do
+    	inherit! :search_paths
+    	pod 'OCMock', '~> 3.4'
+  	end
+end
+
 target 'iOS Sample' do
 	use_frameworks!
     inherit! :search_paths
