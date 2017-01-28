@@ -4,11 +4,11 @@
 ![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Merhaba.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Coverage Status](https://coveralls.io/repos/github/abdullahselek/Merhaba/badge.svg?branch=master)](https://coveralls.io/github/abdullahselek/Merhaba?branch=master)
-![Platform](https://img.shields.io/badge/platform-iOS | macOS-lightgrey.svg)
+![Platform](https://img.shields.io/badge/platform-iOS | macOS | tvOS-lightgrey.svg)
 ![License](https://img.shields.io/dub/l/vibe-d.svg)
 
 # Merhaba
-Bonjour networking for discovery and connection between iOS and macOS devices.
+Bonjour networking for discovery and connection between iOS, macOS and tvOS devices.
 
 ## Features
 
@@ -20,7 +20,7 @@ Bonjour networking for discovery and connection between iOS and macOS devices.
 - Strong Events
 
 ## Requirements
-iOS 9.0+ / macOS 10.9+
+iOS 9.0+ / macOS 10.9+ / tvOS 9.0+
 
 ## Installation
 
@@ -37,7 +37,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Merhaba', '~> 1.1.0'
+    pod 'Merhaba', '~> 1.2.0'
 end
 ```
 Then, run the following command:
@@ -58,7 +58,7 @@ brew install carthage
 To integrate Merhaba into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```
-github "abdullahselek/Merhaba" ~> 1.1.0
+github "abdullahselek/Merhaba" ~> 1.2.0
 ```
 
 Run carthage update to build the framework and drag the built Merhaba.framework into your Xcode project.
