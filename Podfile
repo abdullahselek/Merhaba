@@ -51,3 +51,10 @@ target 'macOS Sample' do
     inherit! :search_paths
     product_pods
 end
+
+target 'tvOS Sample' do
+  project 'Sample/tvOS Sample/tvOS Sample.xcodeproj'
+  use_frameworks!
+    inherit! :search_paths
+    product_pods
+end
