@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4F73E111E3CCD46006756AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F73E101E3CCD46006756AD /* main.m */; };
+		A4F73E141E3CCD46006756AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F73E131E3CCD46006756AD /* AppDelegate.m */; };
+		A4F73E171E3CCD46006756AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F73E161E3CCD46006756AD /* ViewController.m */; };
+		A4F73E1A1E3CCD46006756AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F73E181E3CCD46006756AD /* Main.storyboard */; };
+		A4F73E1C1E3CCD46006756AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F73E1B1E3CCD46006756AD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4F73E0C1E3CCD46006756AD /* tvOS Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F73E101E3CCD46006756AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4F73E121E3CCD46006756AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4F73E131E3CCD46006756AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4F73E151E3CCD46006756AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A4F73E161E3CCD46006756AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4F73E191E3CCD46006756AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4F73E1B1E3CCD46006756AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4F73E1D1E3CCD46006756AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4F73E091E3CCD46006756AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4F73E031E3CCD46006756AD = {
+			isa = PBXGroup;
+			children = (
+				A4F73E0E1E3CCD46006756AD /* tvOS Sample */,
+				A4F73E0D1E3CCD46006756AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4F73E0D1E3CCD46006756AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F73E0C1E3CCD46006756AD /* tvOS Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4F73E0E1E3CCD46006756AD /* tvOS Sample */ = {
+			isa = PBXGroup;
+			children = (
+				A4F73E121E3CCD46006756AD /* AppDelegate.h */,
+				A4F73E131E3CCD46006756AD /* AppDelegate.m */,
+				A4F73E151E3CCD46006756AD /* ViewController.h */,
+				A4F73E161E3CCD46006756AD /* ViewController.m */,
+				A4F73E181E3CCD46006756AD /* Main.storyboard */,
+				A4F73E1B1E3CCD46006756AD /* Assets.xcassets */,
+				A4F73E1D1E3CCD46006756AD /* Info.plist */,
+				A4F73E0F1E3CCD46006756AD /* Supporting Files */,
+			);
+			path = "tvOS Sample";
+			sourceTree = "<group>";
+		};
+		A4F73E0F1E3CCD46006756AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F73E101E3CCD46006756AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4F73E0B1E3CCD46006756AD /* tvOS Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F73E201E3CCD46006756AD /* Build configuration list for PBXNativeTarget "tvOS Sample" */;
+			buildPhases = (
+				A4F73E081E3CCD46006756AD /* Sources */,
+				A4F73E091E3CCD46006756AD /* Frameworks */,
+				A4F73E0A1E3CCD46006756AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS Sample";
+			productName = "tvOS Sample";
+			productReference = A4F73E0C1E3CCD46006756AD /* tvOS Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4F73E041E3CCD46006756AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Abdullah Selek";
+				TargetAttributes = {
+					A4F73E0B1E3CCD46006756AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A4F73E071E3CCD46006756AD /* Build configuration list for PBXProject "tvOS Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4F73E031E3CCD46006756AD;
+			productRefGroup = A4F73E0D1E3CCD46006756AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4F73E0B1E3CCD46006756AD /* tvOS Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4F73E0A1E3CCD46006756AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F73E1C1E3CCD46006756AD /* Assets.xcassets in Resources */,
+				A4F73E1A1E3CCD46006756AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4F73E081E3CCD46006756AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F73E171E3CCD46006756AD /* ViewController.m in Sources */,
+				A4F73E141E3CCD46006756AD /* AppDelegate.m in Sources */,
+				A4F73E111E3CCD46006756AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4F73E181E3CCD46006756AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4F73E191E3CCD46006756AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4F73E1E1E3CCD46006756AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		A4F73E1F1E3CCD46006756AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4F73E211E3CCD46006756AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "tvOS Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.tvOS-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4F73E221E3CCD46006756AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "tvOS Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.tvOS-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4F73E071E3CCD46006756AD /* Build configuration list for PBXProject "tvOS Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F73E1E1E3CCD46006756AD /* Debug */,
+				A4F73E1F1E3CCD46006756AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F73E201E3CCD46006756AD /* Build configuration list for PBXNativeTarget "tvOS Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F73E211E3CCD46006756AD /* Debug */,
+				A4F73E221E3CCD46006756AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4F73E041E3CCD46006756AD /* Project object */;
+}
