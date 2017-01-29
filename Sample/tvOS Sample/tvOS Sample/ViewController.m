@@ -44,6 +44,7 @@
         NSData *data = [textToSend dataUsingEncoding:NSUTF8StringEncoding];
         MRBServerErrorCode errorCode = [self.server sendData:data];
         NSLog(@"Data sent with code : %ld", errorCode);
+        self.textField.text = @"";
     }
 }
 
