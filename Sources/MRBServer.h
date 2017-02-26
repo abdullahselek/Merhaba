@@ -156,7 +156,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   *
   * @param protocol NSString
  */
-- (id)initWithProtocol:(NSString *)protocol;
+- (instancetype)initWithProtocol:(NSString *)protocol;
 
 /**
   * Initialize with name, protocol and name
@@ -165,7 +165,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * @param protocol NSString
   * @param name NSString
  */
-- (id)initWithDomainName:(NSString *)domain
+- (instancetype)initWithDomainName:(NSString *)domain
                 protocol:(NSString *)protocol
                     name:(NSString *)name;
 

@@ -54,19 +54,19 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 @implementation MRBServer
 
-- (id)init {
+- (instancetype)init {
     return [self initWithDomainName:@""
                            protocol:MRBDefaultProtocol
                                name:@""];
 }
 
-- (id)initWithProtocol:(NSString *)protocol {
+- (instancetype)initWithProtocol:(NSString *)protocol {
     return [self initWithDomainName:@""
                            protocol:[NSString stringWithFormat:@"_%@._tcp.", protocol]
                                name:@""];
 }
 
-- (id)initWithDomainName:(NSString *)domain
+- (instancetype)initWithDomainName:(NSString *)domain
                 protocol:(NSString *)protocol
                     name:(NSString *)name {
     self = [super init];
