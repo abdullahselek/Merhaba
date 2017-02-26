@@ -155,6 +155,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * Uses protocol as the bonjour protocol and TCP as the networking layer
   *
   * @param protocol NSString
+  * @return MRBServer instance
  */
 - (instancetype)initWithProtocol:(NSString *)protocol;
 
@@ -164,6 +165,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * @param domain NSString
   * @param protocol NSString
   * @param name NSString
+  * @return MRBServer instance
  */
 - (instancetype)initWithDomainName:(NSString *)domain
                 protocol:(NSString *)protocol
