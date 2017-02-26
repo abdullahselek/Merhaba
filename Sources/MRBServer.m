@@ -67,8 +67,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (instancetype)initWithDomainName:(NSString *)domain
-                protocol:(NSString *)protocol
-                    name:(NSString *)name {
+                          protocol:(NSString *)protocol
+                              name:(NSString *)name {
     self = [super init];
     if (self) {
         self.domain = domain;
@@ -112,8 +112,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     self.socket = [self createSocket];
     if (!self.socket) {
         *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
-                                           code:MRBServerNoSocketsAvailable
-                                       userInfo:nil];
+                                            code:MRBServerNoSocketsAvailable
+                                        userInfo:nil];
         successful = NO;
     }
     
@@ -149,8 +149,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
         if (kCFSocketSuccess != CFSocketSetAddress(self.socket, (CFDataRef)address4)) {
             *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
-                                               code:MRBServerCouldNotBindToIPv4Address
-                                           userInfo:nil];
+                                                code:MRBServerCouldNotBindToIPv4Address
+                                            userInfo:nil];
             if (self.socket) {
                 CFRelease(self.socket);
             }

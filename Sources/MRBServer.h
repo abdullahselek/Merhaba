@@ -168,8 +168,8 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * @return MRBServer instance
  */
 - (instancetype)initWithDomainName:(NSString *)domain
-                protocol:(NSString *)protocol
-                    name:(NSString *)name;
+                          protocol:(NSString *)protocol
+                              name:(NSString *)name;
 
 /**
   * Starts server
