@@ -171,6 +171,9 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 
 /**
   * Starts server
+  *
+  * @param error NSError for information when it fails
+  * @return result
  */
 - (BOOL)start:(NSError **)error;
 
