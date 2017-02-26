@@ -107,12 +107,11 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     return successful;
 }
 
-- (BOOL)start {
+- (BOOL)start:(NSError **)error {
     BOOL successful = YES;
-    NSError *error;
     self.socket = [self createSocket];
     if (!self.socket) {
-        error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
+        *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
                                            code:MRBServerNoSocketsAvailable
                                        userInfo:nil];
         successful = NO;
@@ -149,7 +148,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
         NSData *address4 = [NSData dataWithBytes:&addr4 length:sizeof(addr4)];
 
         if (kCFSocketSuccess != CFSocketSetAddress(self.socket, (CFDataRef)address4)) {
-            error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
+            *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
                                                code:MRBServerCouldNotBindToIPv4Address
                                            userInfo:nil];
             if (self.socket) {

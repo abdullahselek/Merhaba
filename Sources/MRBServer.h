@@ -172,7 +172,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 /**
   * Starts server
  */
-- (BOOL)start;
+- (BOOL)start:(NSError **)error;
 
 /**
   * Send data to the remote side of the server

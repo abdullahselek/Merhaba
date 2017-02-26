@@ -114,7 +114,9 @@
 
 - (void)testStartServer_shouldSuccess {
     XCTAssertNotNil(self.mrbServer, @"init failed");
-    BOOL successful = [self.mrbServer start];
+    NSError *error = nil;
+    BOOL successful = [self.mrbServer start:&error];
+    XCTAssertNil(error, @"socket start failed");
     XCTAssertTrue(successful, @"socket start failed");
 }
 
@@ -183,7 +185,8 @@
 
 - (void)testStop {
     id mockServer = OCMPartialMock(self.mrbServer);
-    [self.mrbServer start];
+    NSError *error = nil;
+    [self.mrbServer start:&error];
     id mockNetService = OCMClassMock([NSNetService class]);
     self.mrbServer.netService = mockNetService;
     id mockProtocol = OCMProtocolMock(@protocol(MRBServerDelegate));
