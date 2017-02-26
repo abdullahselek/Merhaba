@@ -26,8 +26,11 @@
     self.server = [[MRBServer alloc] initWithProtocol:type];
     self.server.delegate = self;
 
+    NSError *error = nil;
     BOOL isStarted = [self.server start];
-    NSLog(@"Check server started : %@", (isStarted) ? @"YES" : @"NO");
+    if (!isStarted) {
+        NSLog(@"Server start failed : %@", error);
+    }
 }
 
 #pragma mark Button Actions
