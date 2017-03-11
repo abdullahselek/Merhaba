@@ -192,6 +192,16 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
+- (MRBServerErrorCode)sendFileAtPath:(NSString *)filepath {
+    if([[NSFileManager defaultManager] fileExistsAtPath:filepath]) {
+        NSData *data = [[NSFileManager defaultManager] contentsAtPath:filepath];
+        return [self sendData:data];
+    } else {
+        NSLog(@"Merhaba try to send file on %@, but there is no such file!", filepath);
+        return MRBServerFileNotFound;
+    }
+}
+
 - (void)connectToRemoteService:(NSNetService *)selectedService {
     [self.currentlyResolvingService stop];
     self.currentlyResolvingService = nil;

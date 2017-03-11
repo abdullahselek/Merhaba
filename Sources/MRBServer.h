@@ -102,6 +102,7 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
     MRBServerNoSocketsAvailable,
     MRBServerNoSpaceOnOutputStream,
     MRBServerOutputStreamReachedCapacity,
+    MRBServerFileNotFound,
     MRBServerSuccess,
 };
 
@@ -186,6 +187,14 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
   * @return MRBServerErrorCode result code
  */
 - (MRBServerErrorCode)sendData:(NSData *)data;
+
+/**
+  * Send file at given path to the remote side of the server
+  *
+  * @param filepath Path for the file
+  * @return MRBServerErrorCode result code
+ */
+- (MRBServerErrorCode)sendFileAtPath:(NSString *)filepath;
 
 /**
   * To connect to the remote service
