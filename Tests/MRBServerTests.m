@@ -154,6 +154,14 @@
     XCTAssertEqual(code, MRBServerSuccess);
 }
 
+- (void)testSendFileAtPath_whenThereIsNoSuchFileAtPath_shouldReturnError {
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    self.mrbServer.outputStream = mockOutputStream;
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendFileAtPath:@"merhaba"];
+    XCTAssertEqual(code, MRBServerFileNotFound);
+}
+
 - (void)testStreamHasSpace {
     [self.mrbServer streamHasSpace:[[NSStream alloc] init]];
     XCTAssertTrue(self.mrbServer.outputStreamHasSpace, @"streamHasSpace failed");
