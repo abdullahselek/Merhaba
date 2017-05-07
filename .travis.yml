@@ -28,7 +28,6 @@ before_install:
 - rvm use $RVM_RUBY_VERSION
 
 install:
-- bundle
 - bundle install --without=documentation --path ../travis_bundle_dir
 
 script: 
