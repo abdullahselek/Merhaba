@@ -27,7 +27,7 @@
     self.server.delegate = self;
 
     NSError *error = nil;
-    BOOL isStarted = [self.server start];
+    BOOL isStarted = [self.server start:&error];
     if (!isStarted) {
         NSLog(@"Server start failed : %@", error);
     }
