@@ -1,6 +1,6 @@
 ![Merhaba](https://github.com/abdullahselek/Merhaba/blob/master/Images/merhaba.png)
 
-![Build Status](https://travis-ci.org/abdullahselek/Merhaba.svg?branch=master)
+[![Build Status](https://travis-ci.org/abdullahselek/Merhaba.svg?branch=master)](https://travis-ci.org/abdullahselek/Merhaba)
 ![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Merhaba.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Coverage Status](https://coveralls.io/repos/github/abdullahselek/Merhaba/badge.svg?branch=master)](https://coveralls.io/github/abdullahselek/Merhaba?branch=master)
