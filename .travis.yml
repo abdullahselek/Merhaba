@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8
+osx_image: xcode8.3
 
 env:
   global:
@@ -9,11 +9,11 @@ env:
   - IOS_FRAMEWORK_SCHEME="Merhaba-iOS"
   - MACOS_FRAMEWORK_SCHEME="Merhaba-macOS"
   - TVOS_FRAMEWORK_SCHEME="Merhaba-tvOS"
-  - IOS_SDK=iphonesimulator10.0
+  - IOS_SDK=iphonesimulator10.3
   - MACOS_SDK=macosx10.12
-  - TVOS_SDK=appletvsimulator10.0
+  - TVOS_SDK=appletvsimulator10.2
   matrix:
-    - DESTINATION="OS=10.0,name=iPhone SE"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    - DESTINATION="OS=10.3.1,name=iPhone SE"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
     - DESTINATION="OS=9.0,name=iPhone 6"       SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
 
     - DESTINATION="arch=x86_64"                SCHEME="$MACOS_FRAMEWORK_SCHEME"   SDK="$MACOS_SDK"   RUN_TESTS="YES" POD_LINT="NO"
@@ -28,7 +28,7 @@ before_install:
 - rvm use $RVM_RUBY_VERSION
 
 install:
-- bundle install --without=documentation --path ../travis_bundle_dir
+- bundle install
 
 script: 
   - set -o pipefail
