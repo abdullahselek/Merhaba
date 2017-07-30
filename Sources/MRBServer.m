@@ -168,7 +168,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
             CFRunLoopAddSource(cfrl, source4, kCFRunLoopCommonModes);
             CFRelease(source4);
 
-            if(![self publishNetService]) {
+            if (![self publishNetService]) {
                 successful = NO;
             }
         }
@@ -193,7 +193,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (MRBServerErrorCode)sendFileAtPath:(NSString *)filepath {
-    if([[NSFileManager defaultManager] fileExistsAtPath:filepath]) {
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filepath]) {
         NSData *data = [[NSFileManager defaultManager] contentsAtPath:filepath];
         return [self sendData:data];
     } else {
@@ -281,7 +281,7 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     NSInputStream *inputStream = nil;
     NSOutputStream *outputStream = nil;
 
-    if([remoteService getInputStream:&inputStream outputStream:&outputStream]) {
+    if ([remoteService getInputStream:&inputStream outputStream:&outputStream]) {
         [self connectedToInputStream:inputStream outputStream:outputStream];
     }
 }
