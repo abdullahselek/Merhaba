@@ -37,7 +37,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Merhaba', '~> 1.2.0'
+    pod 'Merhaba', '~> 1.2.1'
 end
 ```
 Then, run the following command:
@@ -58,7 +58,7 @@ brew install carthage
 To integrate Merhaba into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```
-github "abdullahselek/Merhaba" ~> 1.2.0
+github "abdullahselek/Merhaba" ~> 1.2.1
 ```
 
 Run carthage update to build the framework and drag the built Merhaba.framework into your Xcode project.
