@@ -17,6 +17,7 @@ Bonjour networking for discovery and connection between iOS, macOS and tvOS devi
 - Stop Browsing
 - Create Connection with Another Service
 - Send Data
+- Send file from given file path
 - Strong Events
 
 ## Requirements
@@ -76,8 +77,11 @@ NSString *type = @"TestingProtocol";
 self.server = [[MRBServer alloc] initWithProtocol:type];
 self.server.delegate = self;
 
-BOOL isStarted = [self.server start];
+NSError *error = nil;
+BOOL isStarted = [self.server start:&error];
 NSLog(@"Check server started : %@", (isStarted) ? @"YES" : @"NO");
+
+// Can handle error if not nil
 ```
 
 Connect to selected service
@@ -96,6 +100,11 @@ Handling incoming data with didAcceptData function
 ```
 NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 NSLog(@"Incoming message : %@", message);
+```
+
+Sending file at given path
+```
+[self.server sendFileAtPath:YOUR_FILE_PATH];
 ```
 
 Stopping server
