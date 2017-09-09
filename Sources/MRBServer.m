@@ -177,6 +177,11 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     return successful;
 }
 
+- (MRBServerErrorCode)sendText:(NSString *)text {
+    NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
+    return [self sendData:data];
+}
+
 - (MRBServerErrorCode)sendData:(NSData *)data {
     if (self.outputStreamHasSpace) {
         NSInteger len = [self.outputStream write:[data bytes] maxLength:[data length]];

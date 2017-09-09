@@ -154,6 +154,31 @@
     XCTAssertEqual(code, MRBServerSuccess);
 }
 
+- (void)testSendText_shouldReturnNoSpaceOnOutputStream_whenDataNil {
+    self.mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendText:@"text"];
+    XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
+}
+
+- (void)testSendText_shouldReturnNoSpaceOnOutputStream_whenOutputStreamHasSpaceNo {
+    self.mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    self.mrbServer.outputStreamHasSpace = NO;
+    MRBServerErrorCode code = [self.mrbServer sendText:@"text"];
+    XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
+}
+
+- (void)testSendText_shouldReturnOutputStreamReachedCapacity_whenTextValid {
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    NSString *text = @"text";
+    NSData *data = [Fixture dataFromFile:text];
+    OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(0);
+    self.mrbServer.outputStream = mockOutputStream;
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendText:text];
+    XCTAssertEqual(code, MRBServerOutputStreamReachedCapacity);
+}
+
 - (void)testSendFileAtPath_whenThereIsNoSuchFileAtPath_shouldReturnError {
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
     self.mrbServer.outputStream = mockOutputStream;
