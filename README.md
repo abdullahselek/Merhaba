@@ -18,6 +18,7 @@ Bonjour networking for discovery and connection between iOS, macOS and tvOS devi
 - Create Connection with Another Service
 - Send Data
 - Send file from given file path
+- Send given text
 - Strong Events
 
 ## Requirements
@@ -104,7 +105,12 @@ NSLog(@"Incoming message : %@", message);
 
 Sending file at given path
 ```
-[self.server sendFileAtPath:YOUR_FILE_PATH];
+MRBServerErrorCode code = [self.server sendFileAtPath:YOUR_FILE_PATH];
+```
+
+Send text
+```
+MRBServerErrorCode code = [self.mrbServer sendText:@"text"];
 ```
 
 Stopping server
