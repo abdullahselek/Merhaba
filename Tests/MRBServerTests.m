@@ -171,7 +171,7 @@
 - (void)testSendText_shouldReturnOutputStreamReachedCapacity_whenTextValid {
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
     NSString *text = @"text";
-    NSData *data = [Fixture dataFromFile:text];
+    NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
     OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(0);
     self.mrbServer.outputStream = mockOutputStream;
     self.mrbServer.outputStreamHasSpace = YES;
