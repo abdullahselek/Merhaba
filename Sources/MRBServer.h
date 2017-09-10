@@ -189,6 +189,15 @@ typedef NS_ENUM(NSInteger, MRBServerErrorCode) {
 - (MRBServerErrorCode)sendText:(NSString *)text;
 
 /**
+ * Send data to the remote side of the server
+ *
+ * @param text Text string you want to send
+ * @param encoding Encoding type
+ * @return MRBServerErrorCode result code
+ */
+- (MRBServerErrorCode)sendText:(NSString *)text encoding:(NSStringEncoding)encoding;
+
+/**
   * Send data to the remote side of the server
   *
   * @param data Data you want to send

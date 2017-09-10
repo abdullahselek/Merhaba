@@ -179,6 +179,24 @@
     XCTAssertEqual(code, MRBServerOutputStreamReachedCapacity);
 }
 
+- (void)testSendTextWithEncoding_shouldReturnNoSpaceOnOutputStream_whenOutputStreamHasSpaceNo {
+    self.mrbServer.outputStream = [[NSOutputStream alloc] initToMemory];
+    self.mrbServer.outputStreamHasSpace = NO;
+    MRBServerErrorCode code = [self.mrbServer sendText:@"Türkçe" encoding:NSWindowsCP1254StringEncoding];
+    XCTAssertEqual(code, MRBServerNoSpaceOnOutputStream);
+}
+
+- (void)testSendTextWithEncoding_shouldReturnOutputStreamReachedCapacity_whenTextValid {
+    id mockOutputStream = OCMClassMock([NSOutputStream class]);
+    NSString *text = @"Türkçe";
+    NSData *data = [text dataUsingEncoding:NSWindowsCP1254StringEncoding];
+    OCMStub([mockOutputStream write:[data bytes] maxLength:[data length]]).andReturn(0);
+    self.mrbServer.outputStream = mockOutputStream;
+    self.mrbServer.outputStreamHasSpace = YES;
+    MRBServerErrorCode code = [self.mrbServer sendText:text encoding:NSWindowsCP1254StringEncoding];
+    XCTAssertEqual(code, MRBServerOutputStreamReachedCapacity);
+}
+
 - (void)testSendFileAtPath_whenThereIsNoSuchFileAtPath_shouldReturnError {
     id mockOutputStream = OCMClassMock([NSOutputStream class]);
     self.mrbServer.outputStream = mockOutputStream;
