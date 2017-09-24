@@ -313,23 +313,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006F042F704834A4A2B954AEEA34D4FC /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOS.framework; path = "Pods-Merhaba-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		006F042F704834A4A2B954AEEA34D4FC /* Pods_Merhaba_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C8459BBF0BB85E5A56ECA83030FA7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D97BFF1B476EDE601E206956490431 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
 		00F20526A7FDF0338683D918A0BE31A8 /* OCClassMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCClassMockObject.m; path = Source/OCMock/OCClassMockObject.m; sourceTree = "<group>"; };
 		01B30A953C22953096368022546D78C0 /* NSObject+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OCMAdditions.m"; path = "Source/OCMock/NSObject+OCMAdditions.m"; sourceTree = "<group>"; };
 		02B7C80C83E6D0CF04E8D3AF92AC7FF2 /* Pods-Merhaba-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
 		02D22B32D4A2AFC4CFEAE46937F18AAD /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
-		03A7F4D67AE93E4CEFC8E0A98073FC59 /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_iOSTests.framework; path = "Pods-Merhaba-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A7F4D67AE93E4CEFC8E0A98073FC59 /* Pods_Merhaba_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ECA6CFAC9B918AB2214EB476E188FB /* Pods-tvOS Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tvOS Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		049416F787A28019CB1808176DAB4120 /* Pods-Merhaba-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		05CFB2491B71E2A89DF49742D5857F7B /* Pods_macOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_macOS_Sample.framework; path = "Pods-macOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CFB2491B71E2A89DF49742D5857F7B /* Pods_macOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3FA2049200BA3D9CF1B4D249344DD6 /* Pods-macOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-macOS Sample.release.xcconfig"; sourceTree = "<group>"; };
 		0E11F750690ADA1A0C992364549016BE /* Pods-tvOS Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tvOS Sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		0F68BD4645070053BD87C9140108B2ED /* OCMConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMConstraint.m; path = Source/OCMock/OCMConstraint.m; sourceTree = "<group>"; };
 		101178BDE2EA2EE90DA28A58B9325E83 /* Merhaba-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Merhaba-tvOS.xcconfig"; path = "../Merhaba-tvOS/Merhaba-tvOS.xcconfig"; sourceTree = "<group>"; };
-		11490012FC3366D3082388A2500B089C /* Pods-tvOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-tvOS Sample.modulemap"; sourceTree = "<group>"; };
-		130913BBFFE835586FAFBDD30786A845 /* Pods_Merhaba_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_tvOS.framework; path = "Pods-Merhaba-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11490012FC3366D3082388A2500B089C /* Pods-tvOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tvOS Sample.modulemap"; sourceTree = "<group>"; };
+		130913BBFFE835586FAFBDD30786A845 /* Pods_Merhaba_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		154CAB152071D648C4EF6CA74E43E732 /* Pods-Merhaba-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-macOS-dummy.m"; sourceTree = "<group>"; };
 		18624256ED5020A5A730AB61402504A8 /* Pods-macOS Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-macOS Sample-dummy.m"; sourceTree = "<group>"; };
 		1B6AC0F78A350C75A374688975CB086A /* Pods-Merhaba-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-tvOS-dummy.m"; sourceTree = "<group>"; };
@@ -338,22 +338,22 @@
 		1C35CD9806E1B0C00F11571A958B4D0A /* OCMock-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OCMock-iOS-prefix.pch"; path = "../OCMock-iOS/OCMock-iOS-prefix.pch"; sourceTree = "<group>"; };
 		1C8E8D88358BDA0E14A7A9079047233A /* Pods-Merhaba-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1D11BDFC6D5D642334995B8272F7B951 /* Pods-Merhaba-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		1D2C3D89E7E004A2853DE9870508DD5B /* Pods_Merhaba_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOSTests.framework; path = "Pods-Merhaba-macOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2C3D89E7E004A2853DE9870508DD5B /* Pods_Merhaba_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_macOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E77BD99EA97729B34888471E353AA2C /* Pods-Merhaba-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-iOS-resources.sh"; sourceTree = "<group>"; };
 		1EF90E115CDD692FA299AF9C7BAAE190 /* Pods-Merhaba-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		207ED86BA24FD35144748A6CB867D071 /* Pods-tvOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvOS Sample.release.xcconfig"; sourceTree = "<group>"; };
-		20B81531A3BBEF8945DC171DBA04AE84 /* OCMock-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "OCMock-iOS.modulemap"; path = "../OCMock-iOS/OCMock-iOS.modulemap"; sourceTree = "<group>"; };
-		21ACEBB70C11194A96306AF365719AA6 /* Pods-Merhaba-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-macOS.modulemap"; sourceTree = "<group>"; };
+		20B81531A3BBEF8945DC171DBA04AE84 /* OCMock-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "OCMock-iOS.modulemap"; path = "../OCMock-iOS/OCMock-iOS.modulemap"; sourceTree = "<group>"; };
+		21ACEBB70C11194A96306AF365719AA6 /* Pods-Merhaba-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Merhaba-macOS.modulemap"; sourceTree = "<group>"; };
 		22BE45F5131318D652175576D4ACDF92 /* Pods-macOS Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macOS Sample-resources.sh"; sourceTree = "<group>"; };
 		23504CFEC4A9C9244B57341E4C6BB92F /* OCObserverMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCObserverMockObject.m; path = Source/OCMock/OCObserverMockObject.m; sourceTree = "<group>"; };
-		2358C65A2D8A09185E36DE4B561FB76E /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = "Merhaba-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2358C65A2D8A09185E36DE4B561FB76E /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236187C5F86BBDE65B0C95D295163A9D /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
 		23D019BA1062E7CBA141B7DF06435AEC /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Source/OCMock/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
-		253424EAD3953B7277D2AD732D38FA11 /* Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Merhaba-iOS.modulemap"; path = "../Merhaba-iOS/Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
+		253424EAD3953B7277D2AD732D38FA11 /* Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Merhaba-iOS.modulemap"; path = "../Merhaba-iOS/Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
 		27351DA49BB963983A129F32A7D3A947 /* Pods-Merhaba-macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		2A0AE4C4E819D9150FBAE6B27D0A2B00 /* NSValue+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+OCMAdditions.h"; path = "Source/OCMock/NSValue+OCMAdditions.h"; sourceTree = "<group>"; };
 		2A83A00A0498382F6E74A1D47A0EA5C7 /* Pods-Merhaba-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-tvOS-umbrella.h"; sourceTree = "<group>"; };
-		2C9C694597A132CC6B5813DD77E3C197 /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS_Sample.framework; path = "Pods-iOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9C694597A132CC6B5813DD77E3C197 /* Pods_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4624CCC69F6C01076D99A3A4BCFE26 /* Pods-Merhaba-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-tvOS-resources.sh"; sourceTree = "<group>"; };
 		302E25D333DCE07EACAF72562CB9A7E6 /* OCMock-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OCMock-iOS-dummy.m"; path = "../OCMock-iOS/OCMock-iOS-dummy.m"; sourceTree = "<group>"; };
 		3117A6DABEC60DDC71F1FA2D4CCF9647 /* Merhaba.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Merhaba.h; sourceTree = "<group>"; };
@@ -395,20 +395,20 @@
 		54B91A8307A50CA32257B5B02CA540B6 /* Merhaba-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Merhaba-OSX-dummy.m"; sourceTree = "<group>"; };
 		55AD978C108E81325365B304A233238B /* Merhaba-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Merhaba-iOS-umbrella.h"; path = "../Merhaba-iOS/Merhaba-iOS-umbrella.h"; sourceTree = "<group>"; };
 		56C27032F4837213D25339C0FEC38CDE /* Pods-iOS Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS Sample-dummy.m"; sourceTree = "<group>"; };
-		57134D3A069108A979AC5E5BE7EF7769 /* Pods_Merhaba_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_macOS.framework; path = "Pods-Merhaba-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57134D3A069108A979AC5E5BE7EF7769 /* Pods_Merhaba_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		585A29C7C078595F7BDFD08BAF731BE2 /* Pods-Merhaba-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5D9729FCF134204534028E91123B07B9 /* OCClassMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCClassMockObject.h; path = Source/OCMock/OCClassMockObject.h; sourceTree = "<group>"; };
 		5EE1EB167348D5E40AFD727269BFEFB1 /* OCMObserverRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMObserverRecorder.h; path = Source/OCMock/OCMObserverRecorder.h; sourceTree = "<group>"; };
-		604E2D76E965E6791F5A621686B2B530 /* OCMock-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "OCMock-OSX.modulemap"; sourceTree = "<group>"; };
+		604E2D76E965E6791F5A621686B2B530 /* OCMock-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "OCMock-OSX.modulemap"; sourceTree = "<group>"; };
 		617268429C57F00B374F3D14BB3D6B6C /* OCMock-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OCMock-OSX.xcconfig"; sourceTree = "<group>"; };
-		61764664936D99AED2AA5A78D50B4DB9 /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = "Merhaba-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61764664936D99AED2AA5A78D50B4DB9 /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61968E2AD0C5A15A8646C83757AC9F17 /* Pods-Merhaba-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		621295BA2095D29D1434543F19BEB31B /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = "OCMock-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621295BA2095D29D1434543F19BEB31B /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6304FC267ACABA108F88F86466861951 /* Merhaba-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Merhaba-iOS.xcconfig"; path = "../Merhaba-iOS/Merhaba-iOS.xcconfig"; sourceTree = "<group>"; };
 		64449E322DB05BC732B3849C3C465038 /* Pods-Merhaba-macOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-macOSTests-dummy.m"; sourceTree = "<group>"; };
 		657AA66AE76305F823E4CDF0064C3B53 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		66718F467796A32509DFDD9334EB4354 /* OCMBlockArgCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockArgCaller.m; path = Source/OCMock/OCMBlockArgCaller.m; sourceTree = "<group>"; };
-		668809377CB857341023A78302DF6D87 /* Pods-Merhaba-macOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-macOSTests.modulemap"; sourceTree = "<group>"; };
+		668809377CB857341023A78302DF6D87 /* Pods-Merhaba-macOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Merhaba-macOSTests.modulemap"; sourceTree = "<group>"; };
 		6734A1BB7DEDBED227C09EB0E9D5B490 /* Merhaba-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Merhaba-tvOS-umbrella.h"; path = "../Merhaba-tvOS/Merhaba-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		68E3E475874F1E8FD796A789635302CD /* Pods-iOS Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS Sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		6904C134F46B865991D7F5C2EB00A0B3 /* Pods-tvOS Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tvOS Sample-resources.sh"; sourceTree = "<group>"; };
@@ -424,7 +424,7 @@
 		766345066F7B8F34E9055CEF0656DDC5 /* Pods-Merhaba-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78DA3AA8795C3E46949C321B96D2D528 /* Pods-macOS Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macOS Sample-frameworks.sh"; sourceTree = "<group>"; };
 		79287B4965697621276F2CA7451C06D4 /* OCMMacroState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = Source/OCMock/OCMMacroState.h; sourceTree = "<group>"; };
-		79D00A4927F93A5D3A28F8FC1396B04B /* Pods-iOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOS Sample.modulemap"; sourceTree = "<group>"; };
+		79D00A4927F93A5D3A28F8FC1396B04B /* Pods-iOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOS Sample.modulemap"; sourceTree = "<group>"; };
 		7A3F7F408D434B93D623D9835AADEB1F /* OCMock-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-OSX-prefix.pch"; sourceTree = "<group>"; };
 		7B3C21F0FAE678A4B2442E1EC13996F3 /* Pods-iOS Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7B6DC295D3D4B041F11F2C55B3B215D0 /* Pods-Merhaba-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -438,23 +438,23 @@
 		8EA8AC611E4EEF783C1538F9E6D40DB8 /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
 		9088361D71140D0CE056ADA2AC82734B /* Pods-Merhaba-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Merhaba-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		92055F0248FEB68E2CAE86BF0B4A630A /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F74890735FA8E157AD809C29512EA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95986ADE976159164828540A6E60533D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96428FD40B433B87A1A6272B217FB2FF /* OCMock-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-OSX-umbrella.h"; sourceTree = "<group>"; };
-		96EC80CB4D4F14E9A1468663CB25BED4 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = "OCMock-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97C68FD81E22B7A86DA558F4D9B2C3CD /* OCMock-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "OCMock-tvOS.modulemap"; path = "../OCMock-tvOS/OCMock-tvOS.modulemap"; sourceTree = "<group>"; };
+		96EC80CB4D4F14E9A1468663CB25BED4 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C68FD81E22B7A86DA558F4D9B2C3CD /* OCMock-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "OCMock-tvOS.modulemap"; path = "../OCMock-tvOS/OCMock-tvOS.modulemap"; sourceTree = "<group>"; };
 		981E39212AC4C7E076C7B6F0E1E9CF81 /* Pods-Merhaba-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		989B7966A67D38D3A45F107CB2A8D098 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98C3386674BB34E37039D3C69508AD8E /* Pods-Merhaba-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Merhaba-macOS-umbrella.h"; sourceTree = "<group>"; };
-		9A8B9080A1BCD70295C339F1BABE69C2 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCMock.framework; path = "OCMock-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BC79581C10259FB0C75D8339542EA68 /* Pods-Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
+		9A8B9080A1BCD70295C339F1BABE69C2 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC79581C10259FB0C75D8339542EA68 /* Pods-Merhaba-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Merhaba-iOS.modulemap"; sourceTree = "<group>"; };
 		9CD6EEFF7C33698A25D0DA114408DDBB /* OCMArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Source/OCMock/OCMArg.h; sourceTree = "<group>"; };
 		9E63723DA838726EE619FD8C703FDE94 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+OCMAdditions.h"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
 		A529DC4B3EA8FB3FF9F4F23836B1601E /* Merhaba-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Merhaba-iOS-dummy.m"; path = "../Merhaba-iOS/Merhaba-iOS-dummy.m"; sourceTree = "<group>"; };
 		A6A263A04B036AA866FF0CF9F6D2E2BF /* Pods-Merhaba-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8B055F4304461ECBFDC2B6E762B8BB5 /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMIndirectReturnValueProvider.h; path = Source/OCMock/OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
-		A92DE117552042C408A137972A7B1271 /* Pods-macOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-macOS Sample.modulemap"; sourceTree = "<group>"; };
+		A92DE117552042C408A137972A7B1271 /* Pods-macOS Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-macOS Sample.modulemap"; sourceTree = "<group>"; };
 		A9373DD2F0C3C874DC49B1DFAA91AD12 /* Pods-Merhaba-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Merhaba-iOSTests-dummy.m"; sourceTree = "<group>"; };
 		AA15354B6B0474640AFFDAD4EDF10FA6 /* Pods-tvOS Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tvOS Sample-dummy.m"; sourceTree = "<group>"; };
 		AC2C5A3B38D5709A07D9BF92E31D831E /* Pods-iOS Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -465,10 +465,10 @@
 		B29855694D8935B9C4FB221322F87543 /* Pods-Merhaba-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		B348DADE34C85CE3DC0CD2C2E25B4A2A /* OCMInvocationStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationStub.m; path = Source/OCMock/OCMInvocationStub.m; sourceTree = "<group>"; };
 		B57B81F95BCD1779A9261B6408D23E94 /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
-		B7C5ED550DC53D2A1899F8DA351E2806 /* Pods_Merhaba_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Merhaba_tvOSTests.framework; path = "Pods-Merhaba-tvOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C5ED550DC53D2A1899F8DA351E2806 /* Pods_Merhaba_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merhaba_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F2EDD6095FA8291FAC17C72579D564 /* Pods-Merhaba-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA3750FCEB7B643AF222F5CFE9580AE7 /* Pods-Merhaba-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		BA5B19D8ECCE83BDCFD74EB1F2DB65B3 /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Merhaba.framework; path = "Merhaba-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5B19D8ECCE83BDCFD74EB1F2DB65B3 /* Merhaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Merhaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3101B17E30E24507C5181C7BB4F42E /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OCMAdditions.m"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
 		BFBC987C7FE69C96F47A6770C8116D31 /* OCMBlockArgCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockArgCaller.h; path = Source/OCMock/OCMBlockArgCaller.h; sourceTree = "<group>"; };
 		C022EBAE245B6AA385BE927EF36271DA /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMReturnValueProvider.h; path = Source/OCMock/OCMReturnValueProvider.h; sourceTree = "<group>"; };
@@ -478,11 +478,11 @@
 		C4650183ECE6B056343334713C38BCD1 /* OCMock-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "OCMock-tvOS.xcconfig"; path = "../OCMock-tvOS/OCMock-tvOS.xcconfig"; sourceTree = "<group>"; };
 		C603130A88A09FB036F28A82DA4ECAF1 /* OCMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Source/OCMock/OCMockObject.h; sourceTree = "<group>"; };
 		C6FB02949585F471C08AE9DD10941719 /* OCMArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArg.m; path = Source/OCMock/OCMArg.m; sourceTree = "<group>"; };
-		C7B1EA60F8C266C55F5904DA0958C1B5 /* Pods-Merhaba-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-tvOS.modulemap"; sourceTree = "<group>"; };
-		C82124D144A9004D1BC1654CECFC0081 /* Merhaba-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Merhaba-tvOS.modulemap"; path = "../Merhaba-tvOS/Merhaba-tvOS.modulemap"; sourceTree = "<group>"; };
+		C7B1EA60F8C266C55F5904DA0958C1B5 /* Pods-Merhaba-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Merhaba-tvOS.modulemap"; sourceTree = "<group>"; };
+		C82124D144A9004D1BC1654CECFC0081 /* Merhaba-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Merhaba-tvOS.modulemap"; path = "../Merhaba-tvOS/Merhaba-tvOS.modulemap"; sourceTree = "<group>"; };
 		C8746607AEA550353110CBF8C0ABC0EF /* OCMFunctionsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctionsPrivate.h; path = Source/OCMock/OCMFunctionsPrivate.h; sourceTree = "<group>"; };
-		C88C869ED614CCF4D3B64709D41F8AFA /* Merhaba-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Merhaba-OSX.modulemap"; sourceTree = "<group>"; };
-		C8BEF3A6CC485D218420FCEC97450A97 /* Pods_tvOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_tvOS_Sample.framework; path = "Pods-tvOS Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88C869ED614CCF4D3B64709D41F8AFA /* Merhaba-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Merhaba-OSX.modulemap"; sourceTree = "<group>"; };
+		C8BEF3A6CC485D218420FCEC97450A97 /* Pods_tvOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A8836D079B976D30DA6E4EBCFDD09F /* Pods-macOS Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macOS Sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB3799DDC20C8F7E13090F79718737A1 /* OCMLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMLocation.m; path = Source/OCMock/OCMLocation.m; sourceTree = "<group>"; };
 		CB9DA213BAFF1CC2DA96B0E1CBEA9107 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../OCMock-tvOS/Info.plist"; sourceTree = "<group>"; };
@@ -509,7 +509,7 @@
 		E6763F654629435B08DC5338AC75C743 /* OCPartialMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCPartialMockObject.m; path = Source/OCMock/OCPartialMockObject.m; sourceTree = "<group>"; };
 		E7567C301CE2FA675E55D51E4CB5964D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A64FBB9DBBBE03BC6FB35AB35F181D /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
-		E89E7FFB771F85802AC1CA98D5F3F439 /* Pods-Merhaba-tvOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-tvOSTests.modulemap"; sourceTree = "<group>"; };
+		E89E7FFB771F85802AC1CA98D5F3F439 /* Pods-Merhaba-tvOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Merhaba-tvOSTests.modulemap"; sourceTree = "<group>"; };
 		EA90499307EE6DF29ED8B21D3EB51C77 /* Pods-tvOS Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tvOS Sample-frameworks.sh"; sourceTree = "<group>"; };
 		ED12E52CBFE034C36C26C51625532DA9 /* Pods-Merhaba-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		EFAD63CC91C292DEE8F24B65B2B5AEB9 /* Pods-Merhaba-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Merhaba-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -520,7 +520,7 @@
 		F85D930F84FDEDA8F8AD1E9D7621A5D3 /* OCMFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMFunctions.m; path = Source/OCMock/OCMFunctions.m; sourceTree = "<group>"; };
 		F97F053CC4B3636B0FB4F43582683082 /* Pods-Merhaba-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Merhaba-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9A992AA553CECEDD2FAD950BC583E13 /* Pods-Merhaba-macOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Merhaba-macOSTests-resources.sh"; sourceTree = "<group>"; };
-		FAC22226884F0A889E3BFA471B30A4D3 /* Pods-Merhaba-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Merhaba-iOSTests.modulemap"; sourceTree = "<group>"; };
+		FAC22226884F0A889E3BFA471B30A4D3 /* Pods-Merhaba-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Merhaba-iOSTests.modulemap"; sourceTree = "<group>"; };
 		FB80B97BB837F3B367BE052A9FF64626 /* OCMInvocationStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationStub.h; path = Source/OCMock/OCMInvocationStub.h; sourceTree = "<group>"; };
 		FCF69F79BBC2DA6C73B3EA2D92EEF394 /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
 		FEFAB24E1C36D1F61635FB7CB98EBD4E /* Merhaba-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Merhaba-tvOS-dummy.m"; path = "../Merhaba-tvOS/Merhaba-tvOS-dummy.m"; sourceTree = "<group>"; };
@@ -725,7 +725,6 @@
 				AEB91E7EA1A529C2F3CE4CCA70700749 /* OCProtocolMockObject.m */,
 				983B9BDD31E72CD348CE2003C6676C7B /* Support Files */,
 			);
-			name = OCMock;
 			path = OCMock;
 			sourceTree = "<group>";
 		};
@@ -813,7 +812,6 @@
 				537D7D5B5D7E3010B79B78F2F31B6281 /* MRBServer.h */,
 				FF9CA72094E811FFEB3B649E32A8AFB2 /* MRBServer.m */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -1566,7 +1564,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2081,19 +2079,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -2583,20 +2591,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
