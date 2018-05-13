@@ -1,7 +1,7 @@
 {
   "name": "Merhaba",
-  "version": "1.1.0",
-  "summary": "Discovery and connection between iOS and macOS devices",
+  "version": "1.2.1",
+  "summary": "Discovery and connection between iOS, macOS and tvOS devices",
   "homepage": "https://github.com/abdullahselek/Merhaba",
   "license": {
     "type": "MIT",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/abdullahselek/Merhaba.git",
-    "tag": "1.1.0"
+    "tag": "1.2.1"
   },
   "platforms": {
     "ios": "9.0",
