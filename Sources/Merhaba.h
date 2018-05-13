@@ -2,10 +2,6 @@
 //  Merhaba.h
 //  Merhaba
 //
-//  Created by Abdullah Selek on 02/01/2017.
-//
-//  MIT License
-//
 //  Copyright (c) 2017 Abdullah Selek
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
