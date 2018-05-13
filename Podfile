@@ -39,6 +39,7 @@ target 'Merhaba-tvOS' do
 end
 
 target 'iOS Sample' do
+	platform :ios, '9.0'
 	project 'Sample/iOS Sample/iOS Sample.xcodeproj'
 	use_frameworks!
     inherit! :search_paths
@@ -46,6 +47,7 @@ target 'iOS Sample' do
 end
 
 target 'macOS Sample' do
+	platform :osx, '10.9'
 	project 'Sample/macOS Sample/macOS Sample.xcodeproj'
 	use_frameworks!
     inherit! :search_paths
@@ -53,8 +55,9 @@ target 'macOS Sample' do
 end
 
 target 'tvOS Sample' do
-  project 'Sample/tvOS Sample/tvOS Sample.xcodeproj'
-  use_frameworks!
+	platform :tvos, '9.0'
+  	project 'Sample/tvOS Sample/tvOS Sample.xcodeproj'
+  	use_frameworks!
     inherit! :search_paths
     product_pods
 end
