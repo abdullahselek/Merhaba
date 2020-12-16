@@ -50,13 +50,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 @implementation MRBServer
 
-- (instancetype)init {
+- (instancetype)init
+{
     return [self initWithDomainName:@""
                            protocol:MRBDefaultProtocol
                                name:@""];
 }
 
-- (instancetype)initWithProtocol:(NSString *)protocol {
+- (instancetype)initWithProtocol:(NSString *)protocol
+{
     return [self initWithDomainName:@""
                            protocol:[NSString stringWithFormat:@"_%@._tcp.", protocol]
                                name:@""];
@@ -64,7 +66,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 - (instancetype)initWithDomainName:(NSString *)domain
                           protocol:(NSString *)protocol
-                              name:(NSString *)name {
+                              name:(NSString *)name
+{
     self = [super init];
     if (self) {
         self.domain = domain;
@@ -76,7 +79,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     return self;
 }
 
-- (CFSocketRef)createSocket {
+- (CFSocketRef)createSocket
+{
     CFSocketContext socketCtxt = {0, (__bridge_retained void *)(self), NULL, NULL, NULL};
     return CFSocketCreate(kCFAllocatorDefault,
                           PF_INET,
@@ -87,13 +91,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
                           &socketCtxt);
 }
 
-- (BOOL)publishNetService {
+- (BOOL)publishNetService
+{
     BOOL successful = NO;
     self.netService = [[NSNetService alloc] initWithDomain:self.domain
                                                       type:self.protocol
                                                       name:self.name
                                                       port:self.port];
-    if (self.netService) {
+    if (self.netService)
+    {
         [self.netService scheduleInRunLoop:[NSRunLoop currentRunLoop]
                                    forMode:NSRunLoopCommonModes];
         [self.netService publish];
@@ -103,17 +109,20 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     return successful;
 }
 
-- (BOOL)start:(NSError **)error {
+- (BOOL)start:(NSError **)error
+{
     BOOL successful = YES;
     self.socket = [self createSocket];
-    if (!self.socket) {
+    if (!self.socket)
+    {
         *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
                                             code:MRBServerNoSocketsAvailable
                                         userInfo:nil];
         successful = NO;
     }
     
-    if (successful) {
+    if (successful)
+    {
         // enable address reuse
         int yes = 1;
         setsockopt(CFSocketGetNative(self.socket),
@@ -143,7 +152,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
         addr4.sin_addr.s_addr = htonl(INADDR_ANY);
         NSData *address4 = [NSData dataWithBytes:&addr4 length:sizeof(addr4)];
 
-        if (kCFSocketSuccess != CFSocketSetAddress(self.socket, (CFDataRef)address4)) {
+        if (kCFSocketSuccess != CFSocketSetAddress(self.socket, (CFDataRef)address4))
+        {
             *error = [[NSError alloc] initWithDomain:MRBServerErrorDomain
                                                 code:MRBServerCouldNotBindToIPv4Address
                                             userInfo:nil];
@@ -152,7 +162,9 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
             }
             self.socket = NULL;
             successful = NO;
-        } else {
+        }
+        else
+        {
             // now that the binding was successful, we get the port number
             NSData *addr = (NSData *)CFBridgingRelease(CFSocketCopyAddress(self.socket));
             memcpy(&addr4, [addr bytes], [addr length]);
@@ -164,7 +176,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
             CFRunLoopAddSource(cfrl, source4, kCFRunLoopCommonModes);
             CFRelease(source4);
 
-            if (![self publishNetService]) {
+            if (![self publishNetService])
+            {
                 successful = NO;
             }
         }
@@ -173,42 +186,58 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     return successful;
 }
 
-- (MRBServerErrorCode)sendText:(NSString *)text {
+- (MRBServerErrorCode)sendText:(NSString *)text
+{
     NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
     return [self sendData:data];
 }
 
-- (MRBServerErrorCode)sendText:(NSString *)text encoding:(NSStringEncoding)encoding {
+- (MRBServerErrorCode)sendText:(NSString *)text encoding:(NSStringEncoding)encoding
+{
     NSData *data = [text dataUsingEncoding:encoding];
     return [self sendData:data];
 }
 
-- (MRBServerErrorCode)sendData:(NSData *)data {
-    if (self.outputStreamHasSpace) {
+- (MRBServerErrorCode)sendData:(NSData *)data
+{
+    if (self.outputStreamHasSpace)
+    {
         NSInteger len = [self.outputStream write:[data bytes] maxLength:[data length]];
-        if (len == -1) {
+        if (len == -1)
+        {
             return MRBServerNoSpaceOnOutputStream;
-        } else if (len == 0) {
+        }
+        else if (len == 0)
+        {
             return MRBServerOutputStreamReachedCapacity;
-        } else {
+        }
+        else
+        {
             return MRBServerSuccess;
         }
-    } else {
+    }
+    else
+    {
         return MRBServerNoSpaceOnOutputStream;
     }
 }
 
-- (MRBServerErrorCode)sendFileAtPath:(NSString *)filepath {
-    if ([[NSFileManager defaultManager] fileExistsAtPath:filepath]) {
+- (MRBServerErrorCode)sendFileAtPath:(NSString *)filepath
+{
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filepath])
+    {
         NSData *data = [[NSFileManager defaultManager] contentsAtPath:filepath];
         return [self sendData:data];
-    } else {
+    }
+    else
+    {
         NSLog(@"Merhaba try to send file on %@, but there is no such file!", filepath);
         return MRBServerFileNotFound;
     }
 }
 
-- (void)connectToRemoteService:(NSNetService *)selectedService {
+- (void)connectToRemoteService:(NSNetService *)selectedService
+{
     [self.currentlyResolvingService stop];
     self.currentlyResolvingService = nil;
 
@@ -218,7 +247,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (void)connectedToInputStream:(NSInputStream *)inputStream
-                  outputStream:(NSOutputStream *)outputStream {
+                  outputStream:(NSOutputStream *)outputStream
+{
     // need to close existing streams
     [self stopStreams];
 
@@ -236,10 +266,12 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 }
 
 - (void)stop {
-    if (self.netService) {
+    if (self.netService)
+    {
         [self stopNetService];
     }
-    if (self.socket) {
+    if (self.socket)
+    {
         CFSocketInvalidate(self.socket);
         CFRelease(self.socket);
         self.socket = NULL;
@@ -248,22 +280,26 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self.delegate serverStopped:self];
 }
 
-- (void)stopNetService {
+- (void)stopNetService
+{
     [self.netService stop];
     [self.netService removeFromRunLoop:[NSRunLoop currentRunLoop]
                                forMode:NSRunLoopCommonModes];
     self.netService = nil;
 }
 
-- (void)stopStreams {
-    if (self.inputStream) {
+- (void)stopStreams
+{
+    if (self.inputStream)
+    {
         [self.inputStream close];
         [self.inputStream removeFromRunLoop:[NSRunLoop currentRunLoop]
                                     forMode:NSRunLoopCommonModes];
         self.inputStream = nil;
         self.inputStreamReady = NO;
     }
-    if (self.outputStream) {
+    if (self.outputStream)
+    {
         [self.outputStream close];
         [self.outputStream removeFromRunLoop:[NSRunLoop currentRunLoop]
                                      forMode:NSRunLoopCommonModes];
@@ -272,7 +308,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     }
 }
 
-- (void)stopBrowser {
+- (void)stopBrowser
+{
     [self.browser stop];
     self.browser = nil;
     [self.localService stop];
@@ -283,16 +320,19 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 #pragma mark Remote Service methods
 
-- (void)remoteServiceResolved:(NSNetService *)remoteService {
+- (void)remoteServiceResolved:(NSNetService *)remoteService
+{
     NSInputStream *inputStream = nil;
     NSOutputStream *outputStream = nil;
 
-    if ([remoteService getInputStream:&inputStream outputStream:&outputStream]) {
+    if ([remoteService getInputStream:&inputStream outputStream:&outputStream])
+    {
         [self connectedToInputStream:inputStream outputStream:outputStream];
     }
 }
 
-- (void)searchForServicesOfType:(NSString *)type {
+- (void)searchForServicesOfType:(NSString *)type
+{
     [self.browser stop];
     self.browser = nil;
 
@@ -303,27 +343,34 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 #pragma mark Stream methods
 
-- (void)streamCompletedOpening:(NSStream *)stream {
-    if (self.inputStream == stream) {
+- (void)streamCompletedOpening:(NSStream *)stream
+{
+    if (self.inputStream == stream)
+    {
         self.inputStreamReady = YES;
     }
-    if (self.outputStream == stream) {
+    if (self.outputStream == stream)
+    {
         self.outputStreamReady = YES;
     }
 
-    if (self.inputStreamReady && self.outputStreamReady) {
+    if (self.inputStreamReady && self.outputStreamReady)
+    {
         [self.delegate serverRemoteConnectionComplete:self];
         [self stopNetService];
     }
 }
 
-- (void)streamHasBytes:(NSStream *)stream {
+- (void)streamHasBytes:(NSStream *)stream
+{
     NSMutableData *data = [NSMutableData data];
     uint8_t *buf = calloc(self.payloadSize, sizeof(uint8_t));
     NSUInteger len = 0;
-    while ([(NSInputStream *) stream hasBytesAvailable]) {
+    while ([(NSInputStream *) stream hasBytesAvailable])
+    {
         len = [self.inputStream read:buf maxLength:self.payloadSize];
-        if (len > 0) {
+        if (len > 0)
+        {
             [data appendBytes:buf length:len];
         }
     }
@@ -331,11 +378,13 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self.delegate server:self didAcceptData:data];
 }
 
-- (void)streamHasSpace:(NSStream *)stream {
+- (void)streamHasSpace:(NSStream *)stream
+{
     self.outputStreamHasSpace = YES;
 }
 
-- (void)streamEncounteredEnd:(NSStream *)stream {
+- (void)streamEncounteredEnd:(NSStream *)stream
+{
     // remote side died, tell the delegate then restart my local
     // service looking for some other server to connect to
     [self.delegate server:self lostConnection:nil];
@@ -343,23 +392,27 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self publishNetService];
 }
 
-- (void)streamEncounteredError:(NSStream *)stream {
+- (void)streamEncounteredError:(NSStream *)stream
+{
     [self.delegate server:self lostConnection:[[stream streamError] userInfo]];
     [self stop];
 }
 
 #pragma mark NSNetServiceDelegate methods
 
-- (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict {
+- (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict
+{
     [self.currentlyResolvingService stop];
     self.currentlyResolvingService = nil;
 }
 
-- (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo {
+- (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorInfo
+{
     [self.delegate server:self didNotStart:errorInfo];
 }
 
-- (void)netServiceDidResolveAddress:(NSNetService *)service {
+- (void)netServiceDidResolveAddress:(NSNetService *)service
+{
     assert(service == self.currentlyResolvingService);
 
     [self.currentlyResolvingService stop];
@@ -368,7 +421,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
     [self remoteServiceResolved:service];
 }
 
-- (void)netServiceDidPublish:(NSNetService *)service {
+- (void)netServiceDidPublish:(NSNetService *)service
+{
     self.localService = service;
     self.name = service.name;
     // now start looking for others
@@ -379,12 +433,16 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 - (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
          didRemoveService:(NSNetService*)service
-               moreComing:(BOOL)moreComing {
+               moreComing:(BOOL)moreComing
+{
 
-    if ([service.name isEqualToString:self.currentlyResolvingService.name]) {
+    if ([service.name isEqualToString:self.currentlyResolvingService.name])
+    {
         [self.currentlyResolvingService stop];
         self.currentlyResolvingService = nil;
-    } else if ([self.localService.name isEqualToString:service.name]) {
+    }
+    else if ([self.localService.name isEqualToString:service.name])
+    {
         self.localService = nil;
     }
     [self.delegate serviceRemoved:service moreComing:moreComing];
@@ -392,33 +450,42 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 - (void)netServiceBrowser:(NSNetServiceBrowser*)netServiceBrowser
            didFindService:(NSNetService*)service
-               moreComing:(BOOL)moreComing {
-    if (![service.name isEqualToString:self.localService.name]) {
+               moreComing:(BOOL)moreComing
+{
+    if (![service.name isEqualToString:self.localService.name])
+    {
         [self.delegate serviceAdded:service moreComing:moreComing];
     }
 }
 
 #pragma mark NSStreamDelegate methods
 
-- (void)stream:(NSStream *)stream handleEvent:(NSStreamEvent)eventCode {
-    switch (eventCode) {
-        case NSStreamEventOpenCompleted: {
+- (void)stream:(NSStream *)stream handleEvent:(NSStreamEvent)eventCode
+{
+    switch (eventCode)
+    {
+        case NSStreamEventOpenCompleted:
+        {
             [self streamCompletedOpening:stream];
             break;
         }
-        case NSStreamEventHasBytesAvailable: {
+        case NSStreamEventHasBytesAvailable:
+        {
             [self streamHasBytes:stream];
             break;
         }
-        case NSStreamEventHasSpaceAvailable: {
+        case NSStreamEventHasSpaceAvailable:
+        {
             [self streamHasSpace:stream];
             break;
         }
-        case NSStreamEventEndEncountered: {
+        case NSStreamEventEndEncountered:
+        {
             [self streamEncounteredEnd:stream];
             break;
         }
-        case NSStreamEventErrorOccurred: {
+        case NSStreamEventErrorOccurred:
+        {
             [self streamEncounteredError:stream];
             break;
         }
@@ -429,7 +496,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 
 #pragma mark Dealloc
 
-- (void)dealloc {
+- (void)dealloc
+{
     [self stop];
     [self stopBrowser];
     self.domain = nil;
@@ -443,13 +511,15 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
                                              CFSocketCallBackType type,
                                              CFDataRef address,
-                                             const void *data, void *info) {
+                                             const void *data, void *info)
+{
     /**
       * the server's socket has accepted a connection request
       * this function is called because it was registered in the
       * socket create method
      */
-    if (kCFSocketAcceptCallBack == type) {
+    if (kCFSocketAcceptCallBack == type)
+    {
         MRBServer *server = (MRBServer *) CFBridgingRelease(info);
         // on an accept the data is the native socket handle
         CFSocketNativeHandle nativeSocketHandle = *(CFSocketNativeHandle *)data;
@@ -458,7 +528,8 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
         CFWriteStreamRef writeStream = NULL;
         CFStreamCreatePairWithSocket(kCFAllocatorDefault, nativeSocketHandle,
                                      &readStream, &writeStream);
-        if (readStream && writeStream) {
+        if (readStream && writeStream)
+        {
             CFReadStreamSetProperty(readStream,
                                     kCFStreamPropertyShouldCloseNativeSocket,
                                     kCFBooleanTrue);
@@ -467,7 +538,9 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
                                      kCFBooleanTrue);
             [server connectedToInputStream:(__bridge NSInputStream *) readStream
                               outputStream:(__bridge NSOutputStream *)writeStream];
-        } else {
+        }
+        else
+        {
             /**
               * on any failure, need to destroy the CFSocketNativeHandle
               * since we are not going to use it any more
